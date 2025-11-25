@@ -19,10 +19,7 @@ function Calendar({
   buttonVariant = 'ghost',
   formatters,
   components,
-  ...props
-}: React.ComponentProps<typeof DayPicker> & {
-  buttonVariant?: React.ComponentProps<typeof Button>['variant']
-}) {
+  ...props}) {
   const defaultClassNames = getDefaultClassNames()
 
   return (
@@ -177,7 +174,7 @@ function CalendarDayButton({
   day,
   modifiers,
   ...props
-}: React.ComponentProps<typeof DayButton>) {
+}) {
   const defaultClassNames = getDefaultClassNames()
 
   const ref = React.useRef<HTMLButtonElement>(null)

@@ -1,8 +1,13 @@
 'use client'
 
 import * as React from 'react'
-import * as ToastPrimitives from '@radix-ui/react-toast'
-import { cva, type VariantProps } from 'class-variance-authority'
+
+            param($match)
+            $firstChar = $match.Groups[1].Value.ToUpper()
+            $rest = $match.Groups[2].Value
+            "import * as $firstChar$rest"
+         from '@radix-ui/react-toast'
+import { cva } from 'class-variance-authority'
 import { X } from 'lucide-react'
 
 import { cn } from '@/lib/utils'

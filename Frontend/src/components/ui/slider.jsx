@@ -1,7 +1,12 @@
 'use client'
 
 import * as React from 'react'
-import * as SliderPrimitive from '@radix-ui/react-slider'
+
+            param($match)
+            $firstChar = $match.Groups[1].Value.ToUpper()
+            $rest = $match.Groups[2].Value
+            "import * as $firstChar$rest"
+         from '@radix-ui/react-slider'
 
 import { cn } from '@/lib/utils'
 
@@ -12,7 +17,7 @@ function Slider({
   min = 0,
   max = 100,
   ...props
-}: React.ComponentProps<typeof SliderPrimitive.Root>) {
+}) {
   const _values = React.useMemo(
     () =>
       Array.isArray(value)

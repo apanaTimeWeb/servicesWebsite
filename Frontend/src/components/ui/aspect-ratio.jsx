@@ -1,10 +1,15 @@
 'use client'
 
-import * as AspectRatioPrimitive from '@radix-ui/react-aspect-ratio'
+
+            param($match)
+            $firstChar = $match.Groups[1].Value.ToUpper()
+            $rest = $match.Groups[2].Value
+            "import * as $firstChar$rest"
+         from '@radix-ui/react-aspect-ratio'
 
 function AspectRatio({
   ...props
-}: React.ComponentProps<typeof AspectRatioPrimitive.Root>) {
+}) {
   return <AspectRatioPrimitive.Root data-slot="aspect-ratio" {...props} />
 }
 
