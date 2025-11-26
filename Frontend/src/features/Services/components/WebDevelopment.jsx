@@ -1,5 +1,9 @@
 import React from "react"
-import { ArrowRight, Globe, Star } from "lucide-react"
+import { FaReact, FaNodeJs, FaAws, FaStripe } from "react-icons/fa"
+import { SiNextdotjs, SiTypescript, SiTailwindcss, SiPostgresql, SiMongodb, SiVercel } from "react-icons/si"
+import { IoMdCheckmarkCircle, IoMdStar } from "react-icons/io"
+import { MdArrowForward } from "react-icons/md"
+import { TbWorldWww } from "react-icons/tb"
 
 export default function WebDevelopment() {
   const handleConsultation = () => {
@@ -7,12 +11,12 @@ export default function WebDevelopment() {
   }
 
   const technologies = [
-    { name: "React & Next.js", desc: "Modern, fast, and SEO-friendly web applications" },
-    { name: "Node.js & Express", desc: "Scalable backend APIs and microservices" },
-    { name: "TypeScript", desc: "Type-safe code for better maintainability" },
-    { name: "Tailwind CSS", desc: "Beautiful, responsive designs" },
-    { name: "PostgreSQL & MongoDB", desc: "Robust database solutions" },
-    { name: "AWS & Vercel", desc: "Cloud deployment and hosting" }
+    { name: "React & Next.js", desc: "Modern, fast, and SEO-friendly web applications", icon: SiNextdotjs },
+    { name: "Node.js & Express", desc: "Scalable backend APIs and microservices", icon: FaNodeJs },
+    { name: "TypeScript", desc: "Type-safe code for better maintainability", icon: SiTypescript },
+    { name: "Tailwind CSS", desc: "Beautiful, responsive designs", icon: SiTailwindcss },
+    { name: "PostgreSQL & MongoDB", desc: "Robust database solutions", icon: SiPostgresql },
+    { name: "AWS & Vercel", desc: "Cloud deployment and hosting", icon: FaAws }
   ]
 
   const projects = [
@@ -22,41 +26,50 @@ export default function WebDevelopment() {
   ]
 
   const testimonials = [
-    {
-      quote: "Our e-commerce platform built by them handles thousands of transactions daily. The performance is outstanding!",
-      author: "Sarah Johnson",
-      company: "ShopHub, USA"
-    },
-    {
-      quote: "They transformed our vision into a beautiful, functional web application. Highly recommended!",
-      author: "David Kim",
-      company: "TechStart, South Korea"
-    },
-    {
-      quote: "Professional team that delivered our corporate website on time with excellent SEO results.",
-      author: "Maria Garcia",
-      company: "GlobalCorp, Spain"
-    }
+    { quote: "Our e-commerce platform built by them handles thousands of transactions daily. The performance is outstanding!", author: "Sarah Johnson", company: "ShopHub, USA" },
+    { quote: "They transformed our vision into a beautiful, functional web application. Highly recommended!", author: "David Kim", company: "TechStart, South Korea" },
+    { quote: "Professional team that delivered our corporate website on time with excellent SEO results.", author: "Maria Garcia", company: "GlobalCorp, Spain" }
+  ]
+
+  const partners = [
+    { icon: FaReact, name: "React" },
+    { icon: SiNextdotjs, name: "Next.js" },
+    { icon: FaNodeJs, name: "Node.js" },
+    { icon: FaAws, name: "AWS" },
+    { icon: SiVercel, name: "Vercel" },
+    { icon: FaStripe, name: "Stripe" }
+  ]
+
+  const stats = [
+    { value: '300+', label: 'Websites Built' },
+    { value: '50+', label: 'E-commerce Sites' },
+    { value: '200+', label: 'Happy Clients' },
+    { value: '99%', label: 'Client Satisfaction' }
   ]
 
   return (
     <main style={{ minHeight: '100vh', paddingTop: '64px' }}>
+      <style>{`
+        @keyframes fadeInUp { from { opacity: 0; transform: translateY(30px); } to { opacity: 1; transform: translateY(0); } }
+        @keyframes fadeIn { from { opacity: 0; } to { opacity: 1; } }
+      `}</style>
+
       <section style={{ padding: '5rem 0', background: 'linear-gradient(to bottom right, #f9fafb, #e5e7eb)' }}>
         <div style={{ maxWidth: '1280px', margin: '0 auto', padding: '0 1rem' }}>
           <div style={{ textAlign: 'center', maxWidth: '56rem', margin: '0 auto' }}>
-            <div style={{ display: 'inline-flex', alignItems: 'center', padding: '0.5rem 1rem', border: '1px solid #3b82f6', borderRadius: '9999px', marginBottom: '1rem', color: '#3b82f6' }}>
-              <Globe style={{ width: '1rem', height: '1rem', marginRight: '0.5rem' }} />
+            <div style={{ display: 'inline-flex', alignItems: 'center', padding: '0.5rem 1rem', border: '1px solid #3b82f6', borderRadius: '9999px', marginBottom: '1rem', color: '#3b82f6', animation: 'fadeInUp 0.6s ease-out' }}>
+              <TbWorldWww style={{ width: '1rem', height: '1rem', marginRight: '0.5rem' }} />
               Web Development
             </div>
-            <h1 style={{ fontSize: '3rem', fontWeight: 'bold', color: '#111827', marginBottom: '1.5rem' }}>
+            <h1 style={{ fontSize: '3rem', fontWeight: 'bold', color: '#111827', marginBottom: '1.5rem', animation: 'fadeInUp 0.8s ease-out' }}>
               Modern Web Applications
             </h1>
-            <p style={{ fontSize: '1.25rem', color: '#6b7280', marginBottom: '2rem' }}>
+            <p style={{ fontSize: '1.25rem', color: '#6b7280', marginBottom: '2rem', animation: 'fadeInUp 1s ease-out' }}>
               We build fast, scalable, and beautiful web applications that drive business growth
             </p>
-            <button onClick={handleConsultation} style={{ backgroundColor: '#3b82f6', color: '#ffffff', padding: '0.75rem 2rem', borderRadius: '0.375rem', border: 'none', cursor: 'pointer', fontSize: '1rem', display: 'inline-flex', alignItems: 'center', gap: '0.5rem' }}>
+            <button onClick={handleConsultation} style={{ backgroundColor: '#3b82f6', color: '#ffffff', padding: '0.75rem 2rem', borderRadius: '0.375rem', border: 'none', cursor: 'pointer', fontSize: '1rem', display: 'inline-flex', alignItems: 'center', gap: '0.5rem', animation: 'fadeInUp 1.2s ease-out', transition: 'all 0.3s' }} onMouseEnter={(e) => { e.target.style.transform = 'translateY(-2px)'; e.target.style.boxShadow = '0 8px 16px rgba(59, 130, 246, 0.4)' }} onMouseLeave={(e) => { e.target.style.transform = 'translateY(0)'; e.target.style.boxShadow = 'none' }}>
               Get Free Consultation
-              <ArrowRight style={{ width: '1.25rem', height: '1.25rem' }} />
+              <MdArrowForward style={{ width: '1.25rem', height: '1.25rem' }} />
             </button>
           </div>
         </div>
@@ -65,13 +78,8 @@ export default function WebDevelopment() {
       <section style={{ padding: '4rem 0', backgroundColor: '#ffffff' }}>
         <div style={{ maxWidth: '1280px', margin: '0 auto', padding: '0 1rem' }}>
           <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(200px, 1fr))', gap: '2rem', maxWidth: '80rem', margin: '0 auto' }}>
-            {[
-              { value: '300+', label: 'Websites Built' },
-              { value: '50+', label: 'E-commerce Sites' },
-              { value: '200+', label: 'Happy Clients' },
-              { value: '99%', label: 'Client Satisfaction' }
-            ].map((stat, index) => (
-              <div key={index} style={{ textAlign: 'center', padding: '1.5rem', backgroundColor: '#f9fafb', borderRadius: '0.5rem', border: '1px solid #e5e7eb' }}>
+            {stats.map((stat, index) => (
+              <div key={index} style={{ textAlign: 'center', padding: '1.5rem', backgroundColor: '#f9fafb', borderRadius: '0.5rem', border: '1px solid #e5e7eb', animation: `fadeInUp ${0.8 + index * 0.1}s ease-out`, transition: 'all 0.3s', cursor: 'pointer' }} onMouseEnter={(e) => { e.currentTarget.style.transform = 'translateY(-8px)'; e.currentTarget.style.boxShadow = '0 12px 24px rgba(59, 130, 246, 0.15)'; e.currentTarget.style.borderColor = '#3b82f6' }} onMouseLeave={(e) => { e.currentTarget.style.transform = 'translateY(0)'; e.currentTarget.style.boxShadow = 'none'; e.currentTarget.style.borderColor = '#e5e7eb' }}>
                 <div style={{ fontSize: '1.875rem', fontWeight: 'bold', color: '#3b82f6', marginBottom: '0.5rem' }}>{stat.value}</div>
                 <p style={{ color: '#6b7280', fontSize: '0.875rem' }}>{stat.label}</p>
               </div>
@@ -87,8 +95,11 @@ export default function WebDevelopment() {
           </h2>
           <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(280px, 1fr))', gap: '1.5rem' }}>
             {technologies.map((tech, index) => (
-              <div key={index} style={{ backgroundColor: '#ffffff', borderRadius: '0.5rem', border: '1px solid #e5e7eb', padding: '1.5rem', boxShadow: '0 1px 3px 0 rgba(0, 0, 0, 0.1)' }}>
-                <h3 style={{ fontSize: '1.125rem', fontWeight: '600', color: '#111827', marginBottom: '0.75rem' }}>{tech.name}</h3>
+              <div key={index} style={{ backgroundColor: '#ffffff', borderRadius: '0.5rem', border: '1px solid #e5e7eb', padding: '1.5rem', transition: 'all 0.3s', boxShadow: '0 1px 3px 0 rgba(0, 0, 0, 0.1)', animation: `fadeInUp ${1 + index * 0.1}s ease-out` }} onMouseEnter={(e) => { e.currentTarget.style.transform = 'translateY(-5px)'; e.currentTarget.style.boxShadow = '0 12px 24px rgba(59, 130, 246, 0.2)'; e.currentTarget.style.borderColor = '#3b82f6' }} onMouseLeave={(e) => { e.currentTarget.style.transform = 'translateY(0)'; e.currentTarget.style.boxShadow = '0 1px 3px 0 rgba(0, 0, 0, 0.1)'; e.currentTarget.style.borderColor = '#e5e7eb' }}>
+                <div style={{ display: 'flex', alignItems: 'center', gap: '0.75rem', marginBottom: '0.75rem' }}>
+                  <tech.icon style={{ color: '#3b82f6', fontSize: '1.5rem' }} />
+                  <h3 style={{ fontSize: '1.125rem', fontWeight: '600', color: '#111827' }}>{tech.name}</h3>
+                </div>
                 <p style={{ color: '#6b7280', fontSize: '0.875rem' }}>{tech.desc}</p>
               </div>
             ))}
@@ -103,8 +114,11 @@ export default function WebDevelopment() {
           </h2>
           <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(280px, 1fr))', gap: '1.5rem' }}>
             {projects.map((project, index) => (
-              <div key={index} style={{ backgroundColor: '#f9fafb', borderRadius: '0.5rem', border: '1px solid #e5e7eb', padding: '1.5rem', boxShadow: '0 1px 3px 0 rgba(0, 0, 0, 0.1)' }}>
-                <h3 style={{ fontSize: '1.125rem', fontWeight: '600', color: '#111827', marginBottom: '0.75rem' }}>{project.name}</h3>
+              <div key={index} style={{ backgroundColor: '#f9fafb', borderRadius: '0.5rem', border: '1px solid #e5e7eb', padding: '1.5rem', transition: 'all 0.3s', boxShadow: '0 1px 3px 0 rgba(0, 0, 0, 0.1)', animation: `fadeInUp ${1 + index * 0.15}s ease-out` }} onMouseEnter={(e) => { e.currentTarget.style.transform = 'scale(1.03)'; e.currentTarget.style.boxShadow = '0 12px 24px rgba(0, 0, 0, 0.12)' }} onMouseLeave={(e) => { e.currentTarget.style.transform = 'scale(1)'; e.currentTarget.style.boxShadow = '0 1px 3px 0 rgba(0, 0, 0, 0.1)' }}>
+                <div style={{ display: 'flex', alignItems: 'center', gap: '0.5rem', marginBottom: '0.75rem' }}>
+                  <IoMdCheckmarkCircle style={{ color: '#10b981', fontSize: '1.25rem' }} />
+                  <h3 style={{ fontSize: '1.125rem', fontWeight: '600', color: '#111827' }}>{project.name}</h3>
+                </div>
                 <p style={{ color: '#6b7280', fontSize: '0.875rem' }}>{project.desc}</p>
               </div>
             ))}
@@ -119,10 +133,10 @@ export default function WebDevelopment() {
           </h2>
           <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(280px, 1fr))', gap: '1.5rem' }}>
             {testimonials.map((testimonial, index) => (
-              <div key={index} style={{ backgroundColor: '#ffffff', borderRadius: '0.5rem', border: '1px solid #e5e7eb', padding: '1.5rem', boxShadow: '0 1px 3px 0 rgba(0, 0, 0, 0.1)' }}>
+              <div key={index} style={{ backgroundColor: '#ffffff', borderRadius: '0.5rem', border: '1px solid #e5e7eb', padding: '1.5rem', transition: 'all 0.3s', boxShadow: '0 1px 3px 0 rgba(0, 0, 0, 0.1)', animation: `fadeInUp ${1 + index * 0.15}s ease-out` }} onMouseEnter={(e) => { e.currentTarget.style.boxShadow = '0 12px 24px rgba(0, 0, 0, 0.12)'; e.currentTarget.style.transform = 'translateY(-5px)' }} onMouseLeave={(e) => { e.currentTarget.style.boxShadow = '0 1px 3px 0 rgba(0, 0, 0, 0.1)'; e.currentTarget.style.transform = 'translateY(0)' }}>
                 <div style={{ display: 'flex', marginBottom: '1rem' }}>
                   {[...Array(5)].map((_, i) => (
-                    <Star key={i} style={{ width: '1rem', height: '1rem', fill: '#fbbf24', color: '#fbbf24' }} />
+                    <IoMdStar key={i} style={{ fontSize: '1.125rem', color: '#fbbf24' }} />
                   ))}
                 </div>
                 <p style={{ color: '#6b7280', marginBottom: '1rem', fontStyle: 'italic', fontSize: '0.875rem' }}>"{testimonial.quote}"</p>
@@ -130,6 +144,24 @@ export default function WebDevelopment() {
                 <div style={{ fontSize: '0.875rem', color: '#6b7280' }}>{testimonial.company}</div>
               </div>
             ))}
+          </div>
+        </div>
+      </section>
+
+      <section style={{ padding: '4rem 0', backgroundColor: '#ffffff' }}>
+        <div style={{ maxWidth: '1280px', margin: '0 auto', padding: '0 1rem' }}>
+          <div style={{ maxWidth: '64rem', margin: '0 auto', textAlign: 'center' }}>
+            <h2 style={{ fontSize: '1.875rem', fontWeight: 'bold', marginBottom: '2rem', color: '#111827' }}>
+              Our Web Development Partners
+            </h2>
+            <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(120px, 1fr))', gap: '2rem' }}>
+              {partners.map((partner, index) => (
+                <div key={index} style={{ display: 'flex', flexDirection: 'column', alignItems: 'center', gap: '0.5rem', animation: `fadeIn ${1.2 + index * 0.1}s ease-out`, transition: 'transform 0.3s' }} onMouseEnter={(e) => e.currentTarget.style.transform = 'scale(1.15)'} onMouseLeave={(e) => e.currentTarget.style.transform = 'scale(1)'}>
+                  <partner.icon style={{ fontSize: '2.5rem', color: '#3b82f6' }} />
+                  <span style={{ fontSize: '0.75rem', color: '#6b7280', fontWeight: '500' }}>{partner.name}</span>
+                </div>
+              ))}
+            </div>
           </div>
         </div>
       </section>
@@ -145,10 +177,12 @@ export default function WebDevelopment() {
             </p>
             <button 
               onClick={handleConsultation} 
-              style={{ backgroundColor: '#ffffff', color: '#111827', padding: '0.75rem 2rem', borderRadius: '0.375rem', border: 'none', cursor: 'pointer', fontSize: '1rem', display: 'inline-flex', alignItems: 'center', gap: '0.5rem', fontWeight: '500' }}
+              style={{ backgroundColor: '#ffffff', color: '#111827', padding: '0.75rem 2rem', borderRadius: '0.375rem', border: 'none', cursor: 'pointer', fontSize: '1rem', display: 'inline-flex', alignItems: 'center', gap: '0.5rem', fontWeight: '500', transition: 'all 0.3s' }}
+              onMouseEnter={(e) => { e.target.style.transform = 'translateY(-3px)'; e.target.style.boxShadow = '0 8px 16px rgba(0, 0, 0, 0.3)' }}
+              onMouseLeave={(e) => { e.target.style.transform = 'translateY(0)'; e.target.style.boxShadow = 'none' }}
             >
               Contact Us Now
-              <ArrowRight style={{ width: '1.25rem', height: '1.25rem' }} />
+              <MdArrowForward style={{ width: '1.25rem', height: '1.25rem' }} />
             </button>
           </div>
         </div>

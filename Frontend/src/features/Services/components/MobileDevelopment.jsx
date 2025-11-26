@@ -1,5 +1,8 @@
 import React from "react"
-import { ArrowRight, Smartphone, Star } from "lucide-react"
+import { FaMobileAlt, FaApple, FaGooglePlay, FaReact, FaAws } from "react-icons/fa"
+import { SiFlutter, SiFirebase, SiKotlin, SiSwift } from "react-icons/si"
+import { IoMdCheckmarkCircle, IoMdStar } from "react-icons/io"
+import { MdArrowForward } from "react-icons/md"
 
 export default function MobileDevelopment() {
   const handleConsultation = () => {
@@ -7,12 +10,12 @@ export default function MobileDevelopment() {
   }
 
   const technologies = [
-    { name: "React Native", desc: "Cross-platform mobile apps with native performance" },
-    { name: "Flutter", desc: "Google's UI toolkit for beautiful, natively compiled applications" },
-    { name: "Swift/iOS", desc: "Native iOS development for optimal performance" },
-    { name: "Kotlin/Android", desc: "Modern Android development with Kotlin" },
-    { name: "Firebase", desc: "Backend services and real-time database" },
-    { name: "App Store Optimization", desc: "Maximize your app's visibility and downloads" }
+    { name: "React Native", desc: "Cross-platform mobile apps with native performance", icon: FaReact },
+    { name: "Flutter", desc: "Google's UI toolkit for beautiful, natively compiled applications", icon: SiFlutter },
+    { name: "Swift/iOS", desc: "Native iOS development for optimal performance", icon: SiSwift },
+    { name: "Kotlin/Android", desc: "Modern Android development with Kotlin", icon: SiKotlin },
+    { name: "Firebase", desc: "Backend services and real-time database", icon: SiFirebase },
+    { name: "App Store Optimization", desc: "Maximize your app's visibility and downloads", icon: FaApple }
   ]
 
   const projects = [
@@ -39,26 +42,55 @@ export default function MobileDevelopment() {
     }
   ]
 
-  const partners = ["🍎 Apple App Store", "📱 Google Play", "🔥 Firebase", "☁️ AWS Mobile", "💳 Stripe", "🔔 OneSignal"]
+  const partners = [
+    { icon: FaApple, name: "App Store" },
+    { icon: FaGooglePlay, name: "Google Play" },
+    { icon: SiFirebase, name: "Firebase" },
+    { icon: FaAws, name: "AWS Mobile" },
+    { icon: FaReact, name: "React Native" },
+    { icon: SiFlutter, name: "Flutter" }
+  ]
+
+  const stats = [
+    { value: '200+', label: 'Apps Delivered' },
+    { value: '15+', label: 'Live on Stores' },
+    { value: '35+', label: 'Clients Served' },
+    { value: '50k+', label: 'Avg. Downloads' }
+  ]
 
   return (
     <main style={{ minHeight: '100vh', paddingTop: '64px' }}>
+      <style>{`
+        @keyframes fadeInUp {
+          from { opacity: 0; transform: translateY(30px); }
+          to { opacity: 1; transform: translateY(0); }
+        }
+        @keyframes fadeIn {
+          from { opacity: 0; }
+          to { opacity: 1; }
+        }
+        @keyframes pulse {
+          0%, 100% { transform: scale(1); }
+          50% { transform: scale(1.05); }
+        }
+      `}</style>
+
       <section style={{ padding: '5rem 0', background: 'linear-gradient(to bottom right, #f9fafb, #e5e7eb)' }}>
         <div style={{ maxWidth: '1280px', margin: '0 auto', padding: '0 1rem' }}>
           <div style={{ textAlign: 'center', maxWidth: '56rem', margin: '0 auto' }}>
-            <div style={{ display: 'inline-flex', alignItems: 'center', padding: '0.5rem 1rem', border: '1px solid #3b82f6', borderRadius: '9999px', marginBottom: '1rem', color: '#3b82f6' }}>
-              <Smartphone style={{ width: '1rem', height: '1rem', marginRight: '0.5rem' }} />
+            <div style={{ display: 'inline-flex', alignItems: 'center', padding: '0.5rem 1rem', border: '1px solid #3b82f6', borderRadius: '9999px', marginBottom: '1rem', color: '#3b82f6', animation: 'fadeInUp 0.6s ease-out' }}>
+              <FaMobileAlt style={{ width: '1rem', height: '1rem', marginRight: '0.5rem' }} />
               Mobile Development
             </div>
-            <h1 style={{ fontSize: '3rem', fontWeight: 'bold', color: '#111827', marginBottom: '1.5rem' }}>
+            <h1 style={{ fontSize: '3rem', fontWeight: 'bold', color: '#111827', marginBottom: '1.5rem', animation: 'fadeInUp 0.8s ease-out' }}>
               Native & Cross-Platform Apps
             </h1>
-            <p style={{ fontSize: '1.25rem', color: '#6b7280', marginBottom: '2rem' }}>
+            <p style={{ fontSize: '1.25rem', color: '#6b7280', marginBottom: '2rem', animation: 'fadeInUp 1s ease-out' }}>
               We create powerful mobile applications that deliver exceptional user experiences across iOS and Android platforms
             </p>
-            <button onClick={handleConsultation} style={{ backgroundColor: '#3b82f6', color: '#ffffff', padding: '0.75rem 2rem', borderRadius: '0.375rem', border: 'none', cursor: 'pointer', fontSize: '1rem', display: 'inline-flex', alignItems: 'center', gap: '0.5rem' }}>
+            <button onClick={handleConsultation} style={{ backgroundColor: '#3b82f6', color: '#ffffff', padding: '0.75rem 2rem', borderRadius: '0.375rem', border: 'none', cursor: 'pointer', fontSize: '1rem', display: 'inline-flex', alignItems: 'center', gap: '0.5rem', animation: 'fadeInUp 1.2s ease-out', transition: 'all 0.3s' }} onMouseEnter={(e) => { e.target.style.transform = 'translateY(-2px)'; e.target.style.boxShadow = '0 8px 16px rgba(59, 130, 246, 0.4)' }} onMouseLeave={(e) => { e.target.style.transform = 'translateY(0)'; e.target.style.boxShadow = 'none' }}>
               Get Free Consultation
-              <ArrowRight style={{ width: '1.25rem', height: '1.25rem' }} />
+              <MdArrowForward style={{ width: '1.25rem', height: '1.25rem' }} />
             </button>
           </div>
         </div>
@@ -67,84 +99,72 @@ export default function MobileDevelopment() {
       <section style={{ padding: '4rem 0', backgroundColor: '#ffffff' }}>
         <div style={{ maxWidth: '1280px', margin: '0 auto', padding: '0 1rem' }}>
           <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(200px, 1fr))', gap: '2rem', maxWidth: '80rem', margin: '0 auto' }}>
-            <div style={{ textAlign: 'center', padding: '1.5rem', backgroundColor: '#f9fafb', borderRadius: '0.5rem', border: '1px solid #e5e7eb' }}>
-              <div style={{ fontSize: '1.875rem', fontWeight: 'bold', color: '#3b82f6', marginBottom: '0.5rem' }}>200+</div>
-              <p style={{ color: '#6b7280', fontSize: '0.875rem' }}>Apps Delivered</p>
-            </div>
-            <div style={{ textAlign: 'center', padding: '1.5rem', backgroundColor: '#f9fafb', borderRadius: '0.5rem', border: '1px solid #e5e7eb' }}>
-              <div style={{ fontSize: '1.875rem', fontWeight: 'bold', color: '#3b82f6', marginBottom: '0.5rem' }}>15+</div>
-              <p style={{ color: '#6b7280', fontSize: '0.875rem' }}>Live on Stores</p>
-            </div>
-            <div style={{ textAlign: 'center', padding: '1.5rem', backgroundColor: '#f9fafb', borderRadius: '0.5rem', border: '1px solid #e5e7eb' }}>
-              <div style={{ fontSize: '1.875rem', fontWeight: 'bold', color: '#3b82f6', marginBottom: '0.5rem' }}>35+</div>
-              <p style={{ color: '#6b7280', fontSize: '0.875rem' }}>Clients Served</p>
-            </div>
-            <div style={{ textAlign: 'center', padding: '1.5rem', backgroundColor: '#f9fafb', borderRadius: '0.5rem', border: '1px solid #e5e7eb' }}>
-              <div style={{ fontSize: '1.875rem', fontWeight: 'bold', color: '#3b82f6', marginBottom: '0.5rem' }}>50k+</div>
-              <p style={{ color: '#6b7280', fontSize: '0.875rem' }}>Avg. Downloads</p>
-            </div>
+            {stats.map((stat, index) => (
+              <div key={index} style={{ textAlign: 'center', padding: '1.5rem', backgroundColor: '#f9fafb', borderRadius: '0.5rem', border: '1px solid #e5e7eb', animation: `fadeInUp ${0.8 + index * 0.1}s ease-out`, transition: 'all 0.3s', cursor: 'pointer' }} onMouseEnter={(e) => { e.currentTarget.style.transform = 'translateY(-8px)'; e.currentTarget.style.boxShadow = '0 12px 24px rgba(59, 130, 246, 0.15)'; e.currentTarget.style.borderColor = '#3b82f6' }} onMouseLeave={(e) => { e.currentTarget.style.transform = 'translateY(0)'; e.currentTarget.style.boxShadow = 'none'; e.currentTarget.style.borderColor = '#e5e7eb' }}>
+                <div style={{ fontSize: '1.875rem', fontWeight: 'bold', color: '#3b82f6', marginBottom: '0.5rem' }}>{stat.value}</div>
+                <p style={{ color: '#6b7280', fontSize: '0.875rem' }}>{stat.label}</p>
+              </div>
+            ))}
           </div>
         </div>
       </section>
 
       <section style={{ padding: '5rem 0', backgroundColor: '#f9fafb' }}>
         <div style={{ maxWidth: '1280px', margin: '0 auto', padding: '0 1rem' }}>
-          <div style={{ maxWidth: '96rem', margin: '0 auto' }}>
-            <h2 style={{ fontSize: '2.25rem', fontWeight: 'bold', textAlign: 'center', marginBottom: '3rem', color: '#111827' }}>
-              Technologies We Master
-            </h2>
-            <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(280px, 1fr))', gap: '1.5rem' }}>
-              {technologies.map((tech, index) => (
-                <div key={index} style={{ backgroundColor: '#ffffff', borderRadius: '0.5rem', border: '1px solid #e5e7eb', padding: '1.5rem', transition: 'all 0.3s', boxShadow: '0 1px 3px 0 rgba(0, 0, 0, 0.1)' }}>
-                  <h3 style={{ fontSize: '1.125rem', fontWeight: '600', color: '#111827', marginBottom: '0.75rem' }}>{tech.name}</h3>
-                  <p style={{ color: '#6b7280', fontSize: '0.875rem' }}>{tech.desc}</p>
+          <h2 style={{ fontSize: '2.25rem', fontWeight: 'bold', textAlign: 'center', marginBottom: '3rem', color: '#111827' }}>
+            Technologies We Master
+          </h2>
+          <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(280px, 1fr))', gap: '1.5rem' }}>
+            {technologies.map((tech, index) => (
+              <div key={index} style={{ backgroundColor: '#ffffff', borderRadius: '0.5rem', border: '1px solid #e5e7eb', padding: '1.5rem', transition: 'all 0.3s', boxShadow: '0 1px 3px 0 rgba(0, 0, 0, 0.1)', animation: `fadeInUp ${1 + index * 0.1}s ease-out` }} onMouseEnter={(e) => { e.currentTarget.style.transform = 'translateY(-5px)'; e.currentTarget.style.boxShadow = '0 12px 24px rgba(59, 130, 246, 0.2)'; e.currentTarget.style.borderColor = '#3b82f6' }} onMouseLeave={(e) => { e.currentTarget.style.transform = 'translateY(0)'; e.currentTarget.style.boxShadow = '0 1px 3px 0 rgba(0, 0, 0, 0.1)'; e.currentTarget.style.borderColor = '#e5e7eb' }}>
+                <div style={{ display: 'flex', alignItems: 'center', gap: '0.75rem', marginBottom: '0.75rem' }}>
+                  <tech.icon style={{ color: '#3b82f6', fontSize: '1.5rem' }} />
+                  <h3 style={{ fontSize: '1.125rem', fontWeight: '600', color: '#111827' }}>{tech.name}</h3>
                 </div>
-              ))}
-            </div>
+                <p style={{ color: '#6b7280', fontSize: '0.875rem' }}>{tech.desc}</p>
+              </div>
+            ))}
           </div>
         </div>
       </section>
-
-
 
       <section style={{ padding: '5rem 0', backgroundColor: '#ffffff' }}>
         <div style={{ maxWidth: '1280px', margin: '0 auto', padding: '0 1rem' }}>
-          <div style={{ maxWidth: '96rem', margin: '0 auto' }}>
-            <h2 style={{ fontSize: '2.25rem', fontWeight: 'bold', textAlign: 'center', marginBottom: '3rem', color: '#111827' }}>
-              Example Projects
-            </h2>
-            <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(280px, 1fr))', gap: '1.5rem' }}>
-              {projects.map((project, index) => (
-                <div key={index} style={{ backgroundColor: '#f9fafb', borderRadius: '0.5rem', border: '1px solid #e5e7eb', padding: '1.5rem', transition: 'all 0.3s', boxShadow: '0 1px 3px 0 rgba(0, 0, 0, 0.1)' }}>
-                  <h3 style={{ fontSize: '1.125rem', fontWeight: '600', color: '#111827', marginBottom: '0.75rem' }}>{project.name}</h3>
-                  <p style={{ color: '#6b7280', fontSize: '0.875rem' }}>{project.desc}</p>
+          <h2 style={{ fontSize: '2.25rem', fontWeight: 'bold', textAlign: 'center', marginBottom: '3rem', color: '#111827' }}>
+            Example Projects
+          </h2>
+          <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(280px, 1fr))', gap: '1.5rem' }}>
+            {projects.map((project, index) => (
+              <div key={index} style={{ backgroundColor: '#f9fafb', borderRadius: '0.5rem', border: '1px solid #e5e7eb', padding: '1.5rem', transition: 'all 0.3s', boxShadow: '0 1px 3px 0 rgba(0, 0, 0, 0.1)', animation: `fadeInUp ${1 + index * 0.15}s ease-out` }} onMouseEnter={(e) => { e.currentTarget.style.transform = 'scale(1.03)'; e.currentTarget.style.boxShadow = '0 12px 24px rgba(0, 0, 0, 0.12)' }} onMouseLeave={(e) => { e.currentTarget.style.transform = 'scale(1)'; e.currentTarget.style.boxShadow = '0 1px 3px 0 rgba(0, 0, 0, 0.1)' }}>
+                <div style={{ display: 'flex', alignItems: 'center', gap: '0.5rem', marginBottom: '0.75rem' }}>
+                  <IoMdCheckmarkCircle style={{ color: '#10b981', fontSize: '1.25rem' }} />
+                  <h3 style={{ fontSize: '1.125rem', fontWeight: '600', color: '#111827' }}>{project.name}</h3>
                 </div>
-              ))}
-            </div>
+                <p style={{ color: '#6b7280', fontSize: '0.875rem' }}>{project.desc}</p>
+              </div>
+            ))}
           </div>
         </div>
       </section>
 
       <section style={{ padding: '5rem 0', backgroundColor: '#f9fafb' }}>
         <div style={{ maxWidth: '1280px', margin: '0 auto', padding: '0 1rem' }}>
-          <div style={{ maxWidth: '96rem', margin: '0 auto' }}>
-            <h2 style={{ fontSize: '2.25rem', fontWeight: 'bold', textAlign: 'center', marginBottom: '3rem', color: '#111827' }}>
-              What Our Mobile App Clients Say
-            </h2>
-            <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(280px, 1fr))', gap: '1.5rem' }}>
-              {testimonials.map((testimonial, index) => (
-                <div key={index} style={{ backgroundColor: '#ffffff', borderRadius: '0.5rem', border: '1px solid #e5e7eb', padding: '1.5rem', transition: 'all 0.3s', boxShadow: '0 1px 3px 0 rgba(0, 0, 0, 0.1)' }}>
-                  <div style={{ display: 'flex', marginBottom: '1rem' }}>
-                    {[...Array(5)].map((_, i) => (
-                      <Star key={i} style={{ width: '1rem', height: '1rem', fill: '#fbbf24', color: '#fbbf24' }} />
-                    ))}
-                  </div>
-                  <p style={{ color: '#6b7280', marginBottom: '1rem', fontStyle: 'italic', fontSize: '0.875rem' }}>"{testimonial.quote}"</p>
-                  <div style={{ fontWeight: '600', color: '#111827' }}>{testimonial.author}</div>
-                  <div style={{ fontSize: '0.875rem', color: '#6b7280' }}>{testimonial.company}</div>
+          <h2 style={{ fontSize: '2.25rem', fontWeight: 'bold', textAlign: 'center', marginBottom: '3rem', color: '#111827' }}>
+            What Our Mobile App Clients Say
+          </h2>
+          <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(280px, 1fr))', gap: '1.5rem' }}>
+            {testimonials.map((testimonial, index) => (
+              <div key={index} style={{ backgroundColor: '#ffffff', borderRadius: '0.5rem', border: '1px solid #e5e7eb', padding: '1.5rem', transition: 'all 0.3s', boxShadow: '0 1px 3px 0 rgba(0, 0, 0, 0.1)', animation: `fadeInUp ${1 + index * 0.15}s ease-out` }} onMouseEnter={(e) => { e.currentTarget.style.boxShadow = '0 12px 24px rgba(0, 0, 0, 0.12)'; e.currentTarget.style.transform = 'translateY(-5px)' }} onMouseLeave={(e) => { e.currentTarget.style.boxShadow = '0 1px 3px 0 rgba(0, 0, 0, 0.1)'; e.currentTarget.style.transform = 'translateY(0)' }}>
+                <div style={{ display: 'flex', marginBottom: '1rem' }}>
+                  {[...Array(5)].map((_, i) => (
+                    <IoMdStar key={i} style={{ fontSize: '1.125rem', color: '#fbbf24' }} />
+                  ))}
                 </div>
-              ))}
-            </div>
+                <p style={{ color: '#6b7280', marginBottom: '1rem', fontStyle: 'italic', fontSize: '0.875rem' }}>"{testimonial.quote}"</p>
+                <div style={{ fontWeight: '600', color: '#111827' }}>{testimonial.author}</div>
+                <div style={{ fontSize: '0.875rem', color: '#6b7280' }}>{testimonial.company}</div>
+              </div>
+            ))}
           </div>
         </div>
       </section>
@@ -155,9 +175,12 @@ export default function MobileDevelopment() {
             <h2 style={{ fontSize: '1.875rem', fontWeight: 'bold', marginBottom: '2rem', color: '#111827' }}>
               Our Mobile Development Partners
             </h2>
-            <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(100px, 1fr))', gap: '1rem' }}>
+            <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(120px, 1fr))', gap: '2rem' }}>
               {partners.map((partner, index) => (
-                <div key={index} style={{ fontSize: '1.875rem' }}>{partner}</div>
+                <div key={index} style={{ display: 'flex', flexDirection: 'column', alignItems: 'center', gap: '0.5rem', animation: `fadeIn ${1.2 + index * 0.1}s ease-out`, transition: 'transform 0.3s' }} onMouseEnter={(e) => { e.currentTarget.style.transform = 'scale(1.15)'; e.currentTarget.style.animation = 'pulse 0.6s ease-in-out infinite' }} onMouseLeave={(e) => { e.currentTarget.style.transform = 'scale(1)'; e.currentTarget.style.animation = 'none' }}>
+                  <partner.icon style={{ fontSize: '2.5rem', color: '#3b82f6' }} />
+                  <span style={{ fontSize: '0.75rem', color: '#6b7280', fontWeight: '500' }}>{partner.name}</span>
+                </div>
               ))}
             </div>
           </div>
@@ -175,10 +198,12 @@ export default function MobileDevelopment() {
             </p>
             <button 
               onClick={handleConsultation} 
-              style={{ backgroundColor: '#ffffff', color: '#111827', padding: '0.75rem 2rem', borderRadius: '0.375rem', border: 'none', cursor: 'pointer', fontSize: '1rem', display: 'inline-flex', alignItems: 'center', gap: '0.5rem', fontWeight: '500' }}
+              style={{ backgroundColor: '#ffffff', color: '#111827', padding: '0.75rem 2rem', borderRadius: '0.375rem', border: 'none', cursor: 'pointer', fontSize: '1rem', display: 'inline-flex', alignItems: 'center', gap: '0.5rem', fontWeight: '500', transition: 'all 0.3s' }}
+              onMouseEnter={(e) => { e.target.style.transform = 'translateY(-3px)'; e.target.style.boxShadow = '0 8px 16px rgba(0, 0, 0, 0.3)' }}
+              onMouseLeave={(e) => { e.target.style.transform = 'translateY(0)'; e.target.style.boxShadow = 'none' }}
             >
               Contact Us Now
-              <ArrowRight style={{ width: '1.25rem', height: '1.25rem' }} />
+              <MdArrowForward style={{ width: '1.25rem', height: '1.25rem' }} />
             </button>
           </div>
         </div>
