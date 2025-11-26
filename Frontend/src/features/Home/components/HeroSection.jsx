@@ -13,61 +13,61 @@ export function HeroSection() {
   }
 
   return (
-    <section id="home" className="pt-32 pb-20 bg-gradient-to-br from-background to-muted relative overflow-hidden">
-      
-      <div className="container mx-auto px-4 sm:px-6 lg:px-8 relative">
-        <div className="text-center max-w-4xl mx-auto">
-          <h1 className="text-4xl md:text-6xl font-bold text-foreground mb-6 font-[family-name:var(--font-space-grotesk)] text-balance animate-[fade-in-up_0.6s_ease-out_both]">
+    <section id="home" style={{ paddingTop: '8rem', paddingBottom: '5rem', backgroundColor: '#f9fafb' }}>
+      <div style={{ maxWidth: '1280px', margin: '0 auto', padding: '0 1rem' }}>
+        <div style={{ textAlign: 'center', maxWidth: '56rem', margin: '0 auto' }}>
+          <h1 style={{ fontSize: '3rem', fontWeight: 'bold', color: '#111827', marginBottom: '1.5rem', lineHeight: '1.2' }}>
             Transform Your Business with
-            <span className="text-primary"> Cutting-Edge Technology</span>
+            <span style={{ color: '#3b82f6' }}> Cutting-Edge Technology</span>
           </h1>
-          <p className="text-xl text-muted-foreground mb-8 max-w-2xl mx-auto text-pretty animate-[fade-in-up_0.7s_ease-out_both]">
+          <p style={{ fontSize: '1.125rem', color: '#6b7280', marginBottom: '2rem', maxWidth: '42rem', margin: '0 auto 2rem' }}>
             We deliver premium mobile development, web solutions, AI/ML services, and data analytics that drive real
             business results for forward-thinking companies.
           </p>
 
-          <div className="flex flex-col sm:flex-row gap-4 justify-center mb-12 animate-[fade-in-up_0.8s_ease-out_both]">
+          <div style={{ display: 'flex', gap: '1rem', justifyContent: 'center', marginBottom: '3rem', flexWrap: 'wrap' }}>
             <Button
               onClick={handleConsultation}
-              size="lg"
-              className="bg-primary hover:bg-primary/90 text-primary-foreground"
+              style={{ backgroundColor: '#3b82f6', color: '#ffffff', padding: '0.75rem 2rem', borderRadius: '0.375rem', border: 'none', cursor: 'pointer', display: 'flex', alignItems: 'center', gap: '0.5rem' }}
             >
               Start Your Project
-              <ArrowRight className="ml-2 h-5 w-5" />
+              <ArrowRight size={20} />
             </Button>
             <Button
               onClick={handleViewWork}
-              size="lg"
-              variant="outline"
-              className="border-primary text-primary hover:bg-primary hover:text-primary-foreground bg-transparent"
+              style={{ backgroundColor: 'transparent', color: '#3b82f6', padding: '0.75rem 2rem', borderRadius: '0.375rem', border: '1px solid #3b82f6', cursor: 'pointer' }}
             >
               View Our Work
             </Button>
           </div>
 
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mt-16">
-            <div className="flex flex-col items-center p-6 bg-card rounded-lg border border-border animate-[fade-in-up_0.6s_ease-out_both]">
-              <Code className="h-12 w-12 text-primary mb-4 animate-[float_6s_ease-in-out_infinite]" />
-              <h3 className="text-lg font-semibold mb-2 font-[family-name:var(--font-space-grotesk)]">
+          <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(250px, 1fr))', gap: '2rem', marginTop: '4rem' }}>
+            <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'center', padding: '1.5rem', backgroundColor: '#ffffff', borderRadius: '0.5rem', border: '1px solid #e5e7eb' }}>
+              <Code style={{ width: '3rem', height: '3rem', color: '#3b82f6', marginBottom: '1rem' }} />
+              <h3 style={{ fontSize: '1.125rem', fontWeight: '600', marginBottom: '0.5rem', color: '#111827' }}>
                 Development Excellence
               </h3>
-              <p className="text-muted-foreground text-center">
+              <p style={{ color: '#6b7280', textAlign: 'center', fontSize: '0.875rem' }}>
                 Mobile & web solutions built with cutting-edge technologies
               </p>
             </div>
-            <div className="flex flex-col items-center p-6 bg-card rounded-lg border border-border animate-[fade-in-up_0.7s_ease-out_both]">
-              <Brain className="h-12 w-12 text-primary mb-4 animate-[float_6s_ease-in-out_infinite]" />
-              <h3 className="text-lg font-semibold mb-2 font-[family-name:var(--font-space-grotesk)]">
+            <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'center', padding: '1.5rem', backgroundColor: '#ffffff', borderRadius: '0.5rem', border: '1px solid #e5e7eb' }}>
+              <Brain style={{ width: '3rem', height: '3rem', color: '#3b82f6', marginBottom: '1rem' }} />
+              <h3 style={{ fontSize: '1.125rem', fontWeight: '600', marginBottom: '0.5rem', color: '#111827' }}>
                 AI/ML Innovation
               </h3>
-              <p className="text-muted-foreground text-center">Custom AI models and intelligent automation solutions</p>
+              <p style={{ color: '#6b7280', textAlign: 'center', fontSize: '0.875rem' }}>
+                Custom AI models and intelligent automation solutions
+              </p>
             </div>
-            <div className="flex flex-col items-center p-6 bg-card rounded-lg border border-border animate-[fade-in-up_0.8s_ease-out_both]">
-              <BarChart3 className="h-12 w-12 text-primary mb-4 animate-[float_6s_ease-in-out_infinite]" />
-              <h3 className="text-lg font-semibold mb-2 font-[family-name:var(--font-space-grotesk)]">
+            <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'center', padding: '1.5rem', backgroundColor: '#ffffff', borderRadius: '0.5rem', border: '1px solid #e5e7eb' }}>
+              <BarChart3 style={{ width: '3rem', height: '3rem', color: '#3b82f6', marginBottom: '1rem' }} />
+              <h3 style={{ fontSize: '1.125rem', fontWeight: '600', marginBottom: '0.5rem', color: '#111827' }}>
                 Data Analytics
               </h3>
-              <p className="text-muted-foreground text-center">Transform data into actionable business insights</p>
+              <p style={{ color: '#6b7280', textAlign: 'center', fontSize: '0.875rem' }}>
+                Transform data into actionable business insights
+              </p>
             </div>
           </div>
         </div>

@@ -2,11 +2,6 @@
 
 const items = [
   {
-    title: "AI Assistants",
-    caption: "Custom LLM apps",
-    src: "/ai-assistant-dashboard-ui.jpg",
-  },
-  {
     title: "ML Models",
     caption: "Predictions at scale",
     src: "/machine-learning-model-training-ui.jpg",
@@ -29,70 +24,38 @@ const items = [
 ]
 
 export function MediaMarquee() {
-  // Duplicate items to form a seamless loop
-  const loop = [...items, ...items]
-
   return (
-    <section aria-label="Showcase" className="bg-background">
-      <div className="container mx-auto px-4 sm:px-6 lg:px-8">
-        <div
-          className="group relative overflow-hidden rounded-xl border border-border bg-card p-4 md:p-6"
-          role="region"
-          aria-roledescription="carousel"
-          aria-label="AI, ML, Web & Data showcase"
-        >
-          {/* Motion-safe marquee; pauses on hover; reduced motion disables animation */}
-          <div className="flex gap-4 md:gap-6 [mask-image:linear-gradient(to_right,transparent,black_10%,black_90%,transparent)]">
-            <div className="flex shrink-0 gap-4 md:gap-6 motion-safe:animate-[marquee_28s_linear_infinite] group-hover:[animation-play-state:paused]">
-              {loop.map((item, i) => (
-                <figure
-                  key={`track-a-${i}`}
-                  className="w-[260px] md:w-[320px] flex-none rounded-lg border border-border bg-background"
-                >
-                  <div className="relative h-[160px] md:h-[200px] overflow-hidden rounded-t-lg">
-                    <img
-                      src={item.src || "/placeholder.svg"}
-                      alt={`${item.title} - ${item.caption}`}
-                      className="object-cover absolute inset-0 w-full h-full"
-                    />
-                  </div>
-                  <figcaption className="p-3 md:p-4">
-                    <div className="text-sm font-semibold">{item.title}</div>
-                    <div className="text-xs text-muted-foreground">{item.caption}</div>
-                  </figcaption>
-                </figure>
-              ))}
+    <section style={{ backgroundColor: '#ffffff', padding: '3rem 0' }}>
+      <div style={{ maxWidth: '1280px', margin: '0 auto', padding: '0 1rem' }}>
+        <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(280px, 1fr))', gap: '1.5rem' }}>
+          {items.map((item, i) => (
+            <div
+              key={i}
+              style={{ 
+                backgroundColor: '#ffffff', 
+                borderRadius: '0.5rem', 
+                border: '1px solid #e5e7eb',
+                overflow: 'hidden',
+                boxShadow: '0 1px 3px 0 rgba(0, 0, 0, 0.1)'
+              }}
+            >
+              <div style={{ position: 'relative', height: '200px', overflow: 'hidden' }}>
+                <img
+                  src={item.src}
+                  alt={`${item.title} - ${item.caption}`}
+                  style={{ width: '100%', height: '100%', objectFit: 'cover' }}
+                />
+              </div>
+              <div style={{ padding: '1rem' }}>
+                <div style={{ fontSize: '1rem', fontWeight: '600', color: '#111827', marginBottom: '0.25rem' }}>
+                  {item.title}
+                </div>
+                <div style={{ fontSize: '0.875rem', color: '#6b7280' }}>
+                  {item.caption}
+                </div>
+              </div>
             </div>
-
-            <div className="hidden md:flex shrink-0 gap-6 motion-safe:animate-[marquee_28s_linear_infinite] group-hover:[animation-play-state:paused]">
-              {loop.map((item, i) => (
-                <figure
-                  key={`track-b-${i}`}
-                  className="w-[320px] flex-none rounded-lg border border-border bg-background"
-                >
-                  <div className="relative h-[200px] overflow-hidden rounded-t-lg">
-                    <img
-                      src={item.src || "/placeholder.svg"}
-                      alt={`${item.title} - ${item.caption}`}
-                      className="object-cover absolute inset-0 w-full h-full"
-                    />
-                  </div>
-                  <figcaption className="p-4">
-                    <div className="text-sm font-semibold">{item.title}</div>
-                    <div className="text-xs text-muted-foreground">{item.caption}</div>
-                  </figcaption>
-                </figure>
-              ))}
-            </div>
-          </div>
-          <div
-            className="absolute inset-y-0 left-0 w-12 pointer-events-none bg-gradient-to-r from-card to-transparent"
-            aria-hidden="true"
-          />
-          <div
-            className="absolute inset-y-0 right-0 w-12 pointer-events-none bg-gradient-to-l from-card to-transparent"
-            aria-hidden="true"
-          />
+          ))}
         </div>
       </div>
     </section>
