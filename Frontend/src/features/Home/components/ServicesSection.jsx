@@ -100,7 +100,7 @@ export function ServicesSection() {
                       </li>
                     ))}
                   </ul>
-                  <Link href={service.link}>
+                  <Link to={service.link}>
                     <Button
                       variant="outline"
                       className="w-full group-hover:bg-primary group-hover:text-primary-foreground transition-colors bg-transparent"

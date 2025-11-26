@@ -1,7 +1,5 @@
 "use client"
 
-
-
 const items = [
   {
     title: "AI Assistants",

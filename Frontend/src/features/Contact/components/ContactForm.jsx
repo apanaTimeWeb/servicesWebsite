@@ -10,7 +10,7 @@ import { Textarea } from "@/components/ui/textarea"
 import { Label } from "@/components/ui/label"
 import { Mail, Phone, MapPin, MessageCircle } from "lucide-react"
 
-export function ContactSection() {
+export function ContactForm() {
   const [formData, setFormData] = useState({
     name: "",
     email: "",
@@ -38,7 +38,7 @@ export function ContactSection() {
   }
 
   return (
-    <section id="contact" className="py-20 bg-muted">
+    <section id="contact" className="pt-24 py-20 bg-muted">
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-16">
           <h2 className="text-3xl md:text-4xl font-bold text-foreground mb-4 font-[family-name:var(--font-space-grotesk)]">
@@ -197,7 +197,7 @@ export function ContactSection() {
                 Or Fill Our Google Form
               </h3>
               <p className="text-muted-foreground mb-6">
-                Prefer a quick form? Submit your project details here and we’ll get back within 24 hours.
+                Prefer a quick form? Submit your project details here and we'll get back within 24 hours.
               </p>
               <div className="w-full rounded-md overflow-hidden border border-border">
                 {/* Replace FORM_ID below with your actual Google Form ID */}
