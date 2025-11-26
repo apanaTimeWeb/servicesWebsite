@@ -160,3 +160,9 @@
     @apply transition-colors;
   }
 }
+
+@layer components {
+  header {
+    background-color: #ffffff !important;
+  }
+}
