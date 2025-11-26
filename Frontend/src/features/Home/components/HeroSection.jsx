@@ -13,21 +13,8 @@ export function HeroSection() {
   }
 
   return (
-    <section id="home" className="pt-24 pb-16 bg-gradient-to-br from-background to-muted relative overflow-hidden">
-      <svg
-        aria-hidden="true"
-        className="pointer-events-none absolute inset-0 w-full h-full opacity-30"
-        viewBox="0 0 100 100"
-        preserveAspectRatio="none"
-      >
-        <defs>
-          <pattern id="grid" width="10" height="10" patternUnits="userSpaceOnUse">
-            <path d="M 10 0 L 0 0 0 10" fill="none" stroke="currentColor" className="text-border" strokeWidth="0.2" />
-          </pattern>
-        </defs>
-        <rect width="100%" height="100%" fill="url(#grid)" />
-      </svg>
-
+    <section id="home" className="pt-32 pb-20 bg-gradient-to-br from-background to-muted relative overflow-hidden">
+      
       <div className="container mx-auto px-4 sm:px-6 lg:px-8 relative">
         <div className="text-center max-w-4xl mx-auto">
           <h1 className="text-4xl md:text-6xl font-bold text-foreground mb-6 font-[family-name:var(--font-space-grotesk)] text-balance animate-[fade-in-up_0.6s_ease-out_both]">
