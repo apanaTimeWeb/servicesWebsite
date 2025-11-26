@@ -4,6 +4,9 @@ import { Analytics } from "@vercel/analytics/react"
 import { Header } from "@/features/Layout/components/Header"
 import { Footer } from "@/features/Layout/components/Footer"
 import { Toaster } from "@/components/ui/sonner"
+import ScrollProgress from "@/components/ScrollProgress"
+import FloatingWhatsApp from "@/components/FloatingWhatsApp"
+import BackToTop from "@/components/BackToTop"
 import HomePage from "@/features/Home"
 import ContactPage from "@/features/Contact"
 import ServicePage from "@/features/Services"
@@ -11,7 +14,8 @@ import ServicePage from "@/features/Services"
 function App() {
     return (
         <Router>
-            <div className="min-h-screen font-sans antialiased">
+            <div className="min-h-screen font-sans antialiased" style={{ scrollBehavior: 'smooth' }}>
+                <ScrollProgress />
                 <Header />
                 <Routes>
                     <Route path="/" element={<HomePage />} />
@@ -19,6 +23,8 @@ function App() {
                     <Route path="/services/:serviceName" element={<ServicePage />} />
                 </Routes>
                 <Footer />
+                <FloatingWhatsApp />
+                <BackToTop />
                 <Toaster />
                 <Analytics />
             </div>
