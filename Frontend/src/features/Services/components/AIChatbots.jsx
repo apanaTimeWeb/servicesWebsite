@@ -1,6 +1,9 @@
 import React from "react"
 import { ArrowRight, MessageSquare, Star } from "lucide-react"
 import { projects as projectsData, testimonials as testimonialsData } from "@/data/projects"
+import { caseStudies } from "@/data/caseStudies"
+import { faqs } from "@/data/faqs"
+import { CaseStudyCard, FAQAccordion } from "@/components/ServiceEnhancements"
 
 export default function AIChatbots() {
   const handleConsultation = () => {
@@ -18,6 +21,8 @@ export default function AIChatbots() {
 
   const projects = projectsData.aiChatbot
   const testimonials = testimonialsData.aiChatbot
+  const cases = caseStudies.aiChatbot
+  const serviceFaqs = faqs.aiChatbot
 
   return (
     <main style={{ minHeight: '100vh', paddingTop: '64px' }}>
@@ -111,6 +116,29 @@ export default function AIChatbots() {
               </div>
             ))}
           </div>
+        </div>
+      </section>
+
+
+      <section style={{ padding: '5rem 0', backgroundColor: '#ffffff' }}>
+        <div style={{ maxWidth: '1280px', margin: '0 auto', padding: '0 1rem' }}>
+          <h2 style={{ fontSize: '2.25rem', fontWeight: 'bold', textAlign: 'center', marginBottom: '3rem', color: '#111827' }}>
+            Success Stories
+          </h2>
+          <div style={{ display: 'grid', gap: '1.5rem', maxWidth: '64rem', margin: '0 auto' }}>
+            {cases.map((caseStudy, index) => (
+              <CaseStudyCard key={index} caseStudy={caseStudy} />
+            ))}
+          </div>
+        </div>
+      </section>
+
+      <section style={{ padding: '5rem 0', backgroundColor: '#f9fafb' }}>
+        <div style={{ maxWidth: '1280px', margin: '0 auto', padding: '0 1rem' }}>
+          <h2 style={{ fontSize: '2.25rem', fontWeight: 'bold', textAlign: 'center', marginBottom: '3rem', color: '#111827' }}>
+            Frequently Asked Questions
+          </h2>
+          <FAQAccordion faqs={serviceFaqs} />
         </div>
       </section>
 

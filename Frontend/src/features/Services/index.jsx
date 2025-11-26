@@ -1,5 +1,5 @@
-import React from "react"
-import { useParams } from "react-router-dom"
+import React, { useEffect } from "react"
+import { useParams, useLocation, useNavigate } from "react-router-dom"
 import MobileDevelopment from "./components/MobileDevelopment"
 import WebDevelopment from "./components/WebDevelopment"
 import DashboardDesign from "./components/DashboardDesign"
@@ -10,6 +10,23 @@ import GameDevelopment from "./components/GameDevelopment"
 
 export default function ServicePage() {
     const { serviceName } = useParams()
+    const location = useLocation()
+    const navigate = useNavigate()
+
+    useEffect(() => {
+        const hash = location.hash
+        if (hash) {
+            const targetId = hash.replace('#', '')
+            const targetElement = document.getElementById(targetId)
+            if (targetElement) {
+                setTimeout(() => {
+                    targetElement.scrollIntoView({ behavior: 'smooth', block: 'start' })
+                }, 100)
+            } else {
+                navigate('/' + hash)
+            }
+        }
+    }, [location, navigate])
 
     const serviceComponents = {
         "mobile-development": MobileDevelopment,

@@ -3,6 +3,9 @@ import { SiFigma, SiAdobexd, SiReact, SiTailwindcss, SiMaterialdesignicons, SiCh
 import { IoMdCheckmarkCircle, IoMdStar } from "react-icons/io"
 import { MdArrowForward, MdDashboard } from "react-icons/md"
 import { projects as projectsData, testimonials as testimonialsData } from "@/data/projects"
+import { caseStudies } from "@/data/caseStudies"
+import { faqs } from "@/data/faqs"
+import { CaseStudyCard, FAQAccordion } from "@/components/ServiceEnhancements"
 
 export default function DashboardDesign() {
   const handleConsultation = () => {
@@ -20,6 +23,8 @@ export default function DashboardDesign() {
 
   const projects = projectsData.dashboard
   const testimonials = testimonialsData.dashboard
+  const cases = caseStudies.dashboard
+  const serviceFaqs = faqs.dashboard
 
   const stats = [
     { value: '250+', label: 'Dashboards Created' },
@@ -117,7 +122,7 @@ export default function DashboardDesign() {
               <div key={index} style={{ backgroundColor: '#ffffff', borderRadius: '0.5rem', border: '1px solid #e5e7eb', padding: '1.5rem', transition: 'all 0.3s', boxShadow: '0 1px 3px 0 rgba(0, 0, 0, 0.1)', animation: `fadeInUp ${1 + index * 0.15}s ease-out` }} onMouseEnter={(e) => { e.currentTarget.style.boxShadow = '0 12px 24px rgba(0, 0, 0, 0.12)'; e.currentTarget.style.transform = 'translateY(-5px)' }} onMouseLeave={(e) => { e.currentTarget.style.boxShadow = '0 1px 3px 0 rgba(0, 0, 0, 0.1)'; e.currentTarget.style.transform = 'translateY(0)' }}>
                 <div style={{ display: 'flex', marginBottom: '1rem' }}>
                   {[...Array(5)].map((_, i) => (
-                    <IoMdStar key={i} style={{ fontSize: '1.125rem', color: '#fbbf24' }} />
+                    <IoMdStar key={i} style={{ fontSize: '1.125rem', color: i < Math.floor(testimonial.rating) ? '#fbbf24' : (i < testimonial.rating ? '#fbbf24' : '#d1d5db'), opacity: i < Math.floor(testimonial.rating) ? 1 : (i < testimonial.rating ? 0.5 : 0.3) }} />
                   ))}
                 </div>
                 <p style={{ color: '#6b7280', marginBottom: '1rem', fontStyle: 'italic', fontSize: '0.875rem' }}>"{testimonial.quote}"</p>
@@ -126,6 +131,29 @@ export default function DashboardDesign() {
               </div>
             ))}
           </div>
+        </div>
+      </section>
+
+
+      <section style={{ padding: '5rem 0', backgroundColor: '#ffffff' }}>
+        <div style={{ maxWidth: '1280px', margin: '0 auto', padding: '0 1rem' }}>
+          <h2 style={{ fontSize: '2.25rem', fontWeight: 'bold', textAlign: 'center', marginBottom: '3rem', color: '#111827' }}>
+            Success Stories
+          </h2>
+          <div style={{ display: 'grid', gap: '1.5rem', maxWidth: '64rem', margin: '0 auto' }}>
+            {cases.map((caseStudy, index) => (
+              <CaseStudyCard key={index} caseStudy={caseStudy} />
+            ))}
+          </div>
+        </div>
+      </section>
+
+      <section style={{ padding: '5rem 0', backgroundColor: '#f9fafb' }}>
+        <div style={{ maxWidth: '1280px', margin: '0 auto', padding: '0 1rem' }}>
+          <h2 style={{ fontSize: '2.25rem', fontWeight: 'bold', textAlign: 'center', marginBottom: '3rem', color: '#111827' }}>
+            Frequently Asked Questions
+          </h2>
+          <FAQAccordion faqs={serviceFaqs} />
         </div>
       </section>
 
