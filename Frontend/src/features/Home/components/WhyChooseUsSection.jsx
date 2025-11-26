@@ -1,5 +1,3 @@
-import { Badge } from "@/components/ui/badge"
-import { Card, CardContent } from "@/components/ui/card"
 import { Users, Award, Clock, Shield, Zap, Globe } from "lucide-react"
 
 export function WhyChooseUsSection() {
@@ -7,22 +5,19 @@ export function WhyChooseUsSection() {
     {
       icon: Users,
       title: "Elite Team",
-      description:
-        "Our developers have 4+ years of experience and are ex-employees from Google, Microsoft, Amazon, and other top tech companies.",
+      description: "Our developers have 4+ years of experience and are ex-employees from Google, Microsoft, Amazon, and other top tech companies.",
       highlight: "Ex-FAANG Talent",
     },
     {
       icon: Award,
       title: "Cost-Effective Solutions",
-      description:
-        "Get premium quality services at competitive rates. We deliver enterprise-grade solutions without the enterprise price tag.",
+      description: "Get premium quality services at competitive rates. We deliver enterprise-grade solutions without the enterprise price tag.",
       highlight: "50% Cost Savings",
     },
     {
       icon: Clock,
       title: "Customized Projects",
-      description:
-        "Every project is tailored to your specific requirements. No cookie-cutter solutions - we build exactly what you need.",
+      description: "Every project is tailored to your specific requirements. No cookie-cutter solutions - we build exactly what you need.",
       highlight: "100% Custom",
     },
     {
@@ -34,56 +29,61 @@ export function WhyChooseUsSection() {
     {
       icon: Zap,
       title: "Cutting-Edge Tech",
-      description:
-        "We stay ahead of technology trends, using the latest frameworks and tools to build future-ready applications.",
+      description: "We stay ahead of technology trends, using the latest frameworks and tools to build future-ready applications.",
       highlight: "Latest Tech Stack",
     },
     {
       icon: Globe,
       title: "24/7 Support",
-      description:
-        "Round-the-clock technical support and maintenance services to ensure your applications run smoothly.",
+      description: "Round-the-clock technical support and maintenance services to ensure your applications run smoothly.",
       highlight: "24/7 Available",
     },
   ]
 
   return (
-    <section className="py-20 bg-muted/30">
-      <div className="container mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="text-center mb-16">
-          <Badge variant="outline" className="mb-4 text-primary border-primary">
+    <section style={{ padding: '5rem 0', backgroundColor: '#f9fafb' }}>
+      <div style={{ maxWidth: '1280px', margin: '0 auto', padding: '0 1rem' }}>
+        <div style={{ textAlign: 'center', marginBottom: '4rem' }}>
+          <span style={{ display: 'inline-block', padding: '0.25rem 1rem', backgroundColor: '#eff6ff', color: '#3b82f6', border: '1px solid #3b82f6', borderRadius: '9999px', fontSize: '0.875rem', marginBottom: '1rem' }}>
             Why Choose Us
-          </Badge>
-          <h2 className="text-3xl md:text-4xl font-bold text-foreground mb-4 font-[family-name:var(--font-space-grotesk)]">
+          </span>
+          <h2 style={{ fontSize: '2.25rem', fontWeight: 'bold', color: '#111827', marginBottom: '1rem' }}>
             Your Success is Our Priority
           </h2>
-          <p className="text-xl text-muted-foreground max-w-3xl mx-auto text-pretty">
+          <p style={{ fontSize: '1.125rem', color: '#6b7280', maxWidth: '48rem', margin: '0 auto' }}>
             We combine technical expertise with business acumen to deliver solutions that not only work flawlessly but
             also drive measurable business growth.
           </p>
         </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+        <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(320px, 1fr))', gap: '2rem' }}>
           {reasons.map((reason, index) => (
-            <Card
+            <div
               key={index}
-              className="group hover:shadow-lg transition-all duration-300 border-border/50 hover:border-primary/20"
+              style={{
+                backgroundColor: '#ffffff',
+                border: '1px solid #e5e7eb',
+                borderRadius: '0.5rem',
+                padding: '2rem',
+                transition: 'all 0.3s',
+                boxShadow: '0 1px 3px 0 rgba(0, 0, 0, 0.1)'
+              }}
             >
-              <CardContent className="p-8">
-                <div className="flex items-center mb-4">
-                  <div className="p-3 bg-primary/10 rounded-lg mr-4 group-hover:bg-primary/20 transition-colors">
-                    <reason.icon className="h-6 w-6 text-primary" />
-                  </div>
-                  <Badge variant="secondary" className="text-xs">
-                    {reason.highlight}
-                  </Badge>
+              <div style={{ display: 'flex', alignItems: 'center', marginBottom: '1rem', gap: '1rem' }}>
+                <div style={{ padding: '0.75rem', backgroundColor: '#eff6ff', borderRadius: '0.5rem' }}>
+                  <reason.icon style={{ width: '1.5rem', height: '1.5rem', color: '#3b82f6' }} />
                 </div>
-                <h3 className="text-xl font-semibold mb-3 font-[family-name:var(--font-space-grotesk)]">
-                  {reason.title}
-                </h3>
-                <p className="text-muted-foreground leading-relaxed">{reason.description}</p>
-              </CardContent>
-            </Card>
+                <span style={{ padding: '0.25rem 0.75rem', backgroundColor: '#f3f4f6', color: '#374151', borderRadius: '0.375rem', fontSize: '0.75rem', fontWeight: '500' }}>
+                  {reason.highlight}
+                </span>
+              </div>
+              <h3 style={{ fontSize: '1.25rem', fontWeight: '600', color: '#111827', marginBottom: '0.75rem' }}>
+                {reason.title}
+              </h3>
+              <p style={{ color: '#6b7280', lineHeight: '1.75', fontSize: '0.875rem' }}>
+                {reason.description}
+              </p>
+            </div>
           ))}
         </div>
       </div>

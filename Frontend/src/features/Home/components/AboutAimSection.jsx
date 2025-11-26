@@ -1,5 +1,3 @@
-import { Badge } from "@/components/ui/badge"
-import { Card, CardContent } from "@/components/ui/card"
 import { Building2, Target, CheckCircle2 } from "lucide-react"
 
 export function AboutAimSection() {
@@ -15,63 +13,62 @@ export function AboutAimSection() {
   ]
 
   return (
-    <section id="about" className="py-20 bg-muted/30">
-      <div className="container mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="text-center mb-14">
-          <Badge variant="outline" className="mb-3 text-primary border-primary">
+    <section id="about" style={{ padding: '5rem 0', backgroundColor: '#ffffff' }}>
+      <div style={{ maxWidth: '1280px', margin: '0 auto', padding: '0 1rem' }}>
+        <div style={{ textAlign: 'center', marginBottom: '3.5rem' }}>
+          <span style={{ display: 'inline-block', padding: '0.25rem 1rem', backgroundColor: '#eff6ff', color: '#3b82f6', border: '1px solid #3b82f6', borderRadius: '9999px', fontSize: '0.875rem', marginBottom: '1rem' }}>
             About the Company
-          </Badge>
-          <h2 className="text-3xl md:text-4xl font-bold font-[family-name:var(--font-space-grotesk)]">
+          </span>
+          <h2 style={{ fontSize: '2.25rem', fontWeight: 'bold', color: '#111827', marginBottom: '1rem' }}>
             We Build Reliable, Scalable, and Intelligent Solutions
           </h2>
-          <p className="mt-3 text-lg text-muted-foreground max-w-3xl mx-auto text-pretty">
+          <p style={{ fontSize: '1.125rem', color: '#6b7280', maxWidth: '48rem', margin: '0 auto' }}>
             From mobile and web apps to AI/ML and data analytics, we partner with startups and enterprises to ship
             production-grade software on time and within budget.
           </p>
         </div>
 
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
-          <Card className="border-border bg-card">
-            <CardContent className="p-6 md:p-8">
-              <div className="flex items-center gap-3 mb-4">
-                <Building2 className="h-6 w-6 text-primary" />
-                <h3 className="text-xl font-semibold font-[family-name:var(--font-space-grotesk)]">Who We Are</h3>
-              </div>
-              <p className="text-muted-foreground leading-relaxed">
-                A senior-led engineering team delivering high-quality software across industries such as fintech,
-                health, e-commerce, and SaaS. We combine modern stacks with pragmatic execution.
-              </p>
-              <ul className="mt-5 space-y-2">
-                {points.map((p, i) => (
-                  <li key={i} className="text-sm text-muted-foreground flex items-start">
-                    <CheckCircle2 className="h-4 w-4 text-primary mr-2 mt-0.5 shrink-0" />
-                    {p}
-                  </li>
-                ))}
-              </ul>
-            </CardContent>
-          </Card>
+        <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(320px, 1fr))', gap: '2rem' }}>
+          
+          {/* Who We Are */}
+          <div style={{ backgroundColor: '#f9fafb', border: '1px solid #e5e7eb', borderRadius: '0.5rem', padding: '2rem' }}>
+            <div style={{ display: 'flex', alignItems: 'center', gap: '0.75rem', marginBottom: '1rem' }}>
+              <Building2 style={{ width: '1.5rem', height: '1.5rem', color: '#3b82f6' }} />
+              <h3 style={{ fontSize: '1.25rem', fontWeight: '600', color: '#111827' }}>Who We Are</h3>
+            </div>
+            <p style={{ color: '#6b7280', lineHeight: '1.75', marginBottom: '1.25rem' }}>
+              A senior-led engineering team delivering high-quality software across industries such as fintech,
+              health, e-commerce, and SaaS. We combine modern stacks with pragmatic execution.
+            </p>
+            <ul style={{ listStyle: 'none', padding: 0, margin: 0 }}>
+              {points.map((p, i) => (
+                <li key={i} style={{ display: 'flex', alignItems: 'flex-start', marginBottom: '0.5rem', fontSize: '0.875rem', color: '#6b7280' }}>
+                  <CheckCircle2 style={{ width: '1rem', height: '1rem', color: '#3b82f6', marginRight: '0.5rem', marginTop: '0.125rem', flexShrink: 0 }} />
+                  {p}
+                </li>
+              ))}
+            </ul>
+          </div>
 
-          <Card className="border-border bg-card">
-            <CardContent className="p-6 md:p-8">
-              <div className="flex items-center gap-3 mb-4">
-                <Target className="h-6 w-6 text-primary" />
-                <h3 className="text-xl font-semibold font-[family-name:var(--font-space-grotesk)]">Our Aim</h3>
-              </div>
-              <p className="text-muted-foreground leading-relaxed">
-                Hamara lakshya hai aapke business ko technology se tez banaya jaye — better customer experience,
-                automated operations, aur data-driven decision making ke saath.
-              </p>
-              <ul className="mt-5 space-y-2">
-                {aims.map((a, i) => (
-                  <li key={i} className="text-sm text-muted-foreground flex items-start">
-                    <CheckCircle2 className="h-4 w-4 text-primary mr-2 mt-0.5 shrink-0" />
-                    {a}
-                  </li>
-                ))}
-              </ul>
-            </CardContent>
-          </Card>
+          {/* Our Aim */}
+          <div style={{ backgroundColor: '#f9fafb', border: '1px solid #e5e7eb', borderRadius: '0.5rem', padding: '2rem' }}>
+            <div style={{ display: 'flex', alignItems: 'center', gap: '0.75rem', marginBottom: '1rem' }}>
+              <Target style={{ width: '1.5rem', height: '1.5rem', color: '#3b82f6' }} />
+              <h3 style={{ fontSize: '1.25rem', fontWeight: '600', color: '#111827' }}>Our Aim</h3>
+            </div>
+            <p style={{ color: '#6b7280', lineHeight: '1.75', marginBottom: '1.25rem' }}>
+              Our goal is to accelerate your business with technology — better customer experience,
+              automated operations, and data-driven decision making.
+            </p>
+            <ul style={{ listStyle: 'none', padding: 0, margin: 0 }}>
+              {aims.map((a, i) => (
+                <li key={i} style={{ display: 'flex', alignItems: 'flex-start', marginBottom: '0.5rem', fontSize: '0.875rem', color: '#6b7280' }}>
+                  <CheckCircle2 style={{ width: '1rem', height: '1rem', color: '#3b82f6', marginRight: '0.5rem', marginTop: '0.125rem', flexShrink: 0 }} />
+                  {a}
+                </li>
+              ))}
+            </ul>
+          </div>
         </div>
       </div>
     </section>
