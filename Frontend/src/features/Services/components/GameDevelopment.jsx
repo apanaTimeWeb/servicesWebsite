@@ -3,6 +3,7 @@ import { SiUnity, SiUnrealengine, SiCplusplus } from "react-icons/si"
 import { IoMdCheckmarkCircle, IoMdStar } from "react-icons/io"
 import { MdArrowForward } from "react-icons/md"
 import { FaGamepad, FaMobileAlt } from "react-icons/fa"
+import { projects as projectsData, testimonials as testimonialsData } from "@/data/projects"
 
 export default function GameDevelopment() {
   const handleConsultation = () => {
@@ -18,17 +19,8 @@ export default function GameDevelopment() {
     { name: "LiveOps", desc: "Analytics, events, and monetization", icon: FaGamepad }
   ]
 
-  const projects = [
-    { name: "Action RPG", desc: "Unity 3D; 100k+ downloads" },
-    { name: "Puzzle Game", desc: "2D mobile; in-app purchases" },
-    { name: "Racing Game", desc: "Multiplayer; real-time leaderboards" }
-  ]
-
-  const testimonials = [
-    { quote: "They built our mobile game from concept to launch. The gameplay is smooth and engaging!", author: "Alex Turner", company: "GameStudio, USA" },
-    { quote: "Professional game development team. Our puzzle game has over 50K downloads!", author: "Nina Petrov", company: "IndieGames, Russia" },
-    { quote: "Excellent work on our multiplayer racing game. The networking is flawless.", author: "Marco Rossi", company: "SpeedGames, Italy" }
-  ]
+  const projects = projectsData.game
+  const testimonials = testimonialsData.game
 
   const stats = [
     { value: '100+', label: 'Games Developed' },

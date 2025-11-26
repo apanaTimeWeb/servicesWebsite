@@ -2,6 +2,7 @@ import React from "react"
 import { SiFigma, SiAdobexd, SiReact, SiTailwindcss, SiMaterialdesignicons, SiChartdotjs } from "react-icons/si"
 import { IoMdCheckmarkCircle, IoMdStar } from "react-icons/io"
 import { MdArrowForward, MdDashboard } from "react-icons/md"
+import { projects as projectsData, testimonials as testimonialsData } from "@/data/projects"
 
 export default function DashboardDesign() {
   const handleConsultation = () => {
@@ -17,17 +18,8 @@ export default function DashboardDesign() {
     { name: "Dark Mode", desc: "Eye-friendly themes for better UX", icon: MdDashboard }
   ]
 
-  const projects = [
-    { name: "Analytics Dashboard", desc: "Real-time metrics + charts; 5k users" },
-    { name: "Admin Panel", desc: "User management + CRUD operations" },
-    { name: "CRM Dashboard", desc: "Sales pipeline + customer insights" }
-  ]
-
-  const testimonials = [
-    { quote: "The dashboard they designed is intuitive and beautiful. Our team loves using it every day!", author: "Jennifer Lee", company: "DataFlow Inc, USA" },
-    { quote: "Exceptional UI/UX work. The data visualization makes complex information easy to understand.", author: "Robert Brown", company: "Analytics Pro, UK" },
-    { quote: "Professional design that perfectly matches our brand. Highly recommended!", author: "Sophie Martin", company: "TechVision, France" }
-  ]
+  const projects = projectsData.dashboard
+  const testimonials = testimonialsData.dashboard
 
   const stats = [
     { value: '250+', label: 'Dashboards Created' },

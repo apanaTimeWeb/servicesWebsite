@@ -3,6 +3,7 @@ import { SiTensorflow, SiPytorch, SiScikitlearn, SiPython } from "react-icons/si
 import { IoMdCheckmarkCircle, IoMdStar, IoMdTrendingUp } from "react-icons/io"
 import { MdArrowForward, MdShowChart } from "react-icons/md"
 import { FaBrain, FaChartLine } from "react-icons/fa"
+import { projects as projectsData, testimonials as testimonialsData } from "@/data/projects"
 
 export default function MLPrediction() {
   const handleConsultation = () => {
@@ -18,17 +19,8 @@ export default function MLPrediction() {
     { name: "MLOps", desc: "Model deployment and monitoring", icon: SiPython }
   ]
 
-  const projects = [
-    { name: "Sales Forecasting", desc: "Time series + XGBoost; 95% accuracy" },
-    { name: "Churn Prediction", desc: "Customer retention model; 90% precision" },
-    { name: "Demand Forecasting", desc: "Inventory optimization; 30% cost reduction" }
-  ]
-
-  const testimonials = [
-    { quote: "Their ML model predicts our sales with 95% accuracy. It's transformed our inventory planning!", author: "James Miller", company: "RetailChain, USA" },
-    { quote: "The churn prediction model helped us reduce customer attrition by 40%. Excellent work!", author: "Anna Schmidt", company: "TelecomPro, Germany" },
-    { quote: "Professional team that delivered a robust forecasting solution. Highly recommended!", author: "Raj Patel", company: "LogisticsCorp, India" }
-  ]
+  const projects = projectsData.mlPrediction
+  const testimonials = testimonialsData.mlPrediction
 
   const stats = [
     { value: '180+', label: 'Models Deployed' },

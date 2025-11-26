@@ -4,6 +4,7 @@ import { SiNextdotjs, SiTypescript, SiTailwindcss, SiPostgresql, SiMongodb, SiVe
 import { IoMdCheckmarkCircle, IoMdStar } from "react-icons/io"
 import { MdArrowForward } from "react-icons/md"
 import { TbWorldWww } from "react-icons/tb"
+import { projects as projectsData, testimonials as testimonialsData } from "@/data/projects"
 
 export default function WebDevelopment() {
   const handleConsultation = () => {
@@ -19,17 +20,8 @@ export default function WebDevelopment() {
     { name: "AWS & Vercel", desc: "Cloud deployment and hosting", icon: FaAws }
   ]
 
-  const projects = [
-    { name: "E-commerce Platform", desc: "Next.js + Stripe; 10k+ daily users" },
-    { name: "SaaS Dashboard", desc: "React + Node.js; real-time analytics" },
-    { name: "Corporate Website", desc: "Next.js + CMS; SEO optimized" }
-  ]
-
-  const testimonials = [
-    { quote: "Our e-commerce platform built by them handles thousands of transactions daily. The performance is outstanding!", author: "Sarah Johnson", company: "ShopHub, USA" },
-    { quote: "They transformed our vision into a beautiful, functional web application. Highly recommended!", author: "David Kim", company: "TechStart, South Korea" },
-    { quote: "Professional team that delivered our corporate website on time with excellent SEO results.", author: "Maria Garcia", company: "GlobalCorp, Spain" }
-  ]
+  const projects = projectsData.web
+  const testimonials = testimonialsData.web
 
   const partners = [
     { icon: FaReact, name: "React" },

@@ -1,5 +1,6 @@
 import React from "react"
 import { ArrowRight, Database, Star } from "lucide-react"
+import { projects as projectsData, testimonials as testimonialsData } from "@/data/projects"
 
 export default function DataAnalytics() {
   const handleConsultation = () => {
@@ -15,29 +16,8 @@ export default function DataAnalytics() {
     { name: "ETL Pipelines", desc: "Automated data integration workflows" }
   ]
 
-  const projects = [
-    { name: "Sales Analytics", desc: "Power BI dashboard; real-time insights" },
-    { name: "Customer Analytics", desc: "Segmentation + behavior analysis" },
-    { name: "Financial Reporting", desc: "Automated reports + KPI tracking" }
-  ]
-
-  const testimonials = [
-    {
-      quote: "Their analytics solution gave us insights we never knew existed. Our decision-making has improved dramatically!",
-      author: "Patricia Lee",
-      company: "DataDriven Inc, USA"
-    },
-    {
-      quote: "The dashboards are intuitive and powerful. We can now track all our KPIs in real-time.",
-      author: "Hans Mueller",
-      company: "AnalyticsPro, Germany"
-    },
-    {
-      quote: "Professional team that understood our data needs perfectly. Excellent analytics platform!",
-      author: "Yuki Tanaka",
-      company: "InsightsCorp, Japan"
-    }
-  ]
+  const projects = projectsData.dataAnalytics
+  const testimonials = testimonialsData.dataAnalytics
 
   return (
     <main style={{ minHeight: '100vh', paddingTop: '64px' }}>

@@ -3,6 +3,7 @@ import { FaMobileAlt, FaApple, FaGooglePlay, FaReact, FaAws } from "react-icons/
 import { SiFlutter, SiFirebase, SiKotlin, SiSwift } from "react-icons/si"
 import { IoMdCheckmarkCircle, IoMdStar } from "react-icons/io"
 import { MdArrowForward } from "react-icons/md"
+import { projects as projectsData, testimonials as testimonialsData } from "@/data/projects"
 
 export default function MobileDevelopment() {
   const handleConsultation = () => {
@@ -18,29 +19,8 @@ export default function MobileDevelopment() {
     { name: "App Store Optimization", desc: "Maximize your app's visibility and downloads", icon: FaApple }
   ]
 
-  const projects = [
-    { name: "Fitness Tracker", desc: "RN + BLE + offline sync; 100k+ downloads" },
-    { name: "EdTech App", desc: "Flutter + video; adaptive quizzes, push" },
-    { name: "Delivery App", desc: "Real-time tracking, payments, driver app" }
-  ]
-
-  const testimonials = [
-    {
-      quote: "They built our fitness tracking app that now has 50K+ downloads. The React Native solution works perfectly on both platforms.",
-      author: "Michael Chen",
-      company: "FitTrack Solutions, Singapore"
-    },
-    {
-      quote: "Outstanding mobile development! Our educational app handles complex animations and offline functionality flawlessly.",
-      author: "Lisa Rodriguez",
-      company: "EduTech Innovations, Mexico"
-    },
-    {
-      quote: "The team delivered our delivery app ahead of schedule. Real-time tracking and payment integration work perfectly.",
-      author: "Ahmed Hassan",
-      company: "DeliveryPro, UAE"
-    }
-  ]
+  const projects = projectsData.mobile
+  const testimonials = testimonialsData.mobile
 
   const partners = [
     { icon: FaApple, name: "App Store" },

@@ -1,5 +1,6 @@
 import React from "react"
 import { ArrowRight, MessageSquare, Star } from "lucide-react"
+import { projects as projectsData, testimonials as testimonialsData } from "@/data/projects"
 
 export default function AIChatbots() {
   const handleConsultation = () => {
@@ -15,29 +16,8 @@ export default function AIChatbots() {
     { name: "Analytics", desc: "Track conversations and improve performance" }
   ]
 
-  const projects = [
-    { name: "Customer Support Bot", desc: "24/7 support; 80% query resolution" },
-    { name: "Sales Assistant", desc: "Lead qualification + product recommendations" },
-    { name: "HR Chatbot", desc: "Employee onboarding + FAQ automation" }
-  ]
-
-  const testimonials = [
-    {
-      quote: "The AI chatbot handles 80% of our customer queries automatically. It's been a game-changer for our support team!",
-      author: "Tom Anderson",
-      company: "SupportHub, USA"
-    },
-    {
-      quote: "Impressive natural language understanding. Our customers love the instant, accurate responses.",
-      author: "Emma Wilson",
-      company: "RetailPro, UK"
-    },
-    {
-      quote: "The chatbot integrates perfectly with our systems and has significantly reduced response times.",
-      author: "Carlos Rodriguez",
-      company: "TechSolutions, Spain"
-    }
-  ]
+  const projects = projectsData.aiChatbot
+  const testimonials = testimonialsData.aiChatbot
 
   return (
     <main style={{ minHeight: '100vh', paddingTop: '64px' }}>
