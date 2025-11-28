@@ -32,11 +32,11 @@ export function Header() {
         </div>
 
         <nav style={{ display: 'flex', alignItems: 'center', gap: '2rem' }} className="hidden md:flex">
-          <a href="#home" style={{ color: '#374151', textDecoration: 'none' }}>Home</a>
-          <a href="#about" style={{ color: '#374151', textDecoration: 'none' }}>About</a>
-          <a href="#services" style={{ color: '#374151', textDecoration: 'none' }}>Services</a>
-          <a href="https://intern.apanatime.in/" target="_blank" rel="noopener noreferrer" style={{ color: '#374151', textDecoration: 'none' }}>Training & Internship</a>
-          <button onClick={() => setIsContactModalOpen(true)} style={{ color: '#374151', textDecoration: 'none', background: 'none', border: 'none', cursor: 'pointer' }}>Contact Us</button>
+          <a href="#home" style={{ color: '#374151', textDecoration: 'none', borderBottom: '2px solid transparent', transition: 'border-color 0.3s' }} onMouseEnter={(e) => e.target.style.borderBottomColor = '#10b981'} onMouseLeave={(e) => e.target.style.borderBottomColor = 'transparent'}>Home</a>
+          <a href="#about" style={{ color: '#374151', textDecoration: 'none', borderBottom: '2px solid transparent', transition: 'border-color 0.3s' }} onMouseEnter={(e) => e.target.style.borderBottomColor = '#10b981'} onMouseLeave={(e) => e.target.style.borderBottomColor = 'transparent'}>About</a>
+          <a href="#services" style={{ color: '#374151', textDecoration: 'none', borderBottom: '2px solid transparent', transition: 'border-color 0.3s' }} onMouseEnter={(e) => e.target.style.borderBottomColor = '#10b981'} onMouseLeave={(e) => e.target.style.borderBottomColor = 'transparent'}>Services</a>
+          <a href="https://intern.apanatime.in/" target="_blank" rel="noopener noreferrer" style={{ color: '#374151', textDecoration: 'none', borderBottom: '2px solid transparent', transition: 'border-color 0.3s' }} onMouseEnter={(e) => e.target.style.borderBottomColor = '#10b981'} onMouseLeave={(e) => e.target.style.borderBottomColor = 'transparent'}>Training & Internship</a>
+          <button onClick={() => setIsContactModalOpen(true)} style={{ color: '#374151', textDecoration: 'none', background: 'none', border: 'none', cursor: 'pointer', borderBottom: '2px solid transparent', transition: 'border-color 0.3s' }} onMouseEnter={(e) => e.target.style.borderBottomColor = '#10b981'} onMouseLeave={(e) => e.target.style.borderBottomColor = 'transparent'}>Contact Us</button>
           <a href={`tel:${phoneNumber}`} style={{ color: '#374151', display: 'flex', alignItems: 'center' }}>
             <Phone size={20} />
           </a>
@@ -56,11 +56,11 @@ export function Header() {
 
       {isMenuOpen && (
         <div className="md:hidden" style={{ backgroundColor: '#ffffff', borderTop: '1px solid #e5e7eb', padding: '1rem' }}>
-          <a href="#home" style={{ display: 'block', padding: '0.5rem', color: '#374151', textDecoration: 'none' }}>Home</a>
-          <a href="#about" style={{ display: 'block', padding: '0.5rem', color: '#374151', textDecoration: 'none' }}>About</a>
-          <a href="#services" style={{ display: 'block', padding: '0.5rem', color: '#374151', textDecoration: 'none' }}>Services</a>
-          <a href="https://intern.apanatime.in/" target="_blank" rel="noopener noreferrer" style={{ display: 'block', padding: '0.5rem', color: '#374151', textDecoration: 'none' }}>Training & Internship</a>
-          <button onClick={() => setIsContactModalOpen(true)} style={{ display: 'block', padding: '0.5rem', color: '#374151', textDecoration: 'none', background: 'none', border: 'none', cursor: 'pointer', textAlign: 'left' }}>Contact Us</button>
+          <a href="#home" style={{ display: 'block', padding: '0.5rem', color: '#374151', textDecoration: 'none', borderBottom: '2px solid transparent', transition: 'border-color 0.3s' }} onMouseEnter={(e) => e.target.style.borderBottomColor = '#10b981'} onMouseLeave={(e) => e.target.style.borderBottomColor = 'transparent'}>Home</a>
+          <a href="#about" style={{ display: 'block', padding: '0.5rem', color: '#374151', textDecoration: 'none', borderBottom: '2px solid transparent', transition: 'border-color 0.3s' }} onMouseEnter={(e) => e.target.style.borderBottomColor = '#10b981'} onMouseLeave={(e) => e.target.style.borderBottomColor = 'transparent'}>About</a>
+          <a href="#services" style={{ display: 'block', padding: '0.5rem', color: '#374151', textDecoration: 'none', borderBottom: '2px solid transparent', transition: 'border-color 0.3s' }} onMouseEnter={(e) => e.target.style.borderBottomColor = '#10b981'} onMouseLeave={(e) => e.target.style.borderBottomColor = 'transparent'}>Services</a>
+          <a href="https://intern.apanatime.in/" target="_blank" rel="noopener noreferrer" style={{ display: 'block', padding: '0.5rem', color: '#374151', textDecoration: 'none', borderBottom: '2px solid transparent', transition: 'border-color 0.3s' }} onMouseEnter={(e) => e.target.style.borderBottomColor = '#10b981'} onMouseLeave={(e) => e.target.style.borderBottomColor = 'transparent'}>Training & Internship</a>
+          <button onClick={() => setIsContactModalOpen(true)} style={{ display: 'block', padding: '0.5rem', color: '#374151', textDecoration: 'none', background: 'none', border: 'none', cursor: 'pointer', textAlign: 'left', borderBottom: '2px solid transparent', transition: 'border-color 0.3s' }} onMouseEnter={(e) => e.target.style.borderBottomColor = '#10b981'} onMouseLeave={(e) => e.target.style.borderBottomColor = 'transparent'}>Contact Us</button>
           <div style={{ display: 'flex', gap: '1rem', padding: '0.5rem', marginTop: '0.5rem' }}>
             <a href={`tel:${phoneNumber}`} style={{ color: '#374151' }}><Phone size={20} /></a>
             <a href={`https://wa.me/917080404594?text=${encodeURIComponent(whatsAppText)}`} target="_blank" rel="noopener noreferrer" style={{ color: '#374151' }}><MessageCircle size={20} /></a>
