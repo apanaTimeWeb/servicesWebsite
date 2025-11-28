@@ -1,9 +1,11 @@
 import React from "react"
 import { HeroSection } from "./components/HeroSection"
 import { MediaMarquee } from "./components/MediaMarquee"
-import { ServicesSection } from "./components/ServicesSection"
+import { ServicesSlider } from "./components/ServicesSlider"
 import { AboutAimSection } from "./components/AboutAimSection"
 import { WhyChooseUsSection } from "./components/WhyChooseUsSection"
+import { WhyConnectSection } from "./components/WhyConnectSection"
+import { ContactDetailsSection } from "./components/ContactDetailsSection"
 import { ExpertiseTrustSection } from "./components/ExpertiseTrustSection"
 
 export default function HomePage() {
@@ -11,9 +13,11 @@ export default function HomePage() {
         <main className="min-h-screen">
             <HeroSection />
             <MediaMarquee />
-            <ServicesSection />
+            <ServicesSlider />
             <AboutAimSection />
             <WhyChooseUsSection />
+            <WhyConnectSection />
+            <ContactDetailsSection />
             <ExpertiseTrustSection />
         </main>
     )
