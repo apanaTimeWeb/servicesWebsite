@@ -83,7 +83,7 @@ export function HeroSection() {
               alignItems: 'center',
               height: '100%'
             }}>
-              <div style={{
+              <div className="hero-visual" style={{
                 backgroundColor: '#4c1d95',
                 borderRadius: '3rem',
                 padding: '3rem',
