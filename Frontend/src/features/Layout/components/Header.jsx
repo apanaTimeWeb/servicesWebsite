@@ -3,12 +3,14 @@
 import { useState } from "react"
 import { Button } from "@/components/ui/button"
 import { Menu, X, Phone, MessageCircle } from "lucide-react"
+import { ContactModal } from "../../Home/components/ContactModal"
 
 export function Header() {
   const [isMenuOpen, setIsMenuOpen] = useState(false)
+  const [isContactModalOpen, setIsContactModalOpen] = useState(false)
 
   const handleConsultation = () => {
-    window.open("https://wa.me/917080404594?text=Hi, I would like to get a consultation", "_blank")
+    setIsContactModalOpen(true)
   }
 
   const phoneNumber = "+917080404594"
@@ -27,7 +29,7 @@ export function Header() {
           <a href="#about" style={{ color: '#374151', textDecoration: 'none' }}>About</a>
           <a href="#services" style={{ color: '#374151', textDecoration: 'none' }}>Services</a>
           <a href="https://intern.apanatime.in/" target="_blank" rel="noopener noreferrer" style={{ color: '#374151', textDecoration: 'none' }}>Training & Internship</a>
-          <a href="#contact" style={{ color: '#374151', textDecoration: 'none' }}>Contact</a>
+          <button onClick={() => setIsContactModalOpen(true)} style={{ color: '#374151', textDecoration: 'none', background: 'none', border: 'none', cursor: 'pointer' }}>Contact Us</button>
           <a href={`tel:${phoneNumber}`} style={{ color: '#374151', display: 'flex', alignItems: 'center' }}>
             <Phone size={20} />
           </a>
@@ -37,7 +39,7 @@ export function Header() {
         </nav>
 
         <Button onClick={handleConsultation} style={{ backgroundColor: '#2563eb', color: '#ffffff', padding: '0.5rem 1.5rem', borderRadius: '0.375rem', border: 'none', cursor: 'pointer' }} className="hidden md:block">
-          Get Consultation
+          Contact Us
         </Button>
 
         <button onClick={() => setIsMenuOpen(!isMenuOpen)} style={{ color: '#374151', background: 'none', border: 'none', cursor: 'pointer' }} className="md:hidden">
@@ -51,16 +53,21 @@ export function Header() {
           <a href="#about" style={{ display: 'block', padding: '0.5rem', color: '#374151', textDecoration: 'none' }}>About</a>
           <a href="#services" style={{ display: 'block', padding: '0.5rem', color: '#374151', textDecoration: 'none' }}>Services</a>
           <a href="https://intern.apanatime.in/" target="_blank" rel="noopener noreferrer" style={{ display: 'block', padding: '0.5rem', color: '#374151', textDecoration: 'none' }}>Training & Internship</a>
-          <a href="#contact" style={{ display: 'block', padding: '0.5rem', color: '#374151', textDecoration: 'none' }}>Contact</a>
+          <button onClick={() => setIsContactModalOpen(true)} style={{ display: 'block', padding: '0.5rem', color: '#374151', textDecoration: 'none', background: 'none', border: 'none', cursor: 'pointer', textAlign: 'left' }}>Contact Us</button>
           <div style={{ display: 'flex', gap: '1rem', padding: '0.5rem', marginTop: '0.5rem' }}>
             <a href={`tel:${phoneNumber}`} style={{ color: '#374151' }}><Phone size={20} /></a>
             <a href={`https://wa.me/917080404594?text=${encodeURIComponent(whatsAppText)}`} target="_blank" rel="noopener noreferrer" style={{ color: '#374151' }}><MessageCircle size={20} /></a>
           </div>
           <Button onClick={handleConsultation} style={{ backgroundColor: '#2563eb', color: '#ffffff', padding: '0.5rem 1.5rem', borderRadius: '0.375rem', border: 'none', cursor: 'pointer', width: '100%', marginTop: '1rem' }}>
-            Get Consultation
+            Contact Us
           </Button>
         </div>
       )}
+      
+      <ContactModal 
+        isOpen={isContactModalOpen} 
+        onClose={() => setIsContactModalOpen(false)} 
+      />
     </header>
   )
 }
