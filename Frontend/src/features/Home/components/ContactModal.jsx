@@ -71,13 +71,20 @@ You can reach me at ${formData.email}.`
             position: 'absolute',
             top: '1rem',
             right: '1rem',
-            background: 'none',
-            border: 'none',
+            backgroundColor: '#ffffff',
+            border: '1px solid #e5e7eb',
+            borderRadius: '50%',
+            width: '36px',
+            height: '36px',
+            display: 'flex',
+            alignItems: 'center',
+            justifyContent: 'center',
             cursor: 'pointer',
-            zIndex: 10
+            zIndex: 10,
+            boxShadow: '0 2px 8px rgba(0, 0, 0, 0.1)'
           }}
         >
-          <X size={24} color="#6b7280" />
+          <X size={20} color="#1f2937" />
         </button>
 
         <div style={{ display: 'grid', gridTemplateColumns: '1fr 300px', minHeight: '500px' }}>
