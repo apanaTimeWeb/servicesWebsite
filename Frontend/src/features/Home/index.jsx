@@ -2,6 +2,7 @@ import React from "react"
 import { HeroSection } from "./components/HeroSection"
 import { MediaMarquee } from "./components/MediaMarquee"
 import { ServicesSlider } from "./components/ServicesSlider"
+import { ServicesSection } from "./components/ServicesSection"
 import { ExploreCompanySection } from "./components/ExploreCompanySection"
 import { AboutAimSection } from "./components/AboutAimSection"
 import { WhyChooseUsSection } from "./components/WhyChooseUsSection"
@@ -15,6 +16,7 @@ export default function HomePage() {
             <HeroSection />
             <MediaMarquee />
             <ServicesSlider />
+            <ServicesSection />
             <AboutAimSection />
             <ExploreCompanySection />
             <WhyChooseUsSection />
