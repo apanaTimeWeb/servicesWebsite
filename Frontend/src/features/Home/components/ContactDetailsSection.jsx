@@ -16,9 +16,9 @@ export function ContactDetailsSection() {
       icon: Mail,
       title: "Email",
       subtitle: "Send your inquiry",
-      detail: "hello@techservices.com",
+      detail: "hello@apanatime.com",
       info: "Response in 24h",
-      action: () => window.open("mailto:hello@techservices.com")
+      action: () => window.open("mailto:hello@apanatime.com")
     },
     {
       icon: Phone,

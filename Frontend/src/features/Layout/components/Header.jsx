@@ -20,9 +20,16 @@ export function Header() {
     <header style={{ position: 'fixed', top: 0, width: '100%', backgroundColor: '#ffffff', borderBottom: '1px solid #e5e7eb', zIndex: 50 }}>
       <div style={{ maxWidth: '1280px', margin: '0 auto', padding: '0 1rem', display: 'flex', alignItems: 'center', height: '64px', justifyContent: 'space-between' }}>
         
-        <h1 style={{ fontSize: '1.5rem', fontWeight: 'bold', color: '#2563eb', margin: 0 }}>
-          TechForge
-        </h1>
+        <div style={{ display: 'flex', alignItems: 'center', gap: '0.5rem' }}>
+          <img 
+            src="https://cdn-icons-png.flaticon.com/512/2784/2784403.png" 
+            alt="apanaTime Logo" 
+            style={{ width: '32px', height: '32px' }}
+          />
+          <h1 style={{ fontSize: '1.5rem', fontWeight: 'bold', color: '#2563eb', margin: 0 }}>
+            apanaTime
+          </h1>
+        </div>
 
         <nav style={{ display: 'flex', alignItems: 'center', gap: '2rem' }} className="hidden md:flex">
           <a href="#home" style={{ color: '#374151', textDecoration: 'none' }}>Home</a>
