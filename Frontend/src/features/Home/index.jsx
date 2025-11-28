@@ -4,6 +4,8 @@ import { MediaMarquee } from "./components/MediaMarquee"
 import { ServicesSection } from "./components/ServicesSection"
 import { AboutAimSection } from "./components/AboutAimSection"
 import { WhyChooseUsSection } from "./components/WhyChooseUsSection"
+import { WhyConnectSection } from "./components/WhyConnectSection"
+import { ContactDetailsSection } from "./components/ContactDetailsSection"
 import { ExpertiseTrustSection } from "./components/ExpertiseTrustSection"
 
 export default function HomePage() {
@@ -14,6 +16,8 @@ export default function HomePage() {
             <ServicesSection />
             <AboutAimSection />
             <WhyChooseUsSection />
+            <WhyConnectSection />
+            <ContactDetailsSection />
             <ExpertiseTrustSection />
         </main>
     )
