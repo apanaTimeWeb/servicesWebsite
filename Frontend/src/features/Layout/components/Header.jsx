@@ -31,7 +31,7 @@ export function Header() {
           </h1>
         </div>
 
-        <nav style={{ display: 'flex', alignItems: 'center', gap: '2rem' }} className="hidden md:flex">
+        <nav className="desktop-nav" style={{ display: 'flex', alignItems: 'center', gap: '2rem' }}>
           <a href="#home" style={{ color: '#374151', textDecoration: 'none', borderBottom: '2px solid transparent', transition: 'border-color 0.3s' }} onMouseEnter={(e) => e.target.style.borderBottomColor = '#10b981'} onMouseLeave={(e) => e.target.style.borderBottomColor = 'transparent'}>Home</a>
           <a href="#about" style={{ color: '#374151', textDecoration: 'none', borderBottom: '2px solid transparent', transition: 'border-color 0.3s' }} onMouseEnter={(e) => e.target.style.borderBottomColor = '#10b981'} onMouseLeave={(e) => e.target.style.borderBottomColor = 'transparent'}>About</a>
           <a href="#services" style={{ color: '#374151', textDecoration: 'none', borderBottom: '2px solid transparent', transition: 'border-color 0.3s' }} onMouseEnter={(e) => e.target.style.borderBottomColor = '#10b981'} onMouseLeave={(e) => e.target.style.borderBottomColor = 'transparent'}>Services</a>
@@ -45,17 +45,17 @@ export function Header() {
           </a>
         </nav>
 
-        <Button onClick={handleConsultation} style={{ backgroundColor: '#2563eb', color: '#ffffff', padding: '0.5rem 1.5rem', borderRadius: '0.375rem', border: 'none', cursor: 'pointer' }} className="hidden md:block">
+        <Button onClick={handleConsultation} className="desktop-btn" style={{ backgroundColor: '#2563eb', color: '#ffffff', padding: '0.5rem 1.5rem', borderRadius: '0.375rem', border: 'none', cursor: 'pointer' }}>
           Contact Us
         </Button>
 
-        <button onClick={() => setIsMenuOpen(!isMenuOpen)} style={{ color: '#374151', background: 'none', border: 'none', cursor: 'pointer' }} className="md:hidden">
+        <button onClick={() => setIsMenuOpen(!isMenuOpen)} className="mobile-menu-btn" style={{ color: '#374151', background: 'none', border: 'none', cursor: 'pointer', display: 'none' }}>
           {isMenuOpen ? <X size={24} /> : <Menu size={24} />}
         </button>
       </div>
 
       {isMenuOpen && (
-        <div className="md:hidden" style={{ backgroundColor: '#ffffff', borderTop: '1px solid #e5e7eb', padding: '1rem' }}>
+        <div className="mobile-menu" style={{ backgroundColor: '#ffffff', borderTop: '1px solid #e5e7eb', padding: '1rem' }}>
           <a href="#home" style={{ display: 'block', padding: '0.5rem', color: '#374151', textDecoration: 'none', borderBottom: '2px solid transparent', transition: 'border-color 0.3s' }} onMouseEnter={(e) => e.target.style.borderBottomColor = '#10b981'} onMouseLeave={(e) => e.target.style.borderBottomColor = 'transparent'}>Home</a>
           <a href="#about" style={{ display: 'block', padding: '0.5rem', color: '#374151', textDecoration: 'none', borderBottom: '2px solid transparent', transition: 'border-color 0.3s' }} onMouseEnter={(e) => e.target.style.borderBottomColor = '#10b981'} onMouseLeave={(e) => e.target.style.borderBottomColor = 'transparent'}>About</a>
           <a href="#services" style={{ display: 'block', padding: '0.5rem', color: '#374151', textDecoration: 'none', borderBottom: '2px solid transparent', transition: 'border-color 0.3s' }} onMouseEnter={(e) => e.target.style.borderBottomColor = '#10b981'} onMouseLeave={(e) => e.target.style.borderBottomColor = 'transparent'}>Services</a>
