@@ -1,6 +1,7 @@
 "use client"
 
 import { useState, useEffect } from "react"
+import { Link } from "react-router-dom"
 import { ChevronLeft, ChevronRight } from "lucide-react"
 
 export function ServicesSlider() {
@@ -10,22 +11,26 @@ export function ServicesSlider() {
     {
       image: "/machine-learning-model-training-ui.jpg",
       title: "ML Models",
-      subtitle: "Predictions at scale"
+      subtitle: "Predictions at scale",
+      slug: "ai-ml"
     },
     {
-      image: "/modern-web-dashboard.png", 
+      image: "/modern-web-dashboard.png",
       title: "Web Apps",
-      subtitle: "Next.js + React"
+      subtitle: "Next.js + React",
+      slug: "web-development"
     },
     {
       image: "/data-analytics-charts-and-graphs.jpg",
-      title: "Data Analytics", 
-      subtitle: "Real-time insights"
+      title: "Data Analytics",
+      subtitle: "Real-time insights",
+      slug: "data-analytics"
     },
     {
       image: "/mobile-app-ui-light-theme.jpg",
       title: "Mobile Apps",
-      subtitle: "iOS & Android"
+      subtitle: "iOS & Android",
+      slug: "mobile-development"
     }
   ]
 
@@ -57,8 +62,8 @@ export function ServicesSlider() {
         </div>
 
         <div style={{ position: 'relative', maxWidth: '800px', margin: '0 auto' }}>
-          <div style={{ 
-            overflow: 'hidden', 
+          <div style={{
+            overflow: 'hidden',
             borderRadius: '1rem',
             boxShadow: '0 10px 25px rgba(0, 0, 0, 0.1)'
           }}>
@@ -68,7 +73,17 @@ export function ServicesSlider() {
               transition: 'transform 0.5s ease-in-out'
             }}>
               {services.map((service, index) => (
-                <div key={index} style={{ minWidth: '100%', position: 'relative' }}>
+                <Link
+                  key={index}
+                  to={`/services/${service.slug}`}
+                  style={{
+                    minWidth: '100%',
+                    position: 'relative',
+                    textDecoration: 'none',
+                    color: 'inherit',
+                    cursor: 'pointer'
+                  }}
+                >
                   <img
                     src={service.image}
                     alt={service.title}
@@ -94,7 +109,7 @@ export function ServicesSlider() {
                       {service.subtitle}
                     </p>
                   </div>
-                </div>
+                </Link>
               ))}
             </div>
           </div>
