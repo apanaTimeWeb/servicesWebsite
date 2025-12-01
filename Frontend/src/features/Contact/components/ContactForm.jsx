@@ -151,8 +151,7 @@ export function ContactForm() {
                   <Mail className="h-6 w-6 text-primary mr-4 mt-1" />
                   <div>
                     <h4 className="font-semibold text-foreground">Email Us</h4>
-                    <p className="text-muted-foreground">hello@apanatime.com</p>
-                    <p className="text-muted-foreground">projects@apanatime.com</p>
+                    <p className="text-muted-foreground">info@apanatime.in</p>
                   </div>
                 </div>
 

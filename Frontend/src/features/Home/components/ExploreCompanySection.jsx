@@ -1,21 +1,28 @@
 "use client"
 
+import { useNavigate } from "react-router-dom"
+
 export function ExploreCompanySection() {
+  const navigate = useNavigate()
+
   const exploreItems = [
     {
       title: "Career With Us",
       image: "https://images.unsplash.com/photo-1522202176988-66273c2fd55f?w=400&h=300&fit=crop&crop=faces",
-      description: "Join our innovative team and grow your career in tech"
+      description: "Join our innovative team and grow your career in tech",
+      link: "/career"
     },
     {
-      title: "Our Industries", 
+      title: "Our Industries",
       image: "https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?w=400&h=300&fit=crop&crop=entropy",
-      description: "Serving diverse sectors with cutting-edge solutions"
+      description: "Serving diverse sectors with cutting-edge solutions",
+      link: "/our-industries"
     },
     {
       title: "Our Services",
-      image: "https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=400&h=300&fit=crop&crop=entropy", 
-      description: "Comprehensive tech solutions for your business needs"
+      image: "https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=400&h=300&fit=crop&crop=entropy",
+      description: "Comprehensive tech solutions for your business needs",
+      link: "/our-services"
     }
   ]
 
@@ -31,9 +38,9 @@ export function ExploreCompanySection() {
           </p>
         </div>
 
-        <div style={{ 
-          display: 'grid', 
-          gridTemplateColumns: 'repeat(3, 1fr)', 
+        <div style={{
+          display: 'grid',
+          gridTemplateColumns: 'repeat(3, 1fr)',
           gap: '2rem',
           '@media (max-width: 768px)': {
             gridTemplateColumns: '1fr'
@@ -42,21 +49,34 @@ export function ExploreCompanySection() {
           {exploreItems.map((item, index) => (
             <div
               key={index}
+              onClick={() => {
+                if (item.link) {
+                  if (item.link.startsWith('/#')) {
+                    window.location.href = item.link
+                  } else {
+                    navigate(item.link)
+                  }
+                }
+              }}
               style={{
                 backgroundColor: '#ffffff',
                 borderRadius: '1rem',
                 overflow: 'hidden',
                 boxShadow: '0 4px 12px rgba(0, 0, 0, 0.1)',
                 transition: 'transform 0.3s, box-shadow 0.3s',
-                cursor: 'pointer'
+                cursor: item.link ? 'pointer' : 'default'
               }}
               onMouseEnter={(e) => {
-                e.currentTarget.style.transform = 'translateY(-8px)'
-                e.currentTarget.style.boxShadow = '0 8px 25px rgba(0, 0, 0, 0.15)'
+                if (item.link) {
+                  e.currentTarget.style.transform = 'translateY(-8px)'
+                  e.currentTarget.style.boxShadow = '0 8px 25px rgba(0, 0, 0, 0.15)'
+                }
               }}
               onMouseLeave={(e) => {
-                e.currentTarget.style.transform = 'translateY(0)'
-                e.currentTarget.style.boxShadow = '0 4px 12px rgba(0, 0, 0, 0.1)'
+                if (item.link) {
+                  e.currentTarget.style.transform = 'translateY(0)'
+                  e.currentTarget.style.boxShadow = '0 4px 12px rgba(0, 0, 0, 0.1)'
+                }
               }}
             >
               <div style={{ position: 'relative', height: '200px', overflow: 'hidden' }}>
@@ -83,7 +103,7 @@ export function ExploreCompanySection() {
                   </h3>
                 </div>
               </div>
-              
+
               <div style={{ padding: '1.5rem' }}>
                 <p style={{ color: '#6b7280', fontSize: '0.875rem', lineHeight: '1.5' }}>
                   {item.description}
