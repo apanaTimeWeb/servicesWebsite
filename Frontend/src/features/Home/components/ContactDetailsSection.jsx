@@ -16,9 +16,9 @@ export function ContactDetailsSection() {
       icon: Mail,
       title: "Email",
       subtitle: "Send your inquiry",
-      detail: "hello@apanatime.com",
+      detail: "info@apanatime.in",
       info: "Response in 24h",
-      action: () => window.open("mailto:hello@apanatime.com")
+      action: () => window.open("mailto:info@apanatime.in")
     },
     {
       icon: Phone,
@@ -34,7 +34,7 @@ export function ContactDetailsSection() {
       subtitle: "Our headquarters",
       detail: "Mumbai, India",
       info: "Global team",
-      action: () => {}
+      action: () => { }
     }
   ]
 
@@ -50,9 +50,9 @@ export function ContactDetailsSection() {
           </p>
         </div>
 
-        <div style={{ 
-          display: 'grid', 
-          gridTemplateColumns: 'repeat(auto-fit, minmax(280px, 1fr))', 
+        <div style={{
+          display: 'grid',
+          gridTemplateColumns: 'repeat(auto-fit, minmax(280px, 1fr))',
           gap: '1.5rem',
           maxWidth: '1000px',
           margin: '0 auto'
@@ -98,19 +98,19 @@ export function ContactDetailsSection() {
                 }}>
                   <IconComponent size={28} color="#3b82f6" />
                 </div>
-                
+
                 <h3 style={{ fontSize: '1.25rem', fontWeight: '600', color: '#1f2937', marginBottom: '0.5rem' }}>
                   {method.title}
                 </h3>
-                
+
                 <p style={{ fontSize: '0.875rem', color: '#6b7280', marginBottom: '1rem' }}>
                   {method.subtitle}
                 </p>
-                
+
                 <p style={{ fontSize: '1rem', fontWeight: '600', color: '#3b82f6', marginBottom: '0.5rem' }}>
                   {method.detail}
                 </p>
-                
+
                 <p style={{ fontSize: '0.875rem', color: '#9ca3af' }}>
                   {method.info}
                 </p>

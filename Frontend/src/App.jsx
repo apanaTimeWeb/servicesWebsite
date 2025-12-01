@@ -5,6 +5,7 @@ import { Header } from "@/features/Layout/components/Header"
 import { Footer } from "@/features/Layout/components/Footer"
 import { Toaster } from "@/components/ui/sonner"
 import ScrollProgress from "@/components/ScrollProgress"
+import ScrollToTop from "@/components/ScrollToTop"
 import FloatingWhatsApp from "@/components/FloatingWhatsApp"
 import BackToTop from "@/components/BackToTop"
 import HomePage from "@/features/Home"
@@ -14,6 +15,7 @@ import ServicePage from "@/features/Services"
 function App() {
     return (
         <Router>
+            <ScrollToTop />
             <div className="min-h-screen font-sans antialiased" style={{ scrollBehavior: 'smooth' }}>
                 <ScrollProgress />
                 <Header />

@@ -4,11 +4,11 @@ export function Footer() {
   return (
     <footer style={{ backgroundColor: '#111827', color: '#ffffff', padding: '3rem 0 1.5rem' }}>
       <div style={{ maxWidth: '1280px', margin: '0 auto', padding: '0 1rem' }}>
-        
+
         {/* Top Section */}
         <div style={{ display: 'flex', flexDirection: 'column', gap: '2rem', marginBottom: '3rem' }}>
           <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', flexWrap: 'wrap', gap: '1.5rem' }}>
-            <h3 style={{ fontSize: '1.875rem', fontWeight: 'bold', color: '#3b82f6', margin: 0 }}>TechForge</h3>
+            <h3 style={{ fontSize: '1.875rem', fontWeight: 'bold', color: '#3b82f6', margin: 0 }}>ApanaTime</h3>
             <div style={{ display: 'flex', gap: '0.5rem', flexWrap: 'wrap' }}>
               <a href="https://twitter.com/yourhandle" target="_blank" rel="noopener noreferrer" style={{ color: '#9ca3af', padding: '0.5rem', transition: 'color 0.3s' }}>
                 <FaTwitter size={20} />
@@ -34,7 +34,7 @@ export function Footer() {
 
         {/* Middle Section - 3 Columns */}
         <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(250px, 1fr))', gap: '2rem', marginBottom: '3rem' }}>
-          
+
           {/* Get In Touch */}
           <div>
             <h4 style={{ fontSize: '1.125rem', fontWeight: '600', marginBottom: '1rem', color: '#ffffff' }}>
@@ -43,8 +43,8 @@ export function Footer() {
             <ul style={{ listStyle: 'none', padding: 0, margin: 0, color: '#9ca3af', fontSize: '0.875rem', lineHeight: '1.75' }}>
               <li>Gorakhpur, UP, India</li>
               <li>
-                <a href="mailto:apanatimeat@gmail.com" style={{ color: '#9ca3af', textDecoration: 'none' }}>
-                  apanatimeat@gmail.com
+                <a href="mailto:info@apanatime.in" style={{ color: '#9ca3af', textDecoration: 'none' }}>
+                  info@apanatime.in
                 </a>
               </li>
               <li>
@@ -89,7 +89,7 @@ export function Footer() {
         {/* Bottom Bar */}
         <div style={{ borderTop: '1px solid #374151', paddingTop: '1.5rem', display: 'flex', justifyContent: 'space-between', alignItems: 'center', flexWrap: 'wrap', gap: '1rem' }}>
           <p style={{ color: '#9ca3af', fontSize: '0.875rem', margin: 0 }}>
-            © {new Date().getFullYear()} TechForge Solutions. All rights reserved.
+            © {new Date().getFullYear()} ApanaTime Solutions. All rights reserved.
           </p>
           <div style={{ display: 'flex', gap: '1.5rem', flexWrap: 'wrap' }}>
             <a href="/privacy" style={{ color: '#9ca3af', fontSize: '0.875rem', textDecoration: 'none' }}>

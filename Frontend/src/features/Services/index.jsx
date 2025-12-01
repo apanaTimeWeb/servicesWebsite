@@ -13,6 +13,12 @@ export default function ServicePage() {
     const location = useLocation()
     const navigate = useNavigate()
 
+    // Scroll to top when service page loads
+    useEffect(() => {
+        window.scrollTo({ top: 0, behavior: 'instant' })
+    }, [serviceName])
+
+    // Handle hash navigation within service pages
     useEffect(() => {
         const hash = location.hash
         if (hash) {
