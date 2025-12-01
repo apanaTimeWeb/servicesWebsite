@@ -69,6 +69,7 @@ export function Footer() {
               <li><a href="/" style={{ color: '#9ca3af', textDecoration: 'none' }}>Home</a></li>
               <li><a href="/#about" style={{ color: '#9ca3af', textDecoration: 'none' }}>About Us</a></li>
               <li><a href="/#services" style={{ color: '#9ca3af', textDecoration: 'none' }}>Our Services</a></li>
+              <li><a href="/#career" style={{ color: '#9ca3af', textDecoration: 'none' }}>Career</a></li>
               <li><a href="/#contact" style={{ color: '#9ca3af', textDecoration: 'none' }}>Contact Us</a></li>
             </ul>
           </div>

@@ -11,6 +11,8 @@ import BackToTop from "@/components/BackToTop"
 import HomePage from "@/features/Home"
 import ContactPage from "@/features/Contact"
 import ServicePage from "@/features/Services"
+import CareerPage from "@/features/Career"
+import OurIndustriesPage from "@/features/OurIndustries"
 
 function App() {
     return (
@@ -22,6 +24,8 @@ function App() {
                 <Routes>
                     <Route path="/" element={<HomePage />} />
                     <Route path="/contact" element={<ContactPage />} />
+                    <Route path="/career" element={<CareerPage />} />
+                    <Route path="/our-industries" element={<OurIndustriesPage />} />
                     <Route path="/services/:serviceName" element={<ServicePage />} />
                 </Routes>
                 <Footer />
