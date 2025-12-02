@@ -1,7 +1,7 @@
 "use client"
 
 import { useState } from "react"
-import { Link } from "react-router-dom"
+import { Link, useNavigate, useLocation } from "react-router-dom"
 import { Button } from "@/components/ui/button"
 import { Menu, X, Phone, MessageCircle } from "lucide-react"
 import { ContactModal } from "../../Home/components/ContactModal"
@@ -9,6 +9,8 @@ import { ContactModal } from "../../Home/components/ContactModal"
 export function Header() {
   const [isMenuOpen, setIsMenuOpen] = useState(false)
   const [isContactModalOpen, setIsContactModalOpen] = useState(false)
+  const navigate = useNavigate()
+  const location = useLocation()
 
   const handleConsultation = () => {
     setIsContactModalOpen(true)
@@ -16,15 +18,34 @@ export function Header() {
 
   const handleNavClick = (e, sectionId) => {
     e.preventDefault()
-    const element = document.getElementById(sectionId)
-    if (element) {
-      element.scrollIntoView({
-        behavior: 'smooth',
-        block: 'start'
-      })
-      // Close mobile menu after navigation
-      setIsMenuOpen(false)
+
+    // Check if we're on the home page
+    if (location.pathname !== '/') {
+      // Navigate to home page first
+      navigate('/')
+      // Wait for navigation and DOM update, then scroll
+      setTimeout(() => {
+        const element = document.getElementById(sectionId)
+        if (element) {
+          element.scrollIntoView({
+            behavior: 'smooth',
+            block: 'start'
+          })
+        }
+      }, 100)
+    } else {
+      // Already on home page, just scroll
+      const element = document.getElementById(sectionId)
+      if (element) {
+        element.scrollIntoView({
+          behavior: 'smooth',
+          block: 'start'
+        })
+      }
     }
+
+    // Close mobile menu after navigation
+    setIsMenuOpen(false)
   }
 
   const phoneNumber = "+917080404594"
