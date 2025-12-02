@@ -1,6 +1,7 @@
 "use client"
 
 import { useState } from "react"
+import { Link, useNavigate, useLocation } from "react-router-dom"
 import { Button } from "@/components/ui/button"
 import { Menu, X, Phone, MessageCircle } from "lucide-react"
 import { ContactModal } from "../../Home/components/ContactModal"
@@ -8,6 +9,8 @@ import { ContactModal } from "../../Home/components/ContactModal"
 export function Header() {
   const [isMenuOpen, setIsMenuOpen] = useState(false)
   const [isContactModalOpen, setIsContactModalOpen] = useState(false)
+  const navigate = useNavigate()
+  const location = useLocation()
 
   const handleConsultation = () => {
     setIsContactModalOpen(true)
@@ -15,15 +18,34 @@ export function Header() {
 
   const handleNavClick = (e, sectionId) => {
     e.preventDefault()
-    const element = document.getElementById(sectionId)
-    if (element) {
-      element.scrollIntoView({
-        behavior: 'smooth',
-        block: 'start'
-      })
-      // Close mobile menu after navigation
-      setIsMenuOpen(false)
+
+    // Check if we're on the home page
+    if (location.pathname !== '/') {
+      // Navigate to home page first
+      navigate('/')
+      // Wait for navigation and DOM update, then scroll
+      setTimeout(() => {
+        const element = document.getElementById(sectionId)
+        if (element) {
+          element.scrollIntoView({
+            behavior: 'smooth',
+            block: 'start'
+          })
+        }
+      }, 100)
+    } else {
+      // Already on home page, just scroll
+      const element = document.getElementById(sectionId)
+      if (element) {
+        element.scrollIntoView({
+          behavior: 'smooth',
+          block: 'start'
+        })
+      }
     }
+
+    // Close mobile menu after navigation
+    setIsMenuOpen(false)
   }
 
   const phoneNumber = "+917080404594"
@@ -48,6 +70,7 @@ export function Header() {
           <a href="#home" onClick={(e) => handleNavClick(e, 'home')} style={{ color: '#374151', textDecoration: 'none', borderBottom: '2px solid transparent', transition: 'border-color 0.3s', cursor: 'pointer' }} onMouseEnter={(e) => e.target.style.borderBottomColor = '#10b981'} onMouseLeave={(e) => e.target.style.borderBottomColor = 'transparent'}>Home</a>
           <a href="#about" onClick={(e) => handleNavClick(e, 'about')} style={{ color: '#374151', textDecoration: 'none', borderBottom: '2px solid transparent', transition: 'border-color 0.3s', cursor: 'pointer' }} onMouseEnter={(e) => e.target.style.borderBottomColor = '#10b981'} onMouseLeave={(e) => e.target.style.borderBottomColor = 'transparent'}>About</a>
           <a href="#services" onClick={(e) => handleNavClick(e, 'services')} style={{ color: '#374151', textDecoration: 'none', borderBottom: '2px solid transparent', transition: 'border-color 0.3s', cursor: 'pointer' }} onMouseEnter={(e) => e.target.style.borderBottomColor = '#10b981'} onMouseLeave={(e) => e.target.style.borderBottomColor = 'transparent'}>Services</a>
+          <Link to="/our-products" style={{ color: '#374151', textDecoration: 'none', borderBottom: '2px solid transparent', transition: 'border-color 0.3s', cursor: 'pointer' }} onMouseEnter={(e) => e.target.style.borderBottomColor = '#10b981'} onMouseLeave={(e) => e.target.style.borderBottomColor = 'transparent'}>Our Products</Link>
           <a href="https://intern.apanatime.in/" target="_blank" rel="noopener noreferrer" style={{ color: '#374151', textDecoration: 'none', borderBottom: '2px solid transparent', transition: 'border-color 0.3s' }} onMouseEnter={(e) => e.target.style.borderBottomColor = '#10b981'} onMouseLeave={(e) => e.target.style.borderBottomColor = 'transparent'}>Training & Internship</a>
           <button onClick={() => setIsContactModalOpen(true)} style={{ color: '#374151', textDecoration: 'none', background: 'none', border: 'none', cursor: 'pointer', borderBottom: '2px solid transparent', transition: 'border-color 0.3s' }} onMouseEnter={(e) => e.target.style.borderBottomColor = '#10b981'} onMouseLeave={(e) => e.target.style.borderBottomColor = 'transparent'}>Contact Us</button>
           <a href={`tel:${phoneNumber}`} style={{ color: '#374151', display: 'flex', alignItems: 'center' }}>
@@ -72,6 +95,7 @@ export function Header() {
           <a href="#home" onClick={(e) => handleNavClick(e, 'home')} style={{ display: 'block', padding: '0.5rem', color: '#374151', textDecoration: 'none', borderBottom: '2px solid transparent', transition: 'border-color 0.3s', cursor: 'pointer' }} onMouseEnter={(e) => e.target.style.borderBottomColor = '#10b981'} onMouseLeave={(e) => e.target.style.borderBottomColor = 'transparent'}>Home</a>
           <a href="#about" onClick={(e) => handleNavClick(e, 'about')} style={{ display: 'block', padding: '0.5rem', color: '#374151', textDecoration: 'none', borderBottom: '2px solid transparent', transition: 'border-color 0.3s', cursor: 'pointer' }} onMouseEnter={(e) => e.target.style.borderBottomColor = '#10b981'} onMouseLeave={(e) => e.target.style.borderBottomColor = 'transparent'}>About</a>
           <a href="#services" onClick={(e) => handleNavClick(e, 'services')} style={{ display: 'block', padding: '0.5rem', color: '#374151', textDecoration: 'none', borderBottom: '2px solid transparent', transition: 'border-color 0.3s', cursor: 'pointer' }} onMouseEnter={(e) => e.target.style.borderBottomColor = '#10b981'} onMouseLeave={(e) => e.target.style.borderBottomColor = 'transparent'}>Services</a>
+          <Link to="/our-products" style={{ display: 'block', padding: '0.5rem', color: '#374151', textDecoration: 'none', borderBottom: '2px solid transparent', transition: 'border-color 0.3s', cursor: 'pointer' }} onMouseEnter={(e) => e.target.style.borderBottomColor = '#10b981'} onMouseLeave={(e) => e.target.style.borderBottomColor = 'transparent'}>Our Products</Link>
           <a href="https://intern.apanatime.in/" target="_blank" rel="noopener noreferrer" style={{ display: 'block', padding: '0.5rem', color: '#374151', textDecoration: 'none', borderBottom: '2px solid transparent', transition: 'border-color 0.3s' }} onMouseEnter={(e) => e.target.style.borderBottomColor = '#10b981'} onMouseLeave={(e) => e.target.style.borderBottomColor = 'transparent'}>Training & Internship</a>
           <button onClick={() => setIsContactModalOpen(true)} style={{ display: 'block', padding: '0.5rem', color: '#374151', textDecoration: 'none', background: 'none', border: 'none', cursor: 'pointer', textAlign: 'left', borderBottom: '2px solid transparent', transition: 'border-color 0.3s' }} onMouseEnter={(e) => e.target.style.borderBottomColor = '#10b981'} onMouseLeave={(e) => e.target.style.borderBottomColor = 'transparent'}>Contact Us</button>
           <div style={{ display: 'flex', gap: '1rem', padding: '0.5rem', marginTop: '0.5rem' }}>
