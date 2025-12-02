@@ -14,6 +14,7 @@ import ServicePage from "@/features/Services"
 import CareerPage from "@/features/Career"
 import OurIndustriesPage from "@/features/OurIndustries"
 import OurServicesPage from "@/features/OurServices"
+import OurProductsPage from "@/features/OurProducts"
 
 function App() {
     return (
@@ -28,6 +29,7 @@ function App() {
                     <Route path="/career" element={<CareerPage />} />
                     <Route path="/our-industries" element={<OurIndustriesPage />} />
                     <Route path="/our-services" element={<OurServicesPage />} />
+                    <Route path="/our-products" element={<OurProductsPage />} />
                     <Route path="/services/:serviceName" element={<ServicePage />} />
                 </Routes>
                 <Footer />
