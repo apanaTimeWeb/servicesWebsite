@@ -84,5 +84,23 @@ export const caseStudies = {
       results: ["200K+ downloads", "4.8★ rating", "Recommended by 500+ schools", "15 min avg. session time"],
       tech: ["Unity", "C#", "Firebase", "AdMob"]
     }
+  ],
+  cybersecurity: [
+    {
+      title: "Banking App Security Hardening",
+      client: "FinBank, Mumbai",
+      challenge: "Vulnerabilities in mobile banking application exposing user data",
+      solution: "Implemented end-to-end encryption, biometric auth, and runtime application self-protection (RASP)",
+      results: ["Zero security breaches since launch", "Achieved PCI-DSS compliance", "100% secure transaction flow", "Trust score increased by 40%"],
+      tech: ["RASP", "AES-256", "Biometrics", "OWASP Mobile Top 10"]
+    },
+    {
+      title: "Enterprise Ransomware Protection",
+      client: "LogiCorp, Delhi",
+      challenge: "Recurring ransomware attacks affecting operations",
+      solution: "Deployed advanced endpoint protection, network segmentation, and automated backup systems",
+      results: ["100% prevention of ransomware", "Recovery time reduced to 1 hour", "Zero data loss", "Employee security awareness up 80%"],
+      tech: ["EDR", "Network Segmentation", "Immutable Backups", "SIEM"]
+    }
   ]
 }

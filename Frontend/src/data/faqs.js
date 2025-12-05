@@ -47,6 +47,13 @@ export const faqs = {
     { q: "Can you add multiplayer features?", a: "Yes, we implement real-time multiplayer using technologies like Photon, Firebase, or custom backend solutions." },
     { q: "How long does game development take?", a: "Simple games take 2-3 months, medium complexity games take 4-6 months, and AAA-quality games can take 12+ months." },
     { q: "What is the cost?", a: "Game development starts from ₹2L for simple 2D games to ₹15L+ for complex 3D games with advanced features and multiplayer." }
+  ],
+  cybersecurity: [
+    { q: "What security services do you offer?", a: "We offer VAPT (Vulnerability Assessment & Penetration Testing), Web/App Security, Cloud Security, Compliance Audits (ISO, GDPR), and Incident Response." },
+    { q: "How often should we conduct security audits?", a: "We recommend conducting comprehensive security audits and penetration testing at least once a year, or whenever major changes are made to your infrastructure or applications." },
+    { q: "Do you provide compliance certification?", a: "We help you prepare for and achieve certifications like ISO 27001, SOC 2, HIPAA, and PCI-DSS by aligning your systems and processes with required standards." },
+    { q: "What happens if a vulnerability is found?", a: "We provide a detailed report classifying vulnerabilities by severity (Critical, High, Medium, Low) along with step-by-step remediation guidance and re-testing support." },
+    { q: "Can you help with a hacked website?", a: "Yes, our Incident Response team can help contain the breach, remove malware, restore services, and implement measures to prevent future attacks." }
   ]
 }
 

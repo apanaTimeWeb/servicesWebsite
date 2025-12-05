@@ -1,7 +1,7 @@
 import React from "react"
 import { Button } from "@/components/ui/button"
 import { Link } from "react-router-dom"
-import { Smartphone, Globe, Palette, MessageSquare, TrendingUp, Database, ArrowRight, Gamepad2 } from "lucide-react"
+import { Smartphone, Globe, Palette, MessageSquare, TrendingUp, Database, ArrowRight, Gamepad2, Shield } from "lucide-react"
 
 const services = [
   {
@@ -57,6 +57,13 @@ const services = [
     description: "End-to-end 2D/3D game development for mobile, web, and desktop platforms",
     features: ["Unity & Unreal", "2D/3D Art & Animation", "Mobile & Web Build", "LiveOps & Analytics"],
     link: "/services/game-development",
+  },
+  {
+    icon: Shield,
+    title: "Cybersecurity Solutions",
+    description: "Protect your digital assets with comprehensive security strategies and assessments",
+    features: ["Web App Security", "Mobile App Protection", "Vulnerability Assessment", "Penetration Testing"],
+    link: "/services/cybersecurity",
   },
 ]
 

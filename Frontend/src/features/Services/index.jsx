@@ -7,6 +7,7 @@ import AIChatbots from "./components/AIChatbots"
 import MLPrediction from "./components/MLPrediction"
 import DataAnalytics from "./components/DataAnalytics"
 import GameDevelopment from "./components/GameDevelopment"
+import CybersecuritySolutions from "./components/CybersecuritySolutions"
 
 export default function ServicePage() {
     const { serviceName } = useParams()
@@ -41,7 +42,8 @@ export default function ServicePage() {
         "ai-chatbots": AIChatbots,
         "ml-prediction": MLPrediction,
         "data-analytics": DataAnalytics,
-        "game-development": GameDevelopment
+        "game-development": GameDevelopment,
+        "cybersecurity": CybersecuritySolutions
     }
 
     const ServiceComponent = serviceComponents[serviceName]

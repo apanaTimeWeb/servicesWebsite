@@ -19,10 +19,10 @@ export function ExploreCompanySection() {
       link: "/our-industries"
     },
     {
-      title: "Our Services",
-      image: "https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=400&h=300&fit=crop&crop=entropy",
-      description: "Comprehensive tech solutions for your business needs",
-      link: "/our-services"
+      title: "Our Event",
+      image: "https://images.unsplash.com/photo-1544531586-fde5298cdd40?w=400&h=300&fit=crop&crop=entropy",
+      description: "Join our seminars, webinars, and workshops",
+      link: "/our-events"
     }
   ]
 
