@@ -15,6 +15,7 @@ import CareerPage from "@/features/Career"
 import OurIndustriesPage from "@/features/OurIndustries"
 import OurServicesPage from "@/features/OurServices"
 import OurProductsPage from "@/features/OurProducts"
+import OurEventsPage from "@/features/OurEvents"
 
 function App() {
     return (
@@ -30,6 +31,7 @@ function App() {
                     <Route path="/our-industries" element={<OurIndustriesPage />} />
                     <Route path="/our-services" element={<OurServicesPage />} />
                     <Route path="/our-products" element={<OurProductsPage />} />
+                    <Route path="/our-events" element={<OurEventsPage />} />
                     <Route path="/services/:serviceName" element={<ServicePage />} />
                 </Routes>
                 <Footer />
