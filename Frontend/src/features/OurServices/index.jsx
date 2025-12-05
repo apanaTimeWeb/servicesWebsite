@@ -149,6 +149,30 @@ const services = [
             "Improve conversions",
             "Build brand identity"
         ]
+    },
+    {
+        id: 7,
+        name: "Cybersecurity Solutions",
+        slug: "cybersecurity",
+        icon: Shield,
+        gradient: "from-red-500 to-rose-500",
+        description: "Protect your digital assets with comprehensive security strategies",
+        detailedDescription: "Safeguard your business against evolving cyber threats. We offer end-to-end security solutions including web application security, mobile app protection, and infrastructure hardening.",
+        features: [
+            "Web Application Firewall (WAF)",
+            "Mobile App Security Testing",
+            "Vulnerability Assessment",
+            "Penetration Testing",
+            "Compliance Audits",
+            "Incident Response"
+        ],
+        technologies: ["OWASP", "Burp Suite", "Metasploit", "Wireshark", "Kali Linux"],
+        benefits: [
+            "Prevent data breaches",
+            "Ensure regulatory compliance",
+            "Protect brand reputation",
+            "Secure customer trust"
+        ]
     }
 ]
 

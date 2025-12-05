@@ -68,6 +68,16 @@ export const projects = {
     { name: "Racing Game", desc: "3D racing with multiplayer; real-time leaderboards" },
     { name: "Adventure RPG Game", desc: "Story-driven RPG with quests, inventory, character progression" },
     { name: "Strategy Tower Defense", desc: "Real-time strategy with 50+ levels; 300k+ downloads" }
+  ],
+  cybersecurity: [
+    { name: "FinTech Security Audit", desc: "Comprehensive vulnerability assessment for banking app; ISO 27001 compliance" },
+    { name: "Healthcare Data Protection", desc: "HIPAA compliant security framework for hospital records system" },
+    { name: "E-commerce Penetration Testing", desc: "Identified and patched critical payment gateway vulnerabilities" },
+    { name: "Corporate Network Hardening", desc: "Secured internal infrastructure against ransomware and phishing attacks" },
+    { name: "Mobile App Security Shield", desc: "Implemented RASP and obfuscation for high-security fintech app" },
+    { name: "Cloud Infrastructure Security", desc: "AWS security hardening, IAM policy optimization, and WAF deployment" },
+    { name: "IoT Device Security", desc: "Firmware security analysis and encrypted communication protocol implementation" },
+    { name: "Blockchain Smart Contract Audit", desc: "Verified logic and security of DeFi protocol smart contracts" }
   ]
 }
 
@@ -120,5 +130,12 @@ export const testimonials = {
     { quote: "The educational game we developed has 200k+ downloads. Parents love it!", author: "Preeti Saxena", company: "EduGames India, Bhopal", rating: 4 },
     { quote: "Racing game has smooth graphics and multiplayer works great. 150k+ downloads!", author: "Rohit Verma", company: "GameStudio, Pune", rating: 4.5 },
     { quote: "Math puzzle game is a hit with kids. Teachers recommend it in schools!", author: "Anjali Nair", company: "KidsLearn, Chennai", rating: 5 }
+  ],
+  cybersecurity: [
+    { quote: "Their security audit saved us from a potential data breach. Highly professional team!", author: "Vikram Malhotra", company: "FinTech Solutions, Mumbai", rating: 5 },
+    { quote: "We achieved ISO 27001 compliance in record time thanks to their guidance.", author: "Sarah Jenkins", company: "HealthTech Corp, Bangalore", rating: 5 },
+    { quote: "The penetration testing report was extremely detailed and helped us secure our platform.", author: "Rahul Verma", company: "E-com Giants, Delhi", rating: 4.5 },
+    { quote: "Best cybersecurity partner we've worked with. They understand modern threats.", author: "Amit Singh", company: "CloudNine Systems, Hyderabad", rating: 5 },
+    { quote: "Their incident response team was fast and effective during a recent security scare.", author: "Priya Desai", company: "SecureNet, Pune", rating: 4.5 }
   ]
 }
