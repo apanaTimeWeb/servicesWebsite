@@ -57,8 +57,8 @@ export function Header() {
 
         <div style={{ display: 'flex', alignItems: 'center', gap: '0.5rem' }}>
           <img
-            src="https://cdn-icons-png.flaticon.com/512/2784/2784403.png"
-            alt="apanaTime Logo"
+            src="/Apana_Time_Logo.webp"
+            alt="ApanaTime Logo"
             style={{ width: '32px', height: '32px' }}
           />
           <h1 style={{ fontSize: '1.5rem', fontWeight: 'bold', color: '#2563eb', margin: 0 }}>
