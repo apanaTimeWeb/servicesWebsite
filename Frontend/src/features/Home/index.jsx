@@ -1,7 +1,7 @@
 import React from "react"
 import { HeroSection } from "./components/HeroSection"
 import { MediaMarquee } from "./components/MediaMarquee"
-import { ServicesSlider } from "./components/ServicesSlider"
+
 import { ServicesSection } from "./components/ServicesSection"
 import { ExploreCompanySection } from "./components/ExploreCompanySection"
 import { AboutAimSection } from "./components/AboutAimSection"
@@ -15,7 +15,7 @@ export default function HomePage() {
         <main className="min-h-screen">
             <HeroSection />
             <MediaMarquee />
-            <ServicesSlider />
+
             <ServicesSection />
             <AboutAimSection />
             <ExploreCompanySection />
