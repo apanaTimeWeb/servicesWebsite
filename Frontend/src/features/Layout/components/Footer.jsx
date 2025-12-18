@@ -1,6 +1,29 @@
+import { useNavigate, useLocation, Link } from "react-router-dom"
 import { FaTwitter, FaLinkedinIn, FaInstagram, FaTelegramPlane, FaWhatsapp, FaYoutube } from "react-icons/fa"
 
 export function Footer() {
+  const navigate = useNavigate()
+  const location = useLocation()
+
+  const handleNavClick = (e, sectionId) => {
+    e.preventDefault()
+
+    if (location.pathname !== '/') {
+      navigate('/')
+      setTimeout(() => {
+        const element = document.getElementById(sectionId)
+        if (element) {
+          element.scrollIntoView({ behavior: 'smooth', block: 'start' })
+        }
+      }, 100)
+    } else {
+      const element = document.getElementById(sectionId)
+      if (element) {
+        element.scrollIntoView({ behavior: 'smooth', block: 'start' })
+      }
+    }
+  }
+
   return (
     <footer style={{ backgroundColor: '#111827', color: '#ffffff', padding: '3rem 0 1.5rem' }}>
       <div style={{ maxWidth: '1280px', margin: '0 auto', padding: '0 1rem' }}>
@@ -66,11 +89,11 @@ export function Footer() {
               Quick Links
             </h4>
             <ul style={{ listStyle: 'none', padding: 0, margin: 0, color: '#9ca3af', fontSize: '0.875rem', lineHeight: '1.75' }}>
-              <li><a href="/" style={{ color: '#9ca3af', textDecoration: 'none' }}>Home</a></li>
-              <li><a href="/#about" style={{ color: '#9ca3af', textDecoration: 'none' }}>About Us</a></li>
-              <li><a href="/#services" style={{ color: '#9ca3af', textDecoration: 'none' }}>Our Services</a></li>
-              <li><a href="/#career" style={{ color: '#9ca3af', textDecoration: 'none' }}>Career</a></li>
-              <li><a href="/#contact" style={{ color: '#9ca3af', textDecoration: 'none' }}>Contact Us</a></li>
+              <li><a href="#home" onClick={(e) => handleNavClick(e, 'home')} style={{ color: '#9ca3af', textDecoration: 'none' }}>Home</a></li>
+              <li><a href="#about" onClick={(e) => handleNavClick(e, 'about')} style={{ color: '#9ca3af', textDecoration: 'none' }}>About Us</a></li>
+              <li><a href="#services" onClick={(e) => handleNavClick(e, 'services')} style={{ color: '#9ca3af', textDecoration: 'none' }}>Our Services</a></li>
+              <li><Link to="/career" style={{ color: '#9ca3af', textDecoration: 'none' }}>Career</Link></li>
+              <li><a href="#contact" onClick={(e) => handleNavClick(e, 'contact')} style={{ color: '#9ca3af', textDecoration: 'none' }}>Contact Us</a></li>
             </ul>
           </div>
 
@@ -80,9 +103,9 @@ export function Footer() {
               Popular Links
             </h4>
             <ul style={{ listStyle: 'none', padding: 0, margin: 0, color: '#9ca3af', fontSize: '0.875rem', lineHeight: '1.75' }}>
-              <li><a href="/#career" style={{ color: '#9ca3af', textDecoration: 'none' }}>Career</a></li>
+              <li><Link to="/career" style={{ color: '#9ca3af', textDecoration: 'none' }}>Career</Link></li>
               <li><a href="https://wa.me/917080404594" target="_blank" rel="noopener noreferrer" style={{ color: '#9ca3af', textDecoration: 'none' }}>WhatsApp</a></li>
-              <li><a href="/#testimonials" style={{ color: '#9ca3af', textDecoration: 'none' }}>Testimonial</a></li>
+              <li><a href="#testimonials" onClick={(e) => handleNavClick(e, 'testimonials')} style={{ color: '#9ca3af', textDecoration: 'none' }}>Testimonial</a></li>
             </ul>
           </div>
         </div>

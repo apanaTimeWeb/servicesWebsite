@@ -338,3 +338,35 @@ body {
     font-size: 1rem !important;
   }
 }
+
+/* Contact Modal Responsive */
+@media (max-width: 768px) {
+  #contact-modal-content {
+    max-height: 95vh !important;
+    border-radius: 0.5rem !important;
+  }
+
+  #contact-modal-content .modal-grid {
+    grid-template-columns: 1fr !important;
+  }
+
+  #contact-modal-content .modal-form-side {
+    padding: 1.5rem !important;
+    order: 1;
+  }
+
+  #contact-modal-content .modal-form-side h2 {
+    font-size: 1.25rem !important;
+  }
+
+  #contact-modal-content .form-row {
+    grid-template-columns: 1fr !important;
+    gap: 1.5rem !important;
+  }
+
+  #contact-modal-content .modal-quick-contact-side {
+    padding: 2rem 1.5rem !important;
+    order: 2;
+    border-radius: 0 !important;
+  }
+}

@@ -39,7 +39,7 @@ export function ContactDetailsSection() {
   ]
 
   return (
-    <section style={{ padding: '4rem 0', backgroundColor: '#f9fafb' }}>
+    <section id="contact" style={{ padding: '4rem 0', backgroundColor: '#f9fafb' }}>
       <div style={{ maxWidth: '1280px', margin: '0 auto', padding: '0 1rem' }}>
         <div style={{ textAlign: 'center', marginBottom: '3rem' }}>
           <h2 style={{ fontSize: '2.5rem', fontWeight: 'bold', color: '#1f2937', marginBottom: '1rem' }}>
