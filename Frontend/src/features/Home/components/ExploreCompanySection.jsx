@@ -27,7 +27,7 @@ export function ExploreCompanySection() {
   ]
 
   return (
-    <section style={{ padding: '4rem 0', backgroundColor: '#f8fafc' }}>
+    <section id="explore-company" style={{ padding: '4rem 0', backgroundColor: '#f8fafc' }}>
       <div style={{ maxWidth: '1280px', margin: '0 auto', padding: '0 1rem' }}>
         <div style={{ textAlign: 'center', marginBottom: '3rem' }}>
           <h2 style={{ fontSize: '2.5rem', fontWeight: 'bold', color: '#1f2937', marginBottom: '1rem' }}>
@@ -38,13 +38,10 @@ export function ExploreCompanySection() {
           </p>
         </div>
 
-        <div style={{
+        <div className="explore-grid" style={{
           display: 'grid',
           gridTemplateColumns: 'repeat(3, 1fr)',
-          gap: '2rem',
-          '@media (max-width: 768px)': {
-            gridTemplateColumns: '1fr'
-          }
+          gap: '2rem'
         }}>
           {exploreItems.map((item, index) => (
             <div

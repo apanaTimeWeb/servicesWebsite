@@ -18,11 +18,11 @@ body {
   header nav.desktop-nav {
     display: none !important;
   }
-  
+
   header .desktop-btn {
     display: none !important;
   }
-  
+
   header .mobile-menu-btn {
     display: block !important;
   }
@@ -32,7 +32,7 @@ body {
   header .mobile-menu {
     display: none !important;
   }
-  
+
   header .mobile-menu-btn {
     display: none !important;
   }
@@ -40,32 +40,32 @@ body {
 
 /* Hero Section Responsive */
 @media (max-width: 1024px) {
-  #home > div > div {
+  #home>div>div {
     grid-template-columns: 1fr !important;
     gap: 3rem !important;
   }
-  
+
   #home h1 {
     font-size: 3rem !important;
     text-align: center;
   }
-  
+
   #home p {
     text-align: center;
   }
-  
-  #home > div > div > div:first-child {
+
+  #home>div>div>div:first-child {
     text-align: center;
   }
-  
+
   #home .hero-visual {
     width: 100% !important;
     max-width: 400px !important;
     height: 300px !important;
     margin: 0 auto;
   }
-  
-  #home .hero-visual > div {
+
+  #home .hero-visual>div {
     width: 100px !important;
     height: 130px !important;
   }
@@ -76,24 +76,24 @@ body {
     padding-top: 5rem !important;
     padding-bottom: 2rem !important;
   }
-  
+
   #home h1 {
     font-size: 2.5rem !important;
   }
-  
+
   #home p:first-of-type {
     font-size: 1.25rem !important;
   }
-  
+
   #home p:nth-of-type(2) {
     font-size: 1.125rem !important;
   }
-  
+
   #home button {
     font-size: 1rem !important;
     padding: 1rem 2rem !important;
   }
-  
+
   #home .hero-visual {
     max-width: 280px !important;
     height: 220px !important;
@@ -102,7 +102,7 @@ body {
 
 /* Services Section Responsive */
 @media (max-width: 1024px) {
-  #services > div > div:last-child {
+  #services>div>div:last-child {
     grid-template-columns: repeat(2, 1fr) !important;
     gap: 1.5rem !important;
   }
@@ -112,24 +112,24 @@ body {
   #services {
     padding: 3rem 0 !important;
   }
-  
-  #services > div > div:last-child {
+
+  #services>div>div:last-child {
     grid-template-columns: 1fr !important;
     gap: 1rem !important;
   }
-  
+
   #services h2 {
     font-size: 1.875rem !important;
   }
-  
-  #services > div > div:first-child p {
+
+  #services>div>div:first-child p {
     font-size: 1rem !important;
   }
 }
 
 /* About Section Responsive */
 @media (max-width: 1024px) {
-  #about > div > div:last-child {
+  #about>div>div:last-child {
     grid-template-columns: 1fr !important;
     gap: 1.5rem !important;
   }
@@ -139,11 +139,11 @@ body {
   #about {
     padding: 3rem 0 !important;
   }
-  
+
   #about h2 {
     font-size: 1.875rem !important;
   }
-  
+
   #about h3 {
     font-size: 1.125rem !important;
   }
@@ -151,16 +151,16 @@ body {
 
 /* Why Choose Us Responsive */
 @media (max-width: 1024px) {
-  section > div > div[style*="grid-template-columns: repeat(auto-fit, minmax(320px, 1fr))"] {
+  section>div>div[style*="grid-template-columns: repeat(auto-fit, minmax(320px, 1fr))"] {
     grid-template-columns: repeat(2, 1fr) !important;
   }
 }
 
 @media (max-width: 640px) {
-  section > div > div[style*="grid-template-columns: repeat(auto-fit, minmax(320px, 1fr))"] {
+  section>div>div[style*="grid-template-columns: repeat(auto-fit, minmax(320px, 1fr))"] {
     grid-template-columns: 1fr !important;
   }
-  
+
   section[style*="padding: 5rem 0"] {
     padding: 3rem 0 !important;
   }
@@ -168,7 +168,7 @@ body {
 
 /* Footer Responsive */
 @media (max-width: 1024px) {
-  footer > div > div:nth-child(2) {
+  footer>div>div:nth-child(2) {
     grid-template-columns: repeat(2, 1fr) !important;
   }
 }
@@ -177,17 +177,17 @@ body {
   footer {
     padding: 2rem 0 1rem !important;
   }
-  
-  footer > div > div:nth-child(2) {
+
+  footer>div>div:nth-child(2) {
     grid-template-columns: 1fr !important;
   }
-  
-  footer > div > div:first-child > div {
+
+  footer>div>div:first-child>div {
     flex-direction: column !important;
     text-align: center;
   }
-  
-  footer > div > div:last-child {
+
+  footer>div>div:last-child {
     flex-direction: column !important;
     text-align: center;
   }
@@ -205,11 +205,11 @@ body {
     padding-top: 5rem !important;
     padding-bottom: 2rem !important;
   }
-  
+
   #contact h2 {
     font-size: 1.875rem !important;
   }
-  
+
   #contact iframe {
     height: 600px !important;
   }
@@ -217,8 +217,67 @@ body {
 
 /* General Container Responsive */
 @media (max-width: 640px) {
+
   div[style*="maxWidth: '1280px'"],
   div[style*="maxWidth: '1400px'"] {
     padding: 0 1rem !important;
+  }
+}
+
+/* Explore Our Company Section Responsive */
+@media (max-width: 1024px) {
+  #explore-company .explore-grid {
+    grid-template-columns: repeat(2, 1fr) !important;
+  }
+}
+
+@media (max-width: 768px) {
+  #explore-company {
+    padding: 3rem 0 !important;
+  }
+
+  #explore-company h2 {
+    font-size: 2rem !important;
+  }
+
+  #explore-company .explore-grid {
+    grid-template-columns: 1fr !important;
+    gap: 1.5rem !important;
+  }
+}
+
+/* Why Connect Section Responsive */
+@media (max-width: 1024px) {
+  #why-connect .why-connect-grid {
+    gap: 2rem !important;
+  }
+}
+
+@media (max-width: 768px) {
+  #why-connect {
+    padding: 3rem 0 !important;
+  }
+
+  #why-connect h2 {
+    font-size: 2rem !important;
+    text-align: center;
+  }
+
+  #why-connect p {
+    text-align: center;
+  }
+
+  #why-connect .why-connect-grid {
+    grid-template-columns: 1fr !important;
+    gap: 2.5rem !important;
+  }
+
+  #why-connect .why-connect-grid>div:first-child {
+    order: 1;
+  }
+
+  #why-connect .why-connect-grid>div:last-child {
+    order: 2;
+    padding: 2rem !important;
   }
 }
