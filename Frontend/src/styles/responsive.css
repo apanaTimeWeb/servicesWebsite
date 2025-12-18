@@ -281,3 +281,60 @@ body {
     padding: 2rem !important;
   }
 }
+
+/* Our Events Page Responsive */
+@media (max-width: 768px) {
+  #events-hero {
+    padding: 4rem 0 !important;
+  }
+
+  #events-hero h1 {
+    font-size: 2.5rem !important;
+  }
+
+  #events-hero p {
+    font-size: 1.125rem !important;
+  }
+
+  #events-list {
+    padding: 3rem 0 !important;
+  }
+
+  #events-list .event-card-inner {
+    flex-direction: column !important;
+    gap: 0 !important;
+  }
+
+  #events-list .event-image-side {
+    flex: none !important;
+    width: 100% !important;
+    min-height: 200px !important;
+  }
+
+  #events-list .event-content-side {
+    padding: 1.5rem !important;
+  }
+
+  #events-list .event-content-side h3 {
+    font-size: 1.5rem !important;
+  }
+
+  #events-list .event-meta-info {
+    flex-direction: column !important;
+    align-items: flex-start !important;
+    gap: 1rem !important;
+    margin-bottom: 1.5rem !important;
+  }
+
+  #host-event-cta {
+    padding: 3rem 0 !important;
+  }
+
+  #host-event-cta h2 {
+    font-size: 1.875rem !important;
+  }
+
+  #host-event-cta p {
+    font-size: 1rem !important;
+  }
+}
