@@ -106,6 +106,7 @@ export function Footer() {
               <li><Link to="/career" style={{ color: '#9ca3af', textDecoration: 'none' }}>Career</Link></li>
               <li><a href="https://wa.me/917080404594" target="_blank" rel="noopener noreferrer" style={{ color: '#9ca3af', textDecoration: 'none' }}>WhatsApp</a></li>
               <li><a href="#testimonials" onClick={(e) => handleNavClick(e, 'testimonials')} style={{ color: '#9ca3af', textDecoration: 'none' }}>Testimonial</a></li>
+              <li><a href="#" onClick={(e) => { e.preventDefault(); alert('Our Team feature is coming soon!'); }} style={{ color: '#9ca3af', textDecoration: 'none' }}>Our Teams</a></li>
             </ul>
           </div>
         </div>
