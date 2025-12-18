@@ -30,7 +30,7 @@ export function ContactModal({ isOpen, onClose }) {
 Project Details: ${formData.projectDetails || 'Please contact me to discuss further.'}
 
 You can reach me at ${formData.email}.`
-    
+
     const whatsappUrl = `https://wa.me/917080404594?text=${encodeURIComponent(message)}`
     window.open(whatsappUrl, "_blank")
     onClose()
@@ -43,7 +43,7 @@ You can reach me at ${formData.email}.`
   if (!isOpen) return null
 
   return (
-    <div style={{
+    <div id="contact-modal-overlay" style={{
       position: 'fixed',
       top: 0,
       left: 0,
@@ -56,7 +56,7 @@ You can reach me at ${formData.email}.`
       zIndex: 1000,
       padding: '1rem'
     }}>
-      <div style={{
+      <div id="contact-modal-content" style={{
         backgroundColor: '#ffffff',
         borderRadius: '1rem',
         maxWidth: '900px',
@@ -87,9 +87,9 @@ You can reach me at ${formData.email}.`
           <X size={20} color="#1f2937" />
         </button>
 
-        <div style={{ display: 'grid', gridTemplateColumns: '1fr 300px', minHeight: '500px' }}>
+        <div className="modal-grid" style={{ display: 'grid', gridTemplateColumns: '1fr 300px', minHeight: '500px' }}>
           {/* Left side - Form */}
-          <div style={{ padding: '2rem' }}>
+          <div className="modal-form-side" style={{ padding: '2rem' }}>
             <h2 style={{
               fontSize: '1.5rem',
               fontWeight: 'bold',
@@ -107,7 +107,7 @@ You can reach me at ${formData.email}.`
             </p>
 
             <form onSubmit={handleSubmit} style={{ display: 'flex', flexDirection: 'column', gap: '1.5rem' }}>
-              <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: '1rem' }}>
+              <div className="form-row" style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: '1rem' }}>
                 <div>
                   <Label htmlFor="fullName" style={{ fontSize: '0.875rem', fontWeight: '500', color: '#374151' }}>
                     Full Name *
@@ -139,7 +139,7 @@ You can reach me at ${formData.email}.`
                 </div>
               </div>
 
-              <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: '1rem' }}>
+              <div className="form-row" style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: '1rem' }}>
                 <div>
                   <Label htmlFor="company" style={{ fontSize: '0.875rem', fontWeight: '500', color: '#374151' }}>
                     Company Name
@@ -208,7 +208,7 @@ You can reach me at ${formData.email}.`
           </div>
 
           {/* Right side - Quick Contact */}
-          <div style={{
+          <div className="modal-quick-contact-side" style={{
             backgroundColor: '#6366f1',
             padding: '2rem',
             display: 'flex',

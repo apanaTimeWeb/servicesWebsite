@@ -22,7 +22,7 @@ const impactStats = [
 
 export function ExpertiseTrustSection() {
   return (
-    <section id="expertise" style={{ padding: '5rem 0', backgroundColor: '#ffffff' }}>
+    <section id="testimonials" style={{ padding: '5rem 0', backgroundColor: '#ffffff' }}>
       <div style={{ maxWidth: '1280px', margin: '0 auto', padding: '0 1rem' }}>
         <div style={{ textAlign: 'center', marginBottom: '3rem' }}>
           <span style={{ display: 'inline-block', padding: '0.25rem 1rem', backgroundColor: '#eff6ff', color: '#3b82f6', border: '1px solid #3b82f6', borderRadius: '9999px', fontSize: '0.875rem', marginBottom: '1rem' }}>
