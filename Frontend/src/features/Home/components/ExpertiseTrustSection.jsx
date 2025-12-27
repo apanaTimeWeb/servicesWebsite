@@ -4,25 +4,25 @@ import React from "react"
 import { MapPin, Star, Users, Trophy, Handshake } from "lucide-react"
 
 const expertiseAreas = [
-  { name: "Mobile Development", percentage: 95, projects: "200+" },
-  { name: "Web Development", percentage: 98, projects: "300+" },
-  { name: "AI/ML Solutions", percentage: 90, projects: "150+" },
-  { name: "Data Analytics", percentage: 92, projects: "180+" },
-  { name: "UI/UX Design", percentage: 94, projects: "250+" },
-  { name: "Cloud Solutions", percentage: 88, projects: "120+" },
+  { name: "Mobile Development", percentage: 95, projects: "30+" },
+  { name: "Web Development", percentage: 98, projects: "40+" },
+  { name: "AI/ML Solutions", percentage: 90, projects: "10+" },
+  { name: "Data Analytics", percentage: 92, projects: "10+" },
+  { name: "UI/UX Design", percentage: 94, projects: "5+" },
+  { name: "Dashboard", percentage: 88, projects: "50+" },
 ]
 
 const impactStats = [
-  { number: "100+", label: "Projects Done", icon: Trophy },
-  { number: "80+", label: "Happy Clients", icon: Users },
+  { number: "140+", label: "Projects Done", icon: Trophy },
+  { number: "140+", label: "Happy Clients", icon: Users },
   { number: "100%", label: "Client Satisfaction", icon: Star },
-  { number: "20+", label: "Countries Served", icon: MapPin },
+  { number: "23+", label: "Countries Served", icon: MapPin },
   { number: "15+", label: "Company Tie-ups", icon: Handshake },
 ]
 
 export function ExpertiseTrustSection() {
   return (
-    <section id="expertise" style={{ padding: '5rem 0', backgroundColor: '#ffffff' }}>
+    <section id="testimonials" style={{ padding: '5rem 0', backgroundColor: '#ffffff' }}>
       <div style={{ maxWidth: '1280px', margin: '0 auto', padding: '0 1rem' }}>
         <div style={{ textAlign: 'center', marginBottom: '3rem' }}>
           <span style={{ display: 'inline-block', padding: '0.25rem 1rem', backgroundColor: '#eff6ff', color: '#3b82f6', border: '1px solid #3b82f6', borderRadius: '9999px', fontSize: '0.875rem', marginBottom: '1rem' }}>

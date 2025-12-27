@@ -1,6 +1,6 @@
 "use client"
 
-import { useState } from "react"
+import { useState, useEffect, useRef } from "react"
 import { Link, useNavigate, useLocation } from "react-router-dom"
 import { Button } from "@/components/ui/button"
 import { Menu, X, Phone, MessageCircle } from "lucide-react"
@@ -9,8 +9,33 @@ import { ContactModal } from "../../Home/components/ContactModal"
 export function Header() {
   const [isMenuOpen, setIsMenuOpen] = useState(false)
   const [isContactModalOpen, setIsContactModalOpen] = useState(false)
+  const menuRef = useRef(null)
   const navigate = useNavigate()
   const location = useLocation()
+
+  useEffect(() => {
+    const handleScroll = () => {
+      if (isMenuOpen) {
+        setIsMenuOpen(false);
+      }
+    };
+
+    const handleClickOutside = (event) => {
+      if (isMenuOpen && menuRef.current && !menuRef.current.contains(event.target)) {
+        setIsMenuOpen(false);
+      }
+    };
+
+    if (isMenuOpen) {
+      window.addEventListener('scroll', handleScroll, { passive: true });
+      document.addEventListener('mousedown', handleClickOutside);
+    }
+
+    return () => {
+      window.removeEventListener('scroll', handleScroll);
+      document.removeEventListener('mousedown', handleClickOutside);
+    };
+  }, [isMenuOpen]);
 
   const handleConsultation = () => {
     setIsContactModalOpen(true)
@@ -52,13 +77,13 @@ export function Header() {
   const whatsAppText = "Hi, I would like to know more about your services"
 
   return (
-    <header style={{ position: 'fixed', top: 0, width: '100%', backgroundColor: '#ffffff', borderBottom: '1px solid #e5e7eb', zIndex: 50 }}>
+    <header ref={menuRef} style={{ position: 'fixed', top: 0, width: '100%', backgroundColor: '#ffffff', borderBottom: '1px solid #e5e7eb', zIndex: 50 }}>
       <div style={{ maxWidth: '1280px', margin: '0 auto', padding: '0 1rem', display: 'flex', alignItems: 'center', height: '64px', justifyContent: 'space-between' }}>
 
         <div style={{ display: 'flex', alignItems: 'center', gap: '0.5rem' }}>
           <img
-            src="https://cdn-icons-png.flaticon.com/512/2784/2784403.png"
-            alt="apanaTime Logo"
+            src="/Apana_Time_Logo.webp"
+            alt="ApanaTime Logo"
             style={{ width: '32px', height: '32px' }}
           />
           <h1 style={{ fontSize: '1.5rem', fontWeight: 'bold', color: '#2563eb', margin: 0 }}>

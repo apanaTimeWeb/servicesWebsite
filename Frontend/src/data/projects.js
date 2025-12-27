@@ -10,64 +10,64 @@ export const projects = {
     { name: "Real Estate Portal", desc: "Property listings, search filters, virtual tours, lead management" }
   ],
   mobile: [
-    { name: "Library Mobile App", desc: "Book search, QR scanning, due date alerts; iOS & Android" },
-    { name: "PG Finder App", desc: "Room search, booking, payment, tenant management" },
-    { name: "Gym Workout Tracker", desc: "Exercise logging, diet plans, progress tracking; 50k+ downloads" },
-    { name: "Hospital Appointment App", desc: "Doctor booking, medical records, prescription management" },
-    { name: "Food Delivery App", desc: "Restaurant browsing, real-time tracking, payment integration" },
-    { name: "E-learning App", desc: "Video courses, quizzes, progress tracking, certificates" },
-    { name: "Taxi Booking App", desc: "Ride booking, live tracking, fare calculator; 100k+ rides" },
-    { name: "Banking App", desc: "Account management, fund transfer, bill payments, UPI integration" }
+    { name: "NeoBank Mobile App", desc: "Digital banking with UPI, bill payments, and expense tracking; 500k+ downloads" },
+    { name: "Fitness Coaching App", desc: "AI-based workout plans, diet tracking, and live sessions" },
+    { name: "Travel Booking App", desc: "Flight & hotel booking, itinerary planner, local guide integration" },
+    { name: "Telemedicine App", desc: "Doctor consultations, prescription delivery, health records" },
+    { name: "Food Delivery Network", desc: "Hyperlocal delivery, live tracking, multi-vendor support" },
+    { name: "Real Estate Finder", desc: "AR property tours, mortgage calculator, neighborhood insights" },
+    { name: "Social Networking App", desc: "Interest-based communities, live streaming, chat features" },
+    { name: "Crypto Exchange Wallet", desc: "Secure trading, portfolio management, real-time alerts" }
   ],
   dashboard: [
-    { name: "Library Analytics Dashboard", desc: "Book circulation stats, member analytics, overdue tracking" },
-    { name: "PG Admin Dashboard", desc: "Occupancy rates, rent collection, maintenance tracking" },
-    { name: "Gym Analytics Panel", desc: "Member attendance, revenue tracking, trainer performance" },
-    { name: "Hospital Admin Dashboard", desc: "Patient flow, bed occupancy, revenue analytics" },
-    { name: "Sales Analytics Dashboard", desc: "Revenue tracking, sales trends, performance metrics" },
-    { name: "CRM Dashboard", desc: "Lead tracking, sales pipeline, customer insights" },
-    { name: "HR Analytics Dashboard", desc: "Employee performance, attendance, payroll, recruitment metrics" },
-    { name: "Inventory Dashboard", desc: "Stock levels, reorder alerts, supplier tracking, warehouse analytics" }
+    { name: "SaaS Admin Panel", desc: "User management, subscription billing, usage analytics" },
+    { name: "FinTech Trading Dashboard", desc: "Real-time stock charts, portfolio tracking, trade execution" },
+    { name: "IoT Device Manager", desc: "Smart home device control, energy monitoring, status alerts" },
+    { name: "Healthcare Admin Portal", desc: "Patient flow, bed occupancy, staff scheduling" },
+    { name: "E-commerce Seller Center", desc: "Order processing, inventory management, sales reports" },
+    { name: "Marketing Campaign Hub", desc: "Ad performance, lead tracking, conversion metrics" },
+    { name: "Logistics Control Tower", desc: "Fleet tracking, route optimization, delivery status" },
+    { name: "HR Recruitment Dashboard", desc: "Candidate pipeline, interview scheduling, offer management" }
   ],
   aiChatbot: [
-    { name: "Library Assistant Bot", desc: "Book recommendations, availability check, FAQ automation" },
-    { name: "PG Inquiry Bot", desc: "Room availability, pricing info, booking assistance" },
-    { name: "Gym Support Bot", desc: "Membership queries, class schedules, trainer booking" },
-    { name: "Hospital Helpdesk Bot", desc: "Appointment booking, doctor info, general queries" },
-    { name: "E-commerce Support Bot", desc: "Product queries, order tracking, return assistance" },
-    { name: "Banking Assistant Bot", desc: "Account queries, transaction help, loan information" },
-    { name: "Travel Assistant Bot", desc: "Flight booking, hotel search, itinerary planning, travel tips" },
-    { name: "Insurance Bot", desc: "Policy queries, claim status, premium calculator, document upload" }
+    { name: "HR Recruitment Assistant", desc: "Screening candidates, scheduling interviews, answering FAQs" },
+    { name: "Legal Document Bot", desc: "Contract analysis, clause summarization, legal terminology help" },
+    { name: "Personal Finance Advisor", desc: "Budgeting tips, investment advice, expense categorization" },
+    { name: "Healthcare Triage Bot", desc: "Symptom checker, appointment scheduling, medication reminders" },
+    { name: "IT Support Copilot", desc: "Troubleshooting guide, ticket creation, system status checks" },
+    { name: "Travel Concierge", desc: "Flight recommendations, hotel booking, local attraction tips" },
+    { name: "Real Estate Virtual Agent", desc: "Property matching, tour scheduling, mortgage estimation" },
+    { name: "Education Tutor Bot", desc: "Homework help, concept explanation, quiz generation" }
   ],
   mlPrediction: [
-    { name: "Library Demand Forecasting", desc: "Book demand prediction, optimal stock levels; 92% accuracy" },
-    { name: "PG Occupancy Prediction", desc: "Seasonal demand forecasting, pricing optimization" },
-    { name: "Gym Member Churn Prediction", desc: "Retention analysis, renewal prediction; 88% accuracy" },
-    { name: "Hospital Bed Occupancy Forecast", desc: "Patient admission prediction, resource planning" },
-    { name: "Sales Forecasting Model", desc: "Revenue prediction, inventory optimization; 95% accuracy" },
-    { name: "Customer Churn Prediction", desc: "Retention modeling, risk scoring; 90% precision" },
-    { name: "Credit Risk Assessment", desc: "Loan default prediction, credit scoring; 93% accuracy" },
-    { name: "Fraud Detection System", desc: "Transaction anomaly detection, real-time alerts; 96% accuracy" }
+    { name: "Stock Market Predictor", desc: "Price trend forecasting, volatility analysis, trade signals" },
+    { name: "Disease Diagnosis System", desc: "Medical imaging analysis, early detection of ailments" },
+    { name: "Credit Risk Scorer", desc: "Loan default probability, creditworthiness assessment" },
+    { name: "E-commerce Recommender", desc: "Personalized product suggestions, cross-sell opportunities" },
+    { name: "Supply Chain Demand", desc: "Inventory optimization, seasonal demand forecasting" },
+    { name: "Real Estate Valuation", desc: "Property price estimation based on location and features" },
+    { name: "Customer Churn Alert", desc: "Identifying at-risk customers, retention strategy inputs" },
+    { name: "Fraud Detection Engine", desc: "Real-time transaction monitoring, anomaly detection" }
   ],
   dataAnalytics: [
-    { name: "Library Usage Analytics", desc: "Reading patterns, popular genres, member behavior analysis" },
-    { name: "PG Revenue Analytics", desc: "Occupancy trends, revenue optimization, seasonal patterns" },
-    { name: "Gym Performance Analytics", desc: "Member retention, class popularity, revenue analysis" },
-    { name: "Hospital Operations Analytics", desc: "Patient flow, treatment outcomes, resource utilization" },
-    { name: "Sales Analytics Platform", desc: "Revenue trends, customer segmentation, product performance" },
-    { name: "Supply Chain Analytics", desc: "Inventory optimization, supplier performance, logistics" },
-    { name: "Marketing Analytics", desc: "Campaign performance, ROI tracking, customer acquisition cost" },
-    { name: "Financial Analytics", desc: "P&L analysis, cash flow forecasting, expense optimization" }
+    { name: "Retail Market Basket", desc: "Purchase pattern analysis, product association rules" },
+    { name: "Social Media Sentiment", desc: "Brand reputation tracking, customer feedback analysis" },
+    { name: "Healthcare Outcomes", desc: "Patient recovery rates, treatment efficacy analysis" },
+    { name: "Logistics Optimization", desc: "Route efficiency, fuel consumption, delivery time analysis" },
+    { name: "Energy Consumption", desc: "Smart grid analytics, peak load forecasting" },
+    { name: "Financial Portfolio", desc: "Asset allocation, risk exposure, performance attribution" },
+    { name: "HR Workforce Analytics", desc: "Employee retention, productivity trends, skill gap analysis" },
+    { name: "Web Traffic Analyzer", desc: "User journey mapping, conversion funnel optimization" }
   ],
   game: [
-    { name: "Library Quest Game", desc: "Educational game about books and reading; 100k+ downloads" },
-    { name: "Room Escape Game", desc: "Puzzle-based escape room game; multiplayer support" },
-    { name: "Fitness Challenge Game", desc: "Workout gamification, leaderboards, achievements" },
-    { name: "Medical Trivia Game", desc: "Healthcare knowledge game for students" },
-    { name: "Math Puzzle Game", desc: "Educational math game for kids; 200k+ downloads" },
-    { name: "Racing Game", desc: "3D racing with multiplayer; real-time leaderboards" },
-    { name: "Adventure RPG Game", desc: "Story-driven RPG with quests, inventory, character progression" },
-    { name: "Strategy Tower Defense", desc: "Real-time strategy with 50+ levels; 300k+ downloads" }
+    { name: "Cyberpunk Action RPG", desc: "Immersive 3D open world, character customization, complex quests" },
+    { name: "Battle Royale Shooter", desc: "Multiplayer survival, large-scale maps, realistic physics" },
+    { name: "Cozy Farm Simulator", desc: "Relaxing gameplay, crop management, animal care" },
+    { name: "Hyper-casual Puzzle", desc: "Addictive mechanics, infinite levels, 1M+ downloads" },
+    { name: "Sci-Fi Strategy RTS", desc: "Base building, resource management, tactical combat" },
+    { name: "Fantasy Card Battler", desc: "Deck building, online PvP, competitive leagues" },
+    { name: "Horror Survival", desc: "Atmospheric storytelling, stealth mechanics, psychological thrills" },
+    { name: "Educational Math Adventure", desc: "Learning through play, curriculum tracking for kids" }
   ],
   cybersecurity: [
     { name: "FinTech Security Audit", desc: "Comprehensive vulnerability assessment for banking app; ISO 27001 compliance" },
@@ -90,46 +90,46 @@ export const testimonials = {
     { quote: "School ERP made fee collection and attendance tracking seamless. Great support team!", author: "Anjali Verma", company: "Delhi Public School, Noida", rating: 4.5 }
   ],
   mobile: [
-    { quote: "The library app made book borrowing so convenient for our students. QR scanning feature is amazing!", author: "Sneha Reddy", company: "University Library, Hyderabad", rating: 5 },
-    { quote: "Our PG finder app has 10k+ downloads now. The booking system works flawlessly!", author: "Vikram Singh", company: "PG Connect, Pune", rating: 4.5 },
-    { quote: "The gym app keeps our members engaged. Workout tracking and diet plans are very popular!", author: "Deepak Verma", company: "PowerGym, Noida", rating: 4 },
-    { quote: "Food delivery app handles 500+ orders daily. Performance is excellent!", author: "Rohit Malhotra", company: "QuickBite, Gurgaon", rating: 4.5 },
-    { quote: "E-learning app has 50k+ active users. Video streaming works perfectly!", author: "Kavita Joshi", company: "EduTech India, Bangalore", rating: 5 }
+    { quote: "The NeoBank app interface is stunning and smooth. Our user base doubled in 3 months!", author: "Priya Sharma", company: "FinTech Innovations, Mumbai", rating: 5 },
+    { quote: "Best fitness app development team. The AI tracking feature is a hit with our users.", author: "Rahul Verma", company: "FitTech Solutions, Bangalore", rating: 5 },
+    { quote: "Our telemedicine app has revolutionized how we connect with patients. Highly recommended!", author: "Dr. Anjali Gupta", company: "HealthConnect, Delhi", rating: 4.5 },
+    { quote: "The travel app is feature-rich and bug-free. Great work on the itinerary planner.", author: "Vikram Singh", company: "Wanderlust Travels, Goa", rating: 5 },
+    { quote: "Robust delivery network app. Live tracking is precise and reliable.", author: "Suresh Reddy", company: "QuickDelivery, Hyderabad", rating: 4.5 }
   ],
   dashboard: [
-    { quote: "The analytics dashboard gives us real-time insights into our library operations. Very helpful!", author: "Kavita Desai", company: "Public Library, Ahmedabad", rating: 4.5 },
-    { quote: "PG admin dashboard shows everything at a glance. Occupancy tracking saves us hours of work!", author: "Rahul Gupta", company: "Metro PG, Gurgaon", rating: 5 },
-    { quote: "Gym analytics helped us optimize our class schedules and increase revenue by 30%!", author: "Suresh Iyer", company: "Fitness First, Chennai", rating: 4 },
-    { quote: "Sales dashboard provides actionable insights. Our team loves the visualizations!", author: "Neha Kapoor", company: "RetailPro, Mumbai", rating: 4.5 },
-    { quote: "CRM dashboard improved our lead conversion by 40%. Excellent tool!", author: "Arjun Mehta", company: "SalesMaster, Delhi", rating: 5 }
+    { quote: "The SaaS admin panel is incredibly intuitive. Reduced our support tickets by 40%.", author: "Amit Patel", company: "CloudSaaS, Pune", rating: 5 },
+    { quote: "Trading dashboard is lightning fast. Real-time charts are exactly what we needed.", author: "Karan Mehta", company: "TradeX, Mumbai", rating: 5 },
+    { quote: "IoT manager gives us total visibility over our devices. Great UI/UX design.", author: "Sneha Roy", company: "SmartHome Tech, Bangalore", rating: 4.5 },
+    { quote: "Healthcare portal streamlined our patient flow. Doctors love the simple interface.", author: "Dr. Rajiv Kumar", company: "City Care Hospital, Chennai", rating: 5 },
+    { quote: "Seller center dashboard helped our vendors manage inventory efficiently.", author: "Neha Kapoor", company: "MarketPlace, Delhi", rating: 4.5 }
   ],
   aiChatbot: [
-    { quote: "The library chatbot handles 70% of student queries automatically. It's a game changer!", author: "Meera Nair", company: "College Library, Kochi", rating: 5 },
-    { quote: "Our PG inquiry bot responds instantly to potential tenants. Booking rate increased by 40%!", author: "Arjun Malhotra", company: "Premium PG, Chandigarh", rating: 4.5 },
-    { quote: "The gym support bot answers membership queries 24/7. Our staff can focus on training now!", author: "Pooja Joshi", company: "Elite Fitness, Jaipur", rating: 4 },
-    { quote: "E-commerce bot reduced support tickets by 60%. Very intelligent responses!", author: "Sanjay Kumar", company: "ShopEasy, Kolkata", rating: 4.5 },
-    { quote: "Banking assistant bot handles complex queries efficiently. Customers are happy!", author: "Priya Agarwal", company: "FinBank, Pune", rating: 5 }
+    { quote: "The HR bot screens candidates effectively. Saved us hundreds of hours in recruitment.", author: "Meera Nair", company: "TechRecruit, Hyderabad", rating: 5 },
+    { quote: "Our legal bot helps clients understand contracts instantly. A game changer for our firm.", author: "Adv. Rajesh Kumar", company: "LegalEase, Delhi", rating: 5 },
+    { quote: "Personal finance advisor gives great tips. Our user engagement increased by 50%.", author: "Arjun Das", company: "WealthWise, Mumbai", rating: 4.5 },
+    { quote: "Healthcare triage bot reduces ER wait times. Patients appreciate the quick guidance.", author: "Dr. Simran Kaur", company: "Metro Hospital, Chandigarh", rating: 5 },
+    { quote: "Travel concierge makes trip planning fun and easy. Love the local recommendations!", author: "Pooja Verma", company: "TripPlanner, Jaipur", rating: 4.5 }
   ],
   mlPrediction: [
-    { quote: "The demand forecasting model helped us optimize our book inventory. No more overstocking!", author: "Sanjay Mehta", company: "Book Haven Library, Kolkata", rating: 4.5 },
-    { quote: "Occupancy prediction helps us adjust pricing dynamically. Revenue increased by 25%!", author: "Neha Kapoor", company: "Smart PG Solutions, Lucknow", rating: 5 },
-    { quote: "Churn prediction model helped us retain 35% more members. Excellent accuracy!", author: "Karan Bhatia", company: "Gym Pro, Indore", rating: 4 },
-    { quote: "Sales forecasting model improved our inventory planning. 95% accuracy is impressive!", author: "Ravi Sharma", company: "MegaMart, Bangalore", rating: 4.5 },
-    { quote: "Customer churn prediction saved us millions. ROI was achieved in 3 months!", author: "Amit Desai", company: "TelecomPlus, Mumbai", rating: 5 }
+    { quote: "Stock prediction model has incredible accuracy. Our traders rely on it daily.", author: "Sanjay Mehta", company: "AlphaInvest, Mumbai", rating: 5 },
+    { quote: "Disease diagnosis system assists our radiologists effectively. Early detection rates are up.", author: "Dr. Neha Gupta", company: "MedScan, Bangalore", rating: 5 },
+    { quote: "Credit risk scorer reduced our default rates significantly. Very robust model.", author: "Vikram Kapoor", company: "LendEasy, Delhi", rating: 4.5 },
+    { quote: "Recommender system boosted our cross-sells by 25%. Customers love the suggestions.", author: "Ravi Sharma", company: "ShopMore, Gurgaon", rating: 5 },
+    { quote: "Inventory demand forecasting saved us 20% in storage costs.", author: "Amit Desai", company: "LogiChain, Pune", rating: 4.5 }
   ],
   dataAnalytics: [
-    { quote: "The analytics platform revealed reading patterns we never knew existed. Very insightful!", author: "Anita Roy", company: "State Library, Bhubaneswar", rating: 4.5 },
-    { quote: "Revenue analytics helped us identify peak seasons and optimize pricing strategy!", author: "Manish Agarwal", company: "PG Masters, Nagpur", rating: 5 },
-    { quote: "Performance analytics showed us which classes are most popular. We adjusted schedules accordingly!", author: "Ravi Shankar", company: "Fitness Hub, Coimbatore", rating: 4 },
-    { quote: "Supply chain analytics reduced our logistics costs by 20%. Excellent insights!", author: "Vikram Patel", company: "LogiTech, Ahmedabad", rating: 4.5 },
-    { quote: "Customer segmentation helped us target the right audience. Marketing ROI doubled!", author: "Divya Singh", company: "MarketPro, Delhi", rating: 5 }
+    { quote: "Market basket analysis helped us optimize store layout. Sales increased by 15%.", author: "Anita Roy", company: "RetailGiant, Kolkata", rating: 5 },
+    { quote: "Sentiment analysis gave us the true picture of our brand. We improved our PR strategy.", author: "Manish Agarwal", company: "BrandWatch, Mumbai", rating: 4.5 },
+    { quote: "Healthcare outcomes analysis is helping us improve patient care protocols.", author: "Dr. Ravi Shankar", company: "HealthCare Plus, Chennai", rating: 5 },
+    { quote: "Logistics optimization reduced our delivery times by 20%. Great insights!", author: "Vikram Patel", company: "FastLogistics, Ahmedabad", rating: 4.5 },
+    { quote: "Financial portfolio analytics helps our clients make better investment decisions.", author: "Divya Singh", company: "WealthMakers, Delhi", rating: 5 }
   ],
   game: [
-    { quote: "The library quest game made reading fun for kids. Downloads crossed 100k in 3 months!", author: "Divya Krishnan", company: "Kids Library, Trivandrum", rating: 5 },
-    { quote: "Our fitness challenge game keeps members motivated. Engagement increased significantly!", author: "Aditya Rao", company: "Active Gym, Mysore", rating: 4.5 },
-    { quote: "The educational game we developed has 200k+ downloads. Parents love it!", author: "Preeti Saxena", company: "EduGames India, Bhopal", rating: 4 },
-    { quote: "Racing game has smooth graphics and multiplayer works great. 150k+ downloads!", author: "Rohit Verma", company: "GameStudio, Pune", rating: 4.5 },
-    { quote: "Math puzzle game is a hit with kids. Teachers recommend it in schools!", author: "Anjali Nair", company: "KidsLearn, Chennai", rating: 5 }
+    { quote: "The RPG game world is massive and immersive. Players are spending hours exploring.", author: "Divya Krishnan", company: "GameStudio, Bangalore", rating: 5 },
+    { quote: "Our Battle Royale shooter handles thousands of concurrent players smoothly.", author: "Aditya Rao", company: "ProGaming, Hyderabad", rating: 4.5 },
+    { quote: "Farm simulator is so relaxing. The graphics and sound design are top-notch.", author: "Preeti Saxena", company: "CozyGames, Pune", rating: 4 },
+    { quote: "Hyper-casual puzzle is addictive! We crossed 1M downloads in a month.", author: "Rohit Verma", company: "TapTap Games, Delhi", rating: 5 },
+    { quote: "Strategy game depth is amazing. The AI opponents are truly challenging.", author: "Anjali Nair", company: "StrategyPro, Chennai", rating: 4.5 }
   ],
   cybersecurity: [
     { quote: "Their security audit saved us from a potential data breach. Highly professional team!", author: "Vikram Malhotra", company: "FinTech Solutions, Mumbai", rating: 5 },

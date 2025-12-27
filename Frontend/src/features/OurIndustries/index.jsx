@@ -1,27 +1,37 @@
 "use client"
 
 import React, { useState } from "react"
-import { Star, Briefcase, Award, Users, GraduationCap, TrendingUp, MapPin, Linkedin, Github } from "lucide-react"
+import { Star, Briefcase, Award, Users, GraduationCap, TrendingUp, MapPin, Linkedin, Github, Mail } from "lucide-react"
 import { Button } from "@/components/ui/button"
+import anishProfile from "../../assets/images/anish_profile.jpg"
+import satyamProfile from "../../assets/images/satyam_profile.jpg"
+import ujjwalProfile from "../../assets/images/ujjwal_profile.jpg"
+import saweraProfile from "../../assets/images/sawera_profile.jpg"
+import arihantProfile from "../../assets/images/arihant_profile.jpg"
+import priyaProfile from "../../assets/images/priya_profile.jpg"
+import shivaniProfile from "../../assets/images/shivani_profile.jpg"
+import nikhilProfile from "../../assets/images/nikhil_profile.jpg"
+import balGovindProfile from "../../assets/images/balgovind_profile.jpg"
+import beautyProfile from "../../assets/images/beauty_profile.jpg"
 
 const teamMembers = [
     {
         id: 1,
-        name: "Rajesh Kumar",
-        role: "Senior Web Developer",
-        avatar: "👨‍💻",
-        experience: "8+ years",
-        expertise: ["React", "Node.js", "TypeScript", "AWS"],
-        companies: ["Google", "Amazon", "Startup XYZ"],
-        location: "Bangalore, India",
+        name: "Anish Kumar",
+        role: "Founder & CEO",
+        image: anishProfile,
+        experience: "3+ years",
+        expertise: ["Data Analyst", "Data Science", "AI/ML", "Power BI", "Python", "SQL"],
+        companies: ["Inuron", "360digitmg", "Radwag", "Apana Time"],
+        location: "Gorakhpur, UP, India",
         rating: 4.9,
-        totalReviews: 127,
-        projectsCompleted: 150,
-        studentsTrained: 500,
+        totalReviews: 1252,
+        projectsCompleted: 75,
+        studentsTrained: 4200,
         achievements: [
-            "AWS Certified Solutions Architect",
-            "Google Cloud Professional",
-            "Led 20+ enterprise projects"
+            "Diploma in Generative AI (State Univ. of New York)",
+            "Founder of Apana Time",
+            "Led 75+ enterprise projects"
         ],
         reviews: [
             {
@@ -43,32 +53,32 @@ const teamMembers = [
                 date: "4 months ago"
             }
         ],
-        linkedin: "https://linkedin.com",
-        github: "https://github.com"
+        linkedin: "https://linkedin.com/in/anish-kumar-tech",
+        email: "Anishkumarstech@gmail.com"
     },
     {
         id: 2,
-        name: "Priya Verma",
-        role: "Mobile App Developer",
-        avatar: "👩‍💻",
-        experience: "6+ years",
-        expertise: ["React Native", "Flutter", "iOS", "Android"],
-        companies: ["Microsoft", "Samsung", "Tech Innovations"],
-        location: "Hyderabad, India",
+        name: "Satyam Kumar Chaudhary",
+        role: "Data Scientist",
+        image: satyamProfile,
+        experience: "2+ years",
+        expertise: ["Python", "SQL", "PowerBI", "Data Analyst", "ML"],
+        companies: ["Apana Time"],
+        location: "Bihar, India",
         rating: 4.8,
         totalReviews: 98,
-        projectsCompleted: 120,
-        studentsTrained: 380,
+        projectsCompleted: 20,
+        studentsTrained: 500,
         achievements: [
-            "Google Mobile Web Specialist",
-            "Published 50+ apps on Play Store",
-            "Flutter Expert Certification"
+            "Completed 20+ projects",
+            "Data Science Expert",
+            "Mentored 500+ students"
         ],
         reviews: [
             {
                 student: "Rahul Gupta",
                 rating: 5,
-                comment: "Amazing mobile development skills. Learned so much about Flutter!",
+                comment: "Amazing data analysis skills. Learned so much!",
                 date: "1 month ago"
             },
             {
@@ -78,169 +88,323 @@ const teamMembers = [
                 date: "2 months ago"
             }
         ],
-        linkedin: "https://linkedin.com",
-        github: "https://github.com"
+        linkedin: "https://www.linkedin.com/in/satyam-kumar-0262882a5",
+        email: "satyamkumarsprediff@gmail.com"
     },
     {
         id: 3,
-        name: "Vikram Singh",
-        role: "Data Scientist",
-        avatar: "🧑‍🔬",
-        experience: "7+ years",
-        expertise: ["Python", "Machine Learning", "TensorFlow", "Big Data"],
-        companies: ["IBM", "Accenture", "Data Corp"],
-        location: "Pune, India",
-        rating: 4.9,
-        totalReviews: 145,
-        projectsCompleted: 95,
-        studentsTrained: 420,
+        name: "Arihant Jain",
+        role: "Data Analyst",
+        image: arihantProfile,
+        experience: "2 years",
+        expertise: ["Data Analyst", "Power BI", "Python", "SQL"],
+        companies: ["Apana Time"],
+        location: "Agra, Uttar Pradesh",
+        rating: 4.5,
+        totalReviews: 50,
+        projectsCompleted: 20,
+        studentsTrained: 150,
         achievements: [
-            "PhD in Machine Learning",
-            "Published 15+ research papers",
-            "Kaggle Grandmaster"
+            "Data Analysis Expert",
+            "Power BI Specialist",
+            "Mentored 150+ students"
         ],
         reviews: [
             {
                 student: "Karan Mehta",
                 rating: 5,
-                comment: "Best data science mentor! Got placed at FAANG company.",
+                comment: "Great insights on data analysis.",
                 date: "2 weeks ago"
             },
             {
                 student: "Divya Joshi",
-                rating: 5,
-                comment: "Incredible depth of knowledge in ML and AI.",
-                date: "1 month ago"
-            },
-            {
-                student: "Rohan Das",
                 rating: 4,
-                comment: "Very thorough and practical approach to data science.",
-                date: "3 months ago"
+                comment: "Very helpful with SQL queries.",
+                date: "1 month ago"
             }
         ],
-        linkedin: "https://linkedin.com",
-        github: "https://github.com"
+        linkedin: "http://www.linkedin.com/in/arihantjain5010",
+        email: "jainarihant0102@gmail.com"
     },
     {
         id: 4,
-        name: "Ananya Iyer",
-        role: "UI/UX Designer",
-        avatar: "🎨",
-        experience: "5+ years",
-        expertise: ["Figma", "Adobe XD", "User Research", "Prototyping"],
-        companies: ["Adobe", "Flipkart", "Design Studio"],
-        location: "Mumbai, India",
+        name: "Sawera Nadeem",
+        role: "Mobile App Developer",
+        image: saweraProfile,
+        experience: "3+ years",
+        expertise: ["React Native", "Flutter", "iOS", "Android"],
+        companies: ["Apana Time"],
+        location: "India",
         rating: 4.7,
         totalReviews: 82,
-        projectsCompleted: 200,
-        studentsTrained: 290,
+        projectsCompleted: 30,
+        studentsTrained: 200,
         achievements: [
-            "Adobe Certified Expert",
-            "Won 5+ design awards",
-            "Designed 100+ digital products"
+            "Cross-platform Expert",
+            "Published 30+ apps",
+            "Mentored 200+ students"
         ],
         reviews: [
             {
                 student: "Sanjay Kumar",
                 rating: 5,
-                comment: "Transformed my design thinking completely!",
+                comment: "Great mobile dev mentor!",
                 date: "3 weeks ago"
             },
             {
                 student: "Meera Nair",
                 rating: 5,
-                comment: "Best UI/UX mentor I could ask for.",
+                comment: "Explained Flutter concepts very well.",
                 date: "2 months ago"
             }
         ],
-        linkedin: "https://linkedin.com",
-        github: "https://github.com"
+        linkedin: "https://www.linkedin.com/in/sawera-nadeem-b6b8702b3",
+        email: "saweranadeem567@gmail.com"
     },
     {
         id: 5,
-        name: "Arjun Malhotra",
-        role: "Python Developer",
-        avatar: "🐍",
-        experience: "6+ years",
-        expertise: ["Python", "Django", "Flask", "FastAPI"],
-        companies: ["PayPal", "Uber", "Fintech Solutions"],
-        location: "Delhi, India",
-        rating: 4.8,
-        totalReviews: 103,
-        projectsCompleted: 130,
-        studentsTrained: 350,
+        name: "Priya Pramod Dakhore",
+        role: "Data Analyst",
+        image: priyaProfile,
+        experience: "3+ years",
+        expertise: ["Python", "SQL", "Flask", "Power BI"],
+        companies: ["Apana Time"],
+        location: "Amravati, Maharashtra, India",
+        rating: 4.7,
+        totalReviews: 105,
+        projectsCompleted: 25,
+        studentsTrained: 300,
         achievements: [
-            "Python Software Foundation Member",
-            "Open source contributor",
-            "Built 50+ production APIs"
+            "Data Analysis Specialist",
+            "Python Expert",
+            "Mentored 300+ students"
         ],
         reviews: [
             {
-                student: "Pooja Rao",
+                student: "Rahul Verma",
                 rating: 5,
-                comment: "Excellent Python skills and teaching methodology.",
-                date: "1 month ago"
+                comment: "Excellent SQL and Power BI training.",
+                date: "3 weeks ago"
             },
             {
-                student: "Aditya Sharma",
-                rating: 4,
-                comment: "Very knowledgeable about backend development.",
-                date: "2 months ago"
+                student: "Sneha Patil",
+                rating: 5,
+                comment: "Great teaching style for Python.",
+                date: "1 month ago"
             }
         ],
-        linkedin: "https://linkedin.com",
-        github: "https://github.com"
+        linkedin: "https://www.linkedin.com/in/priyadakhore",
+        email: "priyadakhore08@gmail.com"
     },
     {
         id: 6,
-        name: "Kavita Desai",
-        role: "AI/ML Engineer",
-        avatar: "🤖",
-        experience: "7+ years",
-        expertise: ["TensorFlow", "PyTorch", "NLP", "Computer Vision"],
-        companies: ["NVIDIA", "Intel", "AI Research Lab"],
-        location: "Bangalore, India",
-        rating: 4.9,
-        totalReviews: 156,
-        projectsCompleted: 85,
-        studentsTrained: 410,
+        name: "Ujjwal Kumar Singh",
+        role: "General Manager",
+        image: ujjwalProfile,
+        experience: "2 years",
+        expertise: ["Management", "Operations", "Team Leadership", "Strategy"],
+        companies: ["Apana Time"],
+        location: "Bihar, India",
+        rating: 4.6,
+        totalReviews: 50,
+        projectsCompleted: 10,
+        studentsTrained: 250,
         achievements: [
-            "Masters in AI from IIT",
-            "15+ patents in AI/ML",
-            "Speaker at AI conferences"
+            "Project Management Professional",
+            "Led operational strategy",
+            "Team growth specialist"
         ],
         reviews: [
             {
                 student: "Harsh Gupta",
                 rating: 5,
-                comment: "Mind-blowing AI expertise. Learned advanced ML techniques!",
+                comment: "Excellent leadership and management skills.",
                 date: "2 weeks ago"
             },
             {
                 student: "Neha Kapoor",
                 rating: 5,
-                comment: "Best AI mentor ever! Very supportive and knowledgeable.",
+                comment: "Great mentor for career guidance.",
                 date: "1 month ago"
+            }
+        ],
+        linkedin: "https://www.linkedin.com/in/ujjwal-kumar-singh-4532581a6",
+        email: "ujjwal150212@gmail.com"
+    },
+    {
+        id: 7,
+        name: "Shivani Nagar",
+        role: "Full Stack Developer",
+        image: shivaniProfile,
+        experience: "3+ years",
+        expertise: ["React", "Node.js", "TypeScript", "AWS"],
+        companies: ["Apana Time"],
+        location: "India",
+        rating: 4.8,
+        totalReviews: 80,
+        projectsCompleted: 30,
+        studentsTrained: 200,
+        achievements: [
+            "Full Stack Expert",
+            "Cloud Architecture",
+            "Mentored 200+ students"
+        ],
+        reviews: [
+            {
+                student: "Anita Desai",
+                rating: 5,
+                comment: "Expert in MERN stack.",
+                date: "2 weeks ago"
+            },
+            {
+                student: "Vikram Malhotra",
+                rating: 5,
+                comment: "Great understanding of AWS services.",
+                date: "1 month ago"
+            }
+        ],
+        linkedin: "https://www.linkedin.com/in/shivaninagar28",
+        github: "https://github.com"
+    },
+    {
+        id: 8,
+        name: "Nikhil Kumar",
+        role: "Business Analyst",
+        image: nikhilProfile,
+        experience: "3 years",
+        expertise: ["Python", "Excel", "Power BI", "PowerPoint", "SQL"],
+        companies: ["Apana Time", "Physics Wallah"],
+        location: "Gorakhpur, UP, India",
+        rating: 4.8,
+        totalReviews: 200,
+        projectsCompleted: 30,
+        studentsTrained: 500,
+        achievements: [
+            "Business Analysis Expert",
+            "Data Visualization Specialist",
+            "Process Optimization"
+        ],
+        reviews: [
+            {
+                student: "Amit Singh",
+                rating: 5,
+                comment: "Excellent insights into data analysis.",
+                date: "1 week ago"
+            },
+            {
+                student: "Riya Patel",
+                rating: 5,
+                comment: "Great Power BI training session.",
+                date: "3 weeks ago"
             }
         ],
         linkedin: "https://linkedin.com",
         github: "https://github.com"
+    },
+    {
+        id: 9,
+        name: "Bal Govind Maurya (Samar)",
+        role: "Mobile App Developer",
+        image: balGovindProfile,
+        experience: "3+ years",
+        expertise: ["React Native", "Flutter", "iOS", "Android"],
+        companies: ["Apana Time"],
+        location: "Gorakhpur, Uttar Pradesh, India",
+        rating: 4.7,
+        totalReviews: 150,
+        projectsCompleted: 40,
+        studentsTrained: 500,
+        achievements: [
+            "Cross-platform Expert",
+            "Published 30+ apps",
+            "Mentored 200+ students"
+        ],
+        reviews: [
+            {
+                student: "Rohan Das",
+                rating: 5,
+                comment: "Great experience learning React Native.",
+                date: "2 weeks ago"
+            },
+            {
+                student: "Simran Kaur",
+                rating: 4,
+                comment: "Very helpful with Play Store deployment.",
+                date: "1 month ago"
+            }
+        ],
+        linkedin: "https://www.linkedin.com/in/bal-govind-maurya-samar-9b8231218/",
+        email: "govindbal866@gmail.com"
+    },
+    {
+        id: 10,
+        name: "Beauty Kumari",
+        role: "Data Analyst",
+        image: beautyProfile,
+        experience: "2 years",
+        expertise: ["Data Analyst", "Power BI", "Python", "SQL"],
+        companies: ["Apana Time"],
+        location: "Delhi, India",
+        rating: 4.5,
+        totalReviews: 80,
+        projectsCompleted: 30,
+        studentsTrained: 150,
+        achievements: [
+            "Data Analysis Expert",
+            "Power BI Specialist",
+            "Mentored 150+ students"
+        ],
+        reviews: [
+            {
+                student: "Karan Mehta",
+                rating: 5,
+                comment: "Excellent Power BI visualization skills.",
+                date: "3 weeks ago"
+            },
+            {
+                student: "Sanya Gupta",
+                rating: 4,
+                comment: "Very helpful with SQL queries.",
+                date: "1 month ago"
+            }
+        ],
+        linkedin: "https://www.linkedin.com/in/beauty-kumari-814615325",
+        email: "sharmabeauty427@gmail.com"
     }
 ]
 
-const expertiseAreas = ["All", "Web Development", "Mobile Development", "Data Science", "AI/ML", "UI/UX Design", "Python"]
+const expertiseAreas = ["All", "Web Development", "Mobile Development", "Data Science", "AI/ML", "Power BI", "Python"]
 
 export default function OurIndustriesPage() {
     const [selectedExpertise, setSelectedExpertise] = useState("All")
     const [expandedMember, setExpandedMember] = useState(null)
 
+    const getCategoryKeywords = (category) => {
+        switch (category) {
+            case "Web Development":
+                return ["Web", "Full Stack", "React", "Node.js", "Frontend", "Backend", "MERN", "TypeScript"]
+            case "Mobile Development":
+                return ["Mobile", "Android", "iOS", "Flutter", "React Native"]
+            case "Data Science":
+                return ["Data Science", "Data Scientist", "Machine Learning", "Deep Learning", "NLP"]
+            case "AI/ML":
+                return ["AI", "ML", "Machine Learning", "Deep Learning", "NLP", "Artificial Intelligence"]
+            case "Power BI":
+                return ["Power BI", "Business Analyst", "Data visualization"]
+            case "Python":
+                return ["Python", "Django", "Flask"]
+            default:
+                return [category]
+        }
+    }
+
     const filteredMembers = selectedExpertise === "All"
         ? teamMembers
-        : teamMembers.filter(member =>
-            member.role.toLowerCase().includes(selectedExpertise.toLowerCase()) ||
-            member.expertise.some(exp => exp.toLowerCase().includes(selectedExpertise.toLowerCase()))
-        )
+        : teamMembers.filter(member => {
+            const keywords = getCategoryKeywords(selectedExpertise)
+            const searchString = `${member.role} ${member.expertise.join(' ')}`.toLowerCase()
+            return keywords.some(keyword => searchString.includes(keyword.toLowerCase()))
+        })
 
     const renderStars = (rating) => {
         return Array.from({ length: 5 }, (_, index) => (
@@ -294,15 +458,15 @@ export default function OurIndustriesPage() {
                     <div style={{ maxWidth: '1280px', margin: '0 auto', padding: '0 1rem' }}>
                         <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(200px, 1fr))', gap: '2rem', textAlign: 'center' }}>
                             <div>
-                                <div style={{ fontSize: '3rem', fontWeight: 'bold', color: '#3b82f6' }}>6+</div>
+                                <div style={{ fontSize: '3rem', fontWeight: 'bold', color: '#3b82f6' }}>27+</div>
                                 <div style={{ fontSize: '0.875rem', color: '#6b7280', marginTop: '0.5rem' }}>Expert Instructors</div>
                             </div>
                             <div>
-                                <div style={{ fontSize: '3rem', fontWeight: 'bold', color: '#8b5cf6' }}>2350+</div>
+                                <div style={{ fontSize: '3rem', fontWeight: 'bold', color: '#8b5cf6' }}>4750+</div>
                                 <div style={{ fontSize: '0.875rem', color: '#6b7280', marginTop: '0.5rem' }}>Students Trained</div>
                             </div>
                             <div>
-                                <div style={{ fontSize: '3rem', fontWeight: 'bold', color: '#10b981' }}>780+</div>
+                                <div style={{ fontSize: '3rem', fontWeight: 'bold', color: '#10b981' }}>140+</div>
                                 <div style={{ fontSize: '0.875rem', color: '#6b7280', marginTop: '0.5rem' }}>Projects Completed</div>
                             </div>
                             <div>
@@ -378,7 +542,24 @@ export default function OurIndustriesPage() {
                                         textAlign: 'center',
                                         color: '#ffffff'
                                     }}>
-                                        <div style={{ fontSize: '4rem', marginBottom: '1rem' }}>{member.avatar}</div>
+                                        {member.image ? (
+                                            <div style={{
+                                                width: '120px',
+                                                height: '120px',
+                                                borderRadius: '50%',
+                                                overflow: 'hidden',
+                                                margin: '0 auto 1rem',
+                                                border: '4px solid rgba(255, 255, 255, 0.3)'
+                                            }}>
+                                                <img
+                                                    src={member.image}
+                                                    alt={member.name}
+                                                    style={{ width: '100%', height: '100%', objectFit: 'cover' }}
+                                                />
+                                            </div>
+                                        ) : (
+                                            <div style={{ fontSize: '4rem', marginBottom: '1rem' }}>{member.avatar}</div>
+                                        )}
                                         <h3 style={{ fontSize: '1.5rem', fontWeight: '600', marginBottom: '0.5rem' }}>
                                             {member.name}
                                         </h3>
@@ -533,9 +714,15 @@ export default function OurIndustriesPage() {
                                             <a href={member.linkedin} target="_blank" rel="noopener noreferrer" style={{ color: '#0077b5' }}>
                                                 <Linkedin size={20} />
                                             </a>
-                                            <a href={member.github} target="_blank" rel="noopener noreferrer" style={{ color: '#333' }}>
-                                                <Github size={20} />
-                                            </a>
+                                            {member.email ? (
+                                                <a href={`mailto:${member.email}`} style={{ color: '#ea4335' }}>
+                                                    <Mail size={20} />
+                                                </a>
+                                            ) : (
+                                                <a href={member.github} target="_blank" rel="noopener noreferrer" style={{ color: '#333' }}>
+                                                    <Github size={20} />
+                                                </a>
+                                            )}
                                         </div>
                                     </div>
                                 </div>

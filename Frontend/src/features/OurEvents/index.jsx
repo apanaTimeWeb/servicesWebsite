@@ -4,6 +4,7 @@ import React from "react"
 import { Link } from "react-router-dom"
 import { Calendar, Users, Video, MapPin, Clock, ArrowRight, Mic2, Presentation, Laptop } from "lucide-react"
 import { Button } from "@/components/ui/button"
+import powerBiWebinar from "../../assets/images/power_bi_webinar.png"
 
 const events = [
     {
@@ -21,12 +22,12 @@ const events = [
     {
         id: 2,
         type: "Webinar",
-        title: "Mastering Cloud Architecture",
+        title: "Master in Power BI Dashboard",
         date: "March 20, 2024",
         time: "3:00 PM - 5:00 PM",
         location: "Online (Zoom)",
-        image: "https://images.unsplash.com/photo-1611162617474-5b21e879e113?w=800&h=500&fit=crop",
-        description: "A deep dive into building scalable and resilient cloud infrastructures with AWS and Azure experts.",
+        image: powerBiWebinar,
+        description: "Learn how to build interactive and insightful dashboards using Power BI with live examples.",
         icon: Laptop,
         gradient: "from-purple-500 to-pink-500"
     },
@@ -56,7 +57,7 @@ export default function OurEventsPage() {
 
             <main style={{ paddingTop: '64px', minHeight: '100vh', backgroundColor: '#f8fafc' }}>
                 {/* Hero Section */}
-                <section style={{
+                <section id="events-hero" style={{
                     background: 'linear-gradient(135deg, #0f172a 0%, #334155 100%)',
                     color: '#ffffff',
                     padding: '6rem 0',
@@ -120,7 +121,7 @@ export default function OurEventsPage() {
                 </section>
 
                 {/* Events List Section */}
-                <section style={{ padding: '5rem 0' }}>
+                <section id="events-list" style={{ padding: '5rem 0' }}>
                     <div style={{ maxWidth: '1280px', margin: '0 auto', padding: '0 1rem' }}>
                         <div style={{ display: 'flex', flexDirection: 'column', gap: '3rem' }}>
                             {events.map((event, index) => {
@@ -128,7 +129,7 @@ export default function OurEventsPage() {
                                 return (
                                     <div
                                         key={event.id}
-                                        className="event-card"
+                                        className="event-card event-card-inner"
                                         style={{
                                             display: 'flex',
                                             flexDirection: 'row',
@@ -142,7 +143,7 @@ export default function OurEventsPage() {
                                         }}
                                     >
                                         {/* Image Section */}
-                                        <div style={{ flex: '0 0 40%', position: 'relative', minHeight: '300px' }}>
+                                        <div className="event-image-side" style={{ flex: '0 0 40%', position: 'relative', minHeight: '300px' }}>
                                             <img
                                                 src={event.image}
                                                 alt={event.title}
@@ -164,7 +165,7 @@ export default function OurEventsPage() {
                                         </div>
 
                                         {/* Content Section */}
-                                        <div style={{ flex: '1', padding: '3rem', display: 'flex', flexDirection: 'column', justifyContent: 'center' }}>
+                                        <div className="event-content-side" style={{ flex: '1', padding: '3rem', display: 'flex', flexDirection: 'column', justifyContent: 'center' }}>
                                             <div style={{ display: 'flex', alignItems: 'center', gap: '0.75rem', marginBottom: '1rem', color: '#64748b' }}>
                                                 <Calendar size={18} />
                                                 <span style={{ fontWeight: '500' }}>{event.date}</span>
@@ -181,7 +182,7 @@ export default function OurEventsPage() {
                                                 {event.description}
                                             </p>
 
-                                            <div style={{ display: 'flex', alignItems: 'center', gap: '2rem', marginBottom: '2rem' }}>
+                                            <div className="event-meta-info" style={{ display: 'flex', alignItems: 'center', gap: '2rem', marginBottom: '2rem' }}>
                                                 <div style={{ display: 'flex', alignItems: 'center', gap: '0.5rem', color: '#475569' }}>
                                                     <MapPin size={20} color="#3b82f6" />
                                                     <span style={{ fontWeight: '500' }}>{event.location}</span>
@@ -217,7 +218,7 @@ export default function OurEventsPage() {
                 </section>
 
                 {/* Host Event CTA */}
-                <section style={{
+                <section id="host-event-cta" style={{
                     backgroundColor: '#ffffff',
                     padding: '5rem 0',
                     borderTop: '1px solid #e2e8f0'

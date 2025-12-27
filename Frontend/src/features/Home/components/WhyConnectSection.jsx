@@ -5,7 +5,7 @@ import { CheckCircle } from "lucide-react"
 export function WhyConnectSection() {
   const benefits = [
     "Free consultation & analysis",
-    "24-hour response guarantee", 
+    "24-hour response guarantee",
     "Flexible engagement models",
     "Transparent, fixed pricing",
     "Dedicated project team",
@@ -13,33 +13,29 @@ export function WhyConnectSection() {
   ]
 
   return (
-    <section style={{ padding: '4rem 0', backgroundColor: '#ffffff' }}>
+    <section id="why-connect" style={{ padding: '4rem 0', backgroundColor: '#ffffff' }}>
       <div style={{ maxWidth: '1280px', margin: '0 auto', padding: '0 1rem' }}>
-        <div style={{ 
-          display: 'grid', 
-          gridTemplateColumns: '1fr 1fr', 
-          gap: '4rem', 
-          alignItems: 'center',
-          '@media (max-width: 768px)': {
-            gridTemplateColumns: '1fr',
-            gap: '2rem'
-          }
+        <div className="why-connect-grid" style={{
+          display: 'grid',
+          gridTemplateColumns: '1fr 1fr',
+          gap: '4rem',
+          alignItems: 'center'
         }}>
           {/* Left side - Why Connect content */}
           <div>
-            <h2 style={{ 
-              fontSize: '2.5rem', 
-              fontWeight: 'bold', 
-              color: '#1f2937', 
+            <h2 style={{
+              fontSize: '2.5rem',
+              fontWeight: 'bold',
+              color: '#1f2937',
               marginBottom: '1.5rem',
               lineHeight: '1.2'
             }}>
               Why Connect With Us
             </h2>
-            
-            <p style={{ 
-              fontSize: '1.125rem', 
-              color: '#6b7280', 
+
+            <p style={{
+              fontSize: '1.125rem',
+              color: '#6b7280',
               marginBottom: '2rem',
               lineHeight: '1.6'
             }}>
@@ -66,18 +62,18 @@ export function WhyConnectSection() {
             border: '1px solid #e2e8f0',
             textAlign: 'center'
           }}>
-            <h3 style={{ 
-              fontSize: '1.5rem', 
-              fontWeight: 'bold', 
-              color: '#1f2937', 
-              marginBottom: '1rem' 
+            <h3 style={{
+              fontSize: '1.5rem',
+              fontWeight: 'bold',
+              color: '#1f2937',
+              marginBottom: '1rem'
             }}>
               Ready to Get Started?
             </h3>
-            
-            <p style={{ 
-              fontSize: '1rem', 
-              color: '#6b7280', 
+
+            <p style={{
+              fontSize: '1rem',
+              color: '#6b7280',
               marginBottom: '2rem',
               lineHeight: '1.5'
             }}>
@@ -104,10 +100,10 @@ export function WhyConnectSection() {
               Start Your Project Today
             </button>
 
-            <div style={{ 
-              marginTop: '1.5rem', 
-              padding: '1rem', 
-              backgroundColor: '#ffffff', 
+            <div style={{
+              marginTop: '1.5rem',
+              padding: '1rem',
+              backgroundColor: '#ffffff',
               borderRadius: '0.5rem',
               border: '1px solid #e5e7eb'
             }}>
