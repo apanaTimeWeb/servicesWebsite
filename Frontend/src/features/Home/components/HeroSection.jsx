@@ -49,7 +49,7 @@ export function HeroSection() {
               <p className="hero-description" style={{
                 fontSize: '1.75rem',
                 color: '#6b7280',
-                marginBottom: '1rem',
+                marginBottom: '2rem',
                 lineHeight: '1.4'
               }}>
                 Boosting businesses, startups, and students to grow.
