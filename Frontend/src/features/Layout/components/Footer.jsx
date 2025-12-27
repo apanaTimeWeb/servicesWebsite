@@ -1,9 +1,5 @@
 import { useNavigate, useLocation, Link } from "react-router-dom"
-<<<<<<< HEAD
 import { FaTwitter, FaLinkedinIn, FaInstagram, FaTelegramPlane, FaWhatsapp, FaYoutube, FaFacebook, FaGlobe } from "react-icons/fa"
-=======
-import { FaTwitter, FaLinkedinIn, FaInstagram, FaTelegramPlane, FaWhatsapp, FaYoutube } from "react-icons/fa"
->>>>>>> 9f0b407520450a20e80a02d55f996cd1a4546920
 
 export function Footer() {
   const navigate = useNavigate()
