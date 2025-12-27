@@ -31,7 +31,7 @@ export function ExploreCompanySection() {
       <div style={{ maxWidth: '1280px', margin: '0 auto', padding: '0 1rem' }}>
         <div style={{ textAlign: 'center', marginBottom: '3rem' }}>
           <h2 style={{ fontSize: '2.5rem', fontWeight: 'bold', color: '#1f2937', marginBottom: '1rem' }}>
-            Explore Our Company
+            Explore Apana Time Company
           </h2>
           <p style={{ fontSize: '1.125rem', color: '#6b7280', maxWidth: '600px', margin: '0 auto' }}>
             Discover opportunities, industries we serve, and comprehensive services we offer
