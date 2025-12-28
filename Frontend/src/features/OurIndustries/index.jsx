@@ -13,6 +13,7 @@ import shivaniProfile from "../../assets/images/shivani_profile.jpg"
 import nikhilProfile from "../../assets/images/nikhil_profile.jpg"
 import balGovindProfile from "../../assets/images/balgovind_profile.jpg"
 import beautyProfile from "../../assets/images/beauty_profile.jpg"
+import abhishekProfile from "../../assets/images/abhishek.png"
 
 const teamMembers = [
     {
@@ -370,6 +371,41 @@ const teamMembers = [
         ],
         linkedin: "https://www.linkedin.com/in/beauty-kumari-814615325",
         email: "sharmabeauty427@gmail.com"
+    },
+    {
+        id: 11,
+        name: "Abhishek Roy",
+        role: "Data Analyst",
+        image: abhishekProfile,
+        experience: "3+ years",
+        expertise: ["Data Analysis", "Python", "SQL", "Power BI", "Excel"],
+        companies: ["Apana Time"],
+        location: "India",
+        rating: 4.6,
+        totalReviews: 95,
+        projectsCompleted: 25,
+        studentsTrained: 300,
+        achievements: [
+            "Data Analysis Expert",
+            "Business Intelligence Specialist",
+            "Mentored 300+ students"
+        ],
+        reviews: [
+            {
+                student: "Rajesh Kumar",
+                rating: 5,
+                comment: "Excellent data analysis techniques and insights.",
+                date: "2 weeks ago"
+            },
+            {
+                student: "Priya Sharma",
+                rating: 5,
+                comment: "Great Power BI dashboard creation skills.",
+                date: "1 month ago"
+            }
+        ],
+        linkedin: "https://www.linkedin.com/in/abhishek-roy-b98175212",
+        email: "abhishekwriter2000@gmail.com"
     }
 ]
 
@@ -684,7 +720,7 @@ export default function OurIndustriesPage() {
                                                 fontSize: '0.875rem'
                                             }}
                                         >
-                                            {expandedMember === member.id ? 'Hide Reviews' : 'View Student Reviews'}
+                                            {expandedMember === member.id ? 'Hide Reviews' : 'View Client Reviews'}
                                         </Button>
 
                                         {/* Reviews Section */}
