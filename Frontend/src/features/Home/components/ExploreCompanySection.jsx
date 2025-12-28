@@ -13,7 +13,7 @@ export function ExploreCompanySection() {
       link: "/career"
     },
     {
-      title: "Our Industries",
+      title: "Our Expert Team",
       image: "https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?w=400&h=300&fit=crop&crop=entropy",
       description: "Serving diverse sectors with cutting-edge solutions",
       link: "/our-industries"

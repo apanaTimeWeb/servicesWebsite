@@ -18,7 +18,7 @@ const teamMembers = [
     {
         id: 1,
         name: "Anish Kumar",
-        role: "Founder & CEO",
+        role: "Senior Data Scientist & Founder",
         image: anishProfile,
         experience: "3+ years",
         expertise: ["Data Analyst", "Data Science", "AI/ML", "Power BI", "Python", "SQL"],
@@ -199,7 +199,7 @@ const teamMembers = [
     {
         id: 6,
         name: "Ujjwal Kumar Singh",
-        role: "General Manager",
+        role: "Web Developer",
         image: ujjwalProfile,
         experience: "2 years",
         expertise: ["Management", "Operations", "Team Leadership", "Strategy"],
@@ -447,7 +447,7 @@ export default function OurIndustriesPage() {
                             Meet Our Expert Team
                         </h1>
                         <p style={{ fontSize: '1.25rem', marginBottom: '2rem', opacity: 0.95, maxWidth: '800px', margin: '0 auto 2rem' }}>
-                            industry veterans with years of experience from top companies.
+                            Industry veterans with years of experience from top companies.
                             Learn from the best and accelerate your tech career.
                         </p>
                     </div>
