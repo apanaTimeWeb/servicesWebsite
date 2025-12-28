@@ -763,8 +763,8 @@ export default function OurIndustriesPage() {
                                         {expandedMember === member.id && (
                                             <div style={{ marginTop: '1.5rem', padding: '1rem', backgroundColor: '#f9fafb', borderRadius: '0.5rem' }}>
                                                 <div style={{ fontSize: '0.875rem', fontWeight: '600', color: '#1f2937', marginBottom: '1rem', display: 'flex', alignItems: 'center', gap: '0.5rem' }}>
-                                                    <GraduationCap size={16} />
-                                                    Student Reviews
+                                                    <Users size={16} />
+                                                    Client Reviews
                                                 </div>
                                                 {member.reviews.map((review, idx) => (
                                                     <div key={idx} style={{ marginBottom: '1rem', paddingBottom: '1rem', borderBottom: idx < member.reviews.length - 1 ? '1px solid #e5e7eb' : 'none' }}>
