@@ -36,21 +36,21 @@ const teamMembers = [
         ],
         reviews: [
             {
-                student: "Priya Sharma",
+                student: "Enterprise Solutions Inc",
                 rating: 5,
-                comment: "Excellent mentor! Helped me land my first job at a top tech company.",
+                comment: "Excellent mentor! Helped our team implement advanced data science solutions.",
                 date: "2 months ago"
             },
             {
-                student: "Amit Patel",
+                student: "TechVision Corp",
                 rating: 5,
-                comment: "Best web development instructor I've ever had. Very practical approach.",
+                comment: "Best web development consultant we've worked with. Very practical approach.",
                 date: "3 months ago"
             },
             {
-                student: "Sneha Reddy",
+                student: "DataFlow Systems",
                 rating: 4,
-                comment: "Great teaching style and always available for doubt clearing.",
+                comment: "Great consulting style and always available for project support.",
                 date: "4 months ago"
             }
         ],
@@ -77,15 +77,15 @@ const teamMembers = [
         ],
         reviews: [
             {
-                student: "Rahul Gupta",
+                student: "Analytics Pro Ltd",
                 rating: 5,
-                comment: "Amazing data analysis skills. Learned so much!",
+                comment: "Amazing data analysis skills. Delivered comprehensive insights for our business.",
                 date: "1 month ago"
             },
             {
-                student: "Anita Singh",
+                student: "Business Intelligence Corp",
                 rating: 5,
-                comment: "Very patient and explains complex concepts simply.",
+                comment: "Very professional and explains complex data concepts clearly to our team.",
                 date: "2 months ago"
             }
         ],
@@ -112,15 +112,15 @@ const teamMembers = [
         ],
         reviews: [
             {
-                student: "Karan Mehta",
+                student: "DataTech Solutions",
                 rating: 5,
-                comment: "Great insights on data analysis.",
+                comment: "Great insights on data analysis for our enterprise projects.",
                 date: "2 weeks ago"
             },
             {
-                student: "Divya Joshi",
+                student: "PowerBI Consulting Group",
                 rating: 4,
-                comment: "Very helpful with SQL queries.",
+                comment: "Very helpful with SQL optimization and database management.",
                 date: "1 month ago"
             }
         ],
@@ -147,15 +147,15 @@ const teamMembers = [
         ],
         reviews: [
             {
-                student: "Sanjay Kumar",
+                student: "MobileFirst Technologies",
                 rating: 5,
-                comment: "Great mobile dev mentor!",
+                comment: "Great mobile development expertise for our cross-platform projects!",
                 date: "3 weeks ago"
             },
             {
-                student: "Meera Nair",
+                student: "AppDev Solutions",
                 rating: 5,
-                comment: "Explained Flutter concepts very well.",
+                comment: "Explained Flutter architecture very well for our development team.",
                 date: "2 months ago"
             }
         ],
@@ -182,15 +182,15 @@ const teamMembers = [
         ],
         reviews: [
             {
-                student: "Rahul Verma",
+                student: "DataAnalytics Pro",
                 rating: 5,
-                comment: "Excellent SQL and Power BI training.",
+                comment: "Excellent SQL and Power BI implementation for our reporting systems.",
                 date: "3 weeks ago"
             },
             {
-                student: "Sneha Patil",
+                student: "Python Solutions Inc",
                 rating: 5,
-                comment: "Great teaching style for Python.",
+                comment: "Great consulting approach for Python-based data processing.",
                 date: "1 month ago"
             }
         ],
@@ -200,7 +200,7 @@ const teamMembers = [
     {
         id: 6,
         name: "Ujjwal Kumar Singh",
-        role: "Web Developer",
+        role: "Management Consultant",
         image: ujjwalProfile,
         experience: "2 years",
         expertise: ["Management", "Operations", "Team Leadership", "Strategy"],
@@ -217,15 +217,15 @@ const teamMembers = [
         ],
         reviews: [
             {
-                student: "Harsh Gupta",
+                student: "Strategic Management Corp",
                 rating: 5,
-                comment: "Excellent leadership and management skills.",
+                comment: "Excellent leadership and project management expertise for our operations.",
                 date: "2 weeks ago"
             },
             {
-                student: "Neha Kapoor",
+                student: "Business Growth Partners",
                 rating: 5,
-                comment: "Great mentor for career guidance.",
+                comment: "Great consultant for strategic planning and team development.",
                 date: "1 month ago"
             }
         ],
@@ -252,15 +252,15 @@ const teamMembers = [
         ],
         reviews: [
             {
-                student: "Anita Desai",
+                student: "CloudTech Enterprises",
                 rating: 5,
-                comment: "Expert in MERN stack.",
+                comment: "Expert in MERN stack development for our enterprise applications.",
                 date: "2 weeks ago"
             },
             {
-                student: "Vikram Malhotra",
+                student: "AWS Solutions Group",
                 rating: 5,
-                comment: "Great understanding of AWS services.",
+                comment: "Great understanding of AWS services for our cloud infrastructure.",
                 date: "1 month ago"
             }
         ],
@@ -287,15 +287,15 @@ const teamMembers = [
         ],
         reviews: [
             {
-                student: "Amit Singh",
+                student: "Business Intelligence Ltd",
                 rating: 5,
-                comment: "Excellent insights into data analysis.",
+                comment: "Excellent insights into data analysis for our quarterly business reviews.",
                 date: "1 week ago"
             },
             {
-                student: "Riya Patel",
+                student: "PowerBI Experts Inc",
                 rating: 5,
-                comment: "Great Power BI training session.",
+                comment: "Great Power BI dashboard development for our analytics team.",
                 date: "3 weeks ago"
             }
         ],
@@ -322,15 +322,15 @@ const teamMembers = [
         ],
         reviews: [
             {
-                student: "Rohan Das",
+                student: "MobileTech Solutions",
                 rating: 5,
-                comment: "Great experience learning React Native.",
+                comment: "Great experience with React Native development for our mobile platform.",
                 date: "2 weeks ago"
             },
             {
-                student: "Simran Kaur",
+                student: "AppStore Consulting",
                 rating: 4,
-                comment: "Very helpful with Play Store deployment.",
+                comment: "Very helpful with Play Store deployment and app optimization.",
                 date: "1 month ago"
             }
         ],
@@ -357,15 +357,15 @@ const teamMembers = [
         ],
         reviews: [
             {
-                student: "Karan Mehta",
+                student: "DataViz Corporation",
                 rating: 5,
-                comment: "Excellent Power BI visualization skills.",
+                comment: "Excellent Power BI visualization skills for our business intelligence needs.",
                 date: "3 weeks ago"
             },
             {
-                student: "Sanya Gupta",
+                student: "SQL Experts Group",
                 rating: 4,
-                comment: "Very helpful with SQL queries.",
+                comment: "Very helpful with SQL optimization and database performance tuning.",
                 date: "1 month ago"
             }
         ],
@@ -392,15 +392,15 @@ const teamMembers = [
         ],
         reviews: [
             {
-                student: "Rajesh Kumar",
+                student: "TechCorp Solutions",
                 rating: 5,
-                comment: "Excellent data analysis techniques and insights.",
+                comment: "Outstanding data analysis and insights. Delivered exceptional results for our quarterly reports.",
                 date: "2 weeks ago"
             },
             {
-                student: "Priya Sharma",
+                student: "Digital Innovations Ltd",
                 rating: 5,
-                comment: "Great Power BI dashboard creation skills.",
+                comment: "Professional approach and excellent Power BI dashboard implementations.",
                 date: "1 month ago"
             }
         ],
