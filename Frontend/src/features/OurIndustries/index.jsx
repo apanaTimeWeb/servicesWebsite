@@ -14,6 +14,7 @@ import nikhilProfile from "../../assets/images/nikhil_profile.jpg"
 import balGovindProfile from "../../assets/images/balgovind_profile.jpg"
 import beautyProfile from "../../assets/images/beauty_profile.jpg"
 import abhishekProfile from "../../assets/images/abhishek.png"
+import shivPujanProfile from "../../assets/images/ShivPujan.png"
 
 const teamMembers = [
     {
@@ -406,6 +407,41 @@ const teamMembers = [
         ],
         linkedin: "https://www.linkedin.com/in/abhishek-roy-b98175212",
         email: "abhishekwriter2000@gmail.com"
+    },
+    {
+        id: 12,
+        name: "Shiv Pujan Kumar",
+        role: "Full Stack Software Developer",
+        image: shivPujanProfile,
+        experience: "3+ years",
+        expertise: ["React", "Node.js", "JavaScript", "MongoDB", "Express", "Full Stack"],
+        companies: ["Apana Time"],
+        location: "India",
+        rating: 4.7,
+        totalReviews: 120,
+        projectsCompleted: 35,
+        studentsTrained: 400,
+        achievements: [
+            "Full Stack Development Expert",
+            "MERN Stack Specialist",
+            "Mentored 400+ students"
+        ],
+        reviews: [
+            {
+                student: "WebDev Solutions Inc",
+                rating: 5,
+                comment: "Outstanding full stack development skills. Delivered robust web applications for our clients.",
+                date: "1 week ago"
+            },
+            {
+                student: "TechStack Enterprises",
+                rating: 5,
+                comment: "Professional MERN stack implementation and excellent code quality.",
+                date: "3 weeks ago"
+            }
+        ],
+        linkedin: "https://www.linkedin.com/in/shiv-p-kumar-008003198/",
+        email: "sahil.8228053857@gmail.com"
     }
 ]
 
