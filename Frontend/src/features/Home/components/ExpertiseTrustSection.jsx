@@ -4,19 +4,19 @@ import React from "react"
 import { MapPin, Star, Users, Trophy, Handshake } from "lucide-react"
 
 const expertiseAreas = [
-  { name: "Mobile Development", percentage: 95, projects: "200+" },
-  { name: "Web Development", percentage: 98, projects: "300+" },
-  { name: "AI/ML Solutions", percentage: 90, projects: "150+" },
-  { name: "Data Analytics", percentage: 92, projects: "180+" },
-  { name: "UI/UX Design", percentage: 94, projects: "250+" },
-  { name: "Cloud Solutions", percentage: 88, projects: "120+" },
+  { name: "Mobile Development", percentage: 95, projects: "30+" },
+  { name: "Web Development", percentage: 98, projects: "40+" },
+  { name: "AI/ML Solutions", percentage: 90, projects: "10+" },
+  { name: "Data Analytics", percentage: 92, projects: "10+" },
+  { name: "UI/UX Design", percentage: 94, projects: "5+" },
+  { name: "Dashboard", percentage: 88, projects: "50+" },
 ]
 
 const impactStats = [
-  { number: "100+", label: "Projects Done", icon: Trophy },
-  { number: "80+", label: "Happy Clients", icon: Users },
+  { number: "140+", label: "Projects Done", icon: Trophy },
+  { number: "140+", label: "Happy Clients", icon: Users },
   { number: "100%", label: "Client Satisfaction", icon: Star },
-  { number: "20+", label: "Countries Served", icon: MapPin },
+  { number: "23+", label: "Countries Served", icon: MapPin },
   { number: "15+", label: "Company Tie-ups", icon: Handshake },
 ]
 

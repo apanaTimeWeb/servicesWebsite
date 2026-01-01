@@ -90,13 +90,35 @@ export default function CareerPage() {
     const googleMeetLink = "https://meet.google.com/your-meet-link" // Replace with actual Google Meet link
 
     const handleCareerGuidance = () => {
-        window.open(googleMeetLink, "_blank")
+        const startDate = new Date()
+        startDate.setDate(startDate.getDate() + 1)
+        startDate.setHours(10, 0, 0, 0)
+        
+        const endDate = new Date(startDate)
+        endDate.setHours(11, 0, 0, 0)
+        
+        const formatDate = (date) => {
+            return date.toISOString().replace(/[-:]/g, '').split('.')[0] + 'Z'
+        }
+        
+        const googleCalendarUrl = `https://calendar.google.com/calendar/render?action=TEMPLATE&text=${encodeURIComponent('Career Guidance Session - ApanaTime')}&dates=${formatDate(startDate)}/${formatDate(endDate)}&details=${encodeURIComponent('Career guidance session at ApanaTime. We will discuss career opportunities, required skills, and growth path.')}&location=${encodeURIComponent('Google Meet (Link will be shared)')}&add=15ac975d076024c44f69183ada4eb9fd9986435f639591a8acad888b54ce1a14@group.calendar.google.com`
+        window.open(googleCalendarUrl, "_blank")
     }
 
     const handleScheduleMeeting = (role) => {
-        const message = `Hi, I'm interested in learning about a career in ${role}. I'd like to schedule a career guidance session.`
-        const whatsappUrl = `https://wa.me/917080404594?text=${encodeURIComponent(message)}`
-        window.open(whatsappUrl, "_blank")
+        const startDate = new Date()
+        startDate.setDate(startDate.getDate() + 1)
+        startDate.setHours(10, 0, 0, 0)
+        
+        const endDate = new Date(startDate)
+        endDate.setHours(11, 0, 0, 0)
+        
+        const formatDate = (date) => {
+            return date.toISOString().replace(/[-:]/g, '').split('.')[0] + 'Z'
+        }
+        
+        const googleCalendarUrl = `https://calendar.google.com/calendar/render?action=TEMPLATE&text=${encodeURIComponent(`Career Guidance Session - ${role}`)}&dates=${formatDate(startDate)}/${formatDate(endDate)}&details=${encodeURIComponent(`Career guidance session for ${role} position at ApanaTime. We'll discuss career opportunities, required skills, and growth path.`)}&location=${encodeURIComponent('Google Meet (Link will be shared)')}&add=15ac975d076024c44f69183ada4eb9fd9986435f639591a8acad888b54ce1a14@group.calendar.google.com`
+        window.open(googleCalendarUrl, "_blank")
     }
 
     return (

@@ -2,14 +2,14 @@ import { Building2, Target, CheckCircle2 } from "lucide-react"
 
 export function AboutAimSection() {
   const points = [
-    "End-to-end delivery: Discovery → Design → Development → Launch → Support",
-    "Security-first approach, code reviews, automation, and QA baked in",
-    "Transparent communication and sprint-based progress updates",
+    "End-to-end service delivery: Requirement Analysis → Planning → Development → Testing → Deployment → Support",
+    "Quality-first approach with best practices, reviews, automation, and continuous improvement",
+    "Transparent communication with regular updates and client collaboration",
   ]
   const aims = [
-    "Deliver measurable business impact, not just code",
-    "Leverage AI/ML to automate workflows and unlock insights",
-    "Build scalable products that grow with your users",
+    "Deliver real business value through our services, not just solutions",
+    "Use AI/ML and analytics to optimize processes and generate insights",
+    "Provide scalable, flexible services that grow with your business",
   ]
 
   return (
@@ -20,16 +20,15 @@ export function AboutAimSection() {
             About the Company
           </span>
           <h2 style={{ fontSize: '2.25rem', fontWeight: 'bold', color: '#111827', marginBottom: '1rem' }}>
-            We Build Reliable, Scalable, and Intelligent Solutions
+            We Deliver Reliable, Scalable, and Smart IT Services
           </h2>
           <p style={{ fontSize: '1.125rem', color: '#6b7280', maxWidth: '48rem', margin: '0 auto' }}>
-            From mobile and web apps to AI/ML and data analytics, we partner with startups and enterprises to ship
-            production-grade software on time and within budget.
+            From web and mobile development to data analytics and AI/ML solutions, Apana Time Tech Solutions partners with startups and enterprises to deliver cost-effective, production-ready services on time.
           </p>
         </div>
 
         <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(320px, 1fr))', gap: '2rem' }}>
-          
+
           {/* Who We Are */}
           <div style={{ backgroundColor: '#f9fafb', border: '1px solid #e5e7eb', borderRadius: '0.5rem', padding: '2rem' }}>
             <div style={{ display: 'flex', alignItems: 'center', gap: '0.75rem', marginBottom: '1rem' }}>
@@ -37,8 +36,7 @@ export function AboutAimSection() {
               <h3 style={{ fontSize: '1.25rem', fontWeight: '600', color: '#111827' }}>Who We Are</h3>
             </div>
             <p style={{ color: '#6b7280', lineHeight: '1.75', marginBottom: '1.25rem' }}>
-              A senior-led engineering team delivering high-quality software across industries such as fintech,
-              health, e-commerce, and SaaS. We combine modern stacks with pragmatic execution.
+              Apana Time Tech Solutions is a service-based technology company led by experienced professionals, providing high-quality IT services across domains such as education, business, e-commerce, and digital transformation. We blend modern technologies with practical execution to solve real business problems.
             </p>
             <ul style={{ listStyle: 'none', padding: 0, margin: 0 }}>
               {points.map((p, i) => (
@@ -57,8 +55,7 @@ export function AboutAimSection() {
               <h3 style={{ fontSize: '1.25rem', fontWeight: '600', color: '#111827' }}>Our Aim</h3>
             </div>
             <p style={{ color: '#6b7280', lineHeight: '1.75', marginBottom: '1.25rem' }}>
-              Our goal is to accelerate your business with technology — better customer experience,
-              automated operations, and data-driven decision making.
+              Our aim is to empower businesses through reliable IT services — enhancing efficiency, improving customer engagement, and enabling data-driven growth.
             </p>
             <ul style={{ listStyle: 'none', padding: 0, margin: 0 }}>
               {aims.map((a, i) => (

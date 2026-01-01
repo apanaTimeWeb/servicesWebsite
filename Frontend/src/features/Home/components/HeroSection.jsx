@@ -3,6 +3,7 @@
 import { Button } from "@/components/ui/button"
 import { useState } from "react"
 import { ContactModal } from "./ContactModal"
+import { AnimatedText } from "@/components/AnimatedText"
 
 export function HeroSection() {
   const [isContactModalOpen, setIsContactModalOpen] = useState(false)
@@ -29,7 +30,7 @@ export function HeroSection() {
               <p className="hero-subtitle" style={{
                 fontSize: '2rem',
                 color: '#4b5563',
-                marginBottom: '1rem',
+                marginBottom: '0.25rem',
                 fontWeight: '500'
               }}>
                 Transform Your Digital Future
@@ -40,10 +41,10 @@ export function HeroSection() {
                 fontWeight: 'bold',
                 color: '#4c1d95',
                 marginBottom: '1rem',
-                lineHeight: '0.9'
+                lineHeight: '0.9',
+                minHeight: '10rem'
               }}>
-                ApanaTime<br />
-                <span style={{ color: '#4b5563' }}>Tech Solutions</span>
+                <AnimatedText text="ApanaTime Tech Solutions" delay={150} />
               </h1>
 
               <p className="hero-description" style={{

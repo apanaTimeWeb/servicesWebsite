@@ -32,7 +32,7 @@ export function ContactDetailsSection() {
       icon: MapPin,
       title: "Visit Us",
       subtitle: "Our headquarters",
-      detail: "Mumbai, India",
+      detail: "Gorakhpur, Uttar Pradesh, India",
       info: "Global team",
       action: () => { }
     }

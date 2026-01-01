@@ -4,6 +4,7 @@ import React from "react"
 import { Link } from "react-router-dom"
 import { Calendar, Users, Video, MapPin, Clock, ArrowRight, Mic2, Presentation, Laptop } from "lucide-react"
 import { Button } from "@/components/ui/button"
+import powerBiWebinar from "../../assets/images/power_bi_webinar.png"
 
 const events = [
     {
@@ -21,12 +22,12 @@ const events = [
     {
         id: 2,
         type: "Webinar",
-        title: "Mastering Cloud Architecture",
+        title: "Master in Power BI Dashboard",
         date: "March 20, 2024",
         time: "3:00 PM - 5:00 PM",
         location: "Online (Zoom)",
-        image: "https://images.unsplash.com/photo-1611162617474-5b21e879e113?w=800&h=500&fit=crop",
-        description: "A deep dive into building scalable and resilient cloud infrastructures with AWS and Azure experts.",
+        image: powerBiWebinar,
+        description: "Learn how to build interactive and insightful dashboards using Power BI with live examples.",
         icon: Laptop,
         gradient: "from-purple-500 to-pink-500"
     },
