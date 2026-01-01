@@ -16,6 +16,9 @@ import OurIndustriesPage from "@/features/OurIndustries"
 import OurServicesPage from "@/features/OurServices"
 import OurProductsPage from "@/features/OurProducts"
 import OurEventsPage from "@/features/OurEvents"
+import PrivacyPolicy from "@/features/Legal/PrivacyPolicy"
+import TermsOfService from "@/features/Legal/TermsOfService"
+import CookiePolicy from "@/features/Legal/CookiePolicy"
 
 function App() {
     return (
@@ -34,6 +37,9 @@ function App() {
                     <Route path="/our-products" element={<OurProductsPage />} />
                     <Route path="/our-events" element={<OurEventsPage />} />
                     <Route path="/services/:serviceName" element={<ServicePage />} />
+                    <Route path="/privacy" element={<PrivacyPolicy />} />
+                    <Route path="/terms" element={<TermsOfService />} />
+                    <Route path="/cookies" element={<CookiePolicy />} />
                 </Routes>
                 <Footer />
                 <FloatingWhatsApp />

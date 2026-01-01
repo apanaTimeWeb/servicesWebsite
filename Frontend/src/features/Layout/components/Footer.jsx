@@ -115,15 +115,15 @@ export function Footer() {
             © {new Date().getFullYear()} ApanaTime Solutions. All rights reserved.
           </p>
           <div style={{ display: 'flex', gap: '1.5rem', flexWrap: 'wrap' }}>
-            <a href="/privacy" style={{ color: '#9ca3af', fontSize: '0.875rem', textDecoration: 'none' }}>
+            <Link to="/privacy" style={{ color: '#9ca3af', fontSize: '0.875rem', textDecoration: 'none' }}>
               Privacy Policy
-            </a>
-            <a href="/terms" style={{ color: '#9ca3af', fontSize: '0.875rem', textDecoration: 'none' }}>
+            </Link>
+            <Link to="/terms" style={{ color: '#9ca3af', fontSize: '0.875rem', textDecoration: 'none' }}>
               Terms of Service
-            </a>
-            <a href="/cookies" style={{ color: '#9ca3af', fontSize: '0.875rem', textDecoration: 'none' }}>
+            </Link>
+            <Link to="/cookies" style={{ color: '#9ca3af', fontSize: '0.875rem', textDecoration: 'none' }}>
               Cookie Policy
-            </a>
+            </Link>
           </div>
         </div>
       </div>
