@@ -3,7 +3,8 @@
 import { useState, useEffect, useRef } from "react"
 import { Link, useNavigate, useLocation } from "react-router-dom"
 import { Button } from "@/components/ui/button"
-import { Menu, X, Phone, MessageCircle } from "lucide-react"
+import { Menu, X, Phone } from "lucide-react"
+import { FaWhatsapp } from "react-icons/fa"
 import { ContactModal } from "../../Home/components/ContactModal"
 
 export function Header() {
@@ -101,7 +102,7 @@ export function Header() {
             <Phone size={20} />
           </a>
           <a href={`https://wa.me/917080404594?text=${encodeURIComponent(whatsAppText)}`} target="_blank" rel="noopener noreferrer" style={{ color: '#374151', display: 'flex', alignItems: 'center' }}>
-            <MessageCircle size={20} />
+            <FaWhatsapp size={20} />
           </a>
         </nav>
 
@@ -123,7 +124,7 @@ export function Header() {
           <a href="https://intern.apanatime.in/" target="_blank" rel="noopener noreferrer" style={{ display: 'block', padding: '0.5rem', color: '#374151', textDecoration: 'none', borderBottom: '2px solid transparent', transition: 'border-color 0.3s' }} onMouseEnter={(e) => e.target.style.borderBottomColor = '#10b981'} onMouseLeave={(e) => e.target.style.borderBottomColor = 'transparent'}>Training & Internship</a>
           <div style={{ display: 'flex', gap: '1rem', padding: '0.5rem', marginTop: '0.5rem' }}>
             <a href={`tel:${phoneNumber}`} style={{ color: '#374151' }}><Phone size={20} /></a>
-            <a href={`https://wa.me/917080404594?text=${encodeURIComponent(whatsAppText)}`} target="_blank" rel="noopener noreferrer" style={{ color: '#374151' }}><MessageCircle size={20} /></a>
+            <a href={`https://wa.me/917080404594?text=${encodeURIComponent(whatsAppText)}`} target="_blank" rel="noopener noreferrer" style={{ color: '#374151' }}><FaWhatsapp size={20} /></a>
           </div>
           <Button onClick={handleConsultation} style={{ backgroundColor: '#2563eb', color: '#ffffff', padding: '0.5rem 1.5rem', borderRadius: '0.375rem', border: 'none', cursor: 'pointer', width: '100%', marginTop: '1rem' }}>
             Contact Us
