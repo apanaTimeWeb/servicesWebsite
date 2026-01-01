@@ -4,11 +4,11 @@ import React from "react"
 import { MapPin, Star, Users, Trophy, Handshake } from "lucide-react"
 
 const impactStats = [
-  { number: "140+", label: "Projects Done", icon: Trophy },
-  { number: "140+", label: "Happy Clients", icon: Users },
+  { number: "35+", label: "Projects Done", icon: Trophy },
+  { number: "30+", label: "Happy Clients", icon: Users },
   { number: "100%", label: "Client Satisfaction", icon: Star },
-  { number: "23+", label: "Countries Served", icon: MapPin },
-  { number: "15+", label: "Company Tie-ups", icon: Handshake },
+  { number: "5+", label: "Countries Served", icon: MapPin },
+  { number: "8+", label: "Company Tie-ups", icon: Handshake },
 ]
 
 export function ExpertiseTrustSection() {

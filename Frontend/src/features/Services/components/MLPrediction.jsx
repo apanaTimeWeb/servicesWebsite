@@ -28,10 +28,10 @@ export default function MLPrediction() {
   const serviceFaqs = faqs.mlPrediction
 
   const stats = [
-    { value: '180+', label: 'Models Deployed' },
-    { value: '95%', label: 'Avg. Accuracy' },
-    { value: '120+', label: 'Happy Clients' },
-    { value: '40%', label: 'Cost Reduction' }
+    { value: '12+', label: 'Models Deployed' },
+    { value: '88%', label: 'Avg. Accuracy' },
+    { value: '15+', label: 'Happy Clients' },
+    { value: '25%', label: 'Cost Reduction' }
   ]
 
   return (

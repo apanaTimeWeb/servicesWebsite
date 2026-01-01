@@ -37,9 +37,9 @@ export default function CybersecuritySolutions() {
     ]
 
     const stats = [
-        { value: '100+', label: 'Audits Conducted' },
-        { value: '500+', label: 'Vulnerabilities Fixed' },
-        { value: '50+', label: 'Secure Apps' },
+        { value: '20+', label: 'Audits Conducted' },
+        { value: '150+', label: 'Vulnerabilities Fixed' },
+        { value: '12+', label: 'Secure Apps' },
         { value: '100%', label: 'Compliance Rate' }
     ]
 

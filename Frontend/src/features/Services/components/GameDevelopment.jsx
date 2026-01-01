@@ -28,10 +28,10 @@ export default function GameDevelopment() {
   const serviceFaqs = faqs.game
 
   const stats = [
-    { value: '100+', label: 'Games Developed' },
-    { value: '500k+', label: 'Total Downloads' },
-    { value: '80+', label: 'Happy Clients' },
-    { value: '4.5+', label: 'Avg. Rating' }
+    { value: '8+', label: 'Games Developed' },
+    { value: '25k+', label: 'Total Downloads' },
+    { value: '12+', label: 'Happy Clients' },
+    { value: '4.2+', label: 'Avg. Rating' }
   ]
 
   return (
