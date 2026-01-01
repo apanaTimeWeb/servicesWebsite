@@ -1,9 +1,10 @@
 "use client"
 
-import React from "react"
+import React, { useState } from "react"
 import { Link } from "react-router-dom"
 import { Calendar, Users, Video, MapPin, Clock, ArrowRight, Mic2, Presentation, Laptop } from "lucide-react"
 import { Button } from "@/components/ui/button"
+import { ContactModal } from "../Home/components/ContactModal"
 import powerBiWebinar from "../../assets/images/power_bi_webinar.png"
 
 const events = [
@@ -46,6 +47,11 @@ const events = [
 ]
 
 export default function OurEventsPage() {
+    const [isContactModalOpen, setIsContactModalOpen] = useState(false)
+
+    const handleContactUs = () => {
+        setIsContactModalOpen(true)
+    }
     return (
         <>
             <style>{`
@@ -230,21 +236,24 @@ export default function OurEventsPage() {
                         <p style={{ fontSize: '1.25rem', color: '#64748b', marginBottom: '2.5rem' }}>
                             Partner with ApanaTime to organize impactful seminars and workshops at your institution.
                         </p>
-                        <Link to="/contact">
-                            <Button style={{
-                                backgroundColor: '#3b82f6',
-                                color: '#ffffff',
-                                padding: '1rem 3rem',
-                                fontSize: '1.125rem',
-                                borderRadius: '0.5rem',
-                                fontWeight: '600'
-                            }}>
-                                Contact Us
-                            </Button>
-                        </Link>
+                        <Button onClick={handleContactUs} style={{
+                            backgroundColor: '#3b82f6',
+                            color: '#ffffff',
+                            padding: '1rem 3rem',
+                            fontSize: '1.125rem',
+                            borderRadius: '0.5rem',
+                            fontWeight: '600'
+                        }}>
+                            Contact Us
+                        </Button>
                     </div>
                 </section>
             </main>
+
+            <ContactModal
+                isOpen={isContactModalOpen}
+                onClose={() => setIsContactModalOpen(false)}
+            />
         </>
     )
 }
