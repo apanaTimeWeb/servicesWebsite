@@ -1,9 +1,10 @@
 "use client"
 
-import React from "react"
+import React, { useState } from "react"
 import { Link } from "react-router-dom"
 import { GraduationCap, Dumbbell, BookOpen, BarChart3, ShoppingCart, Users, Globe, CheckCircle2, TrendingUp, Code, Smartphone, Database, Brain } from "lucide-react"
 import { Button } from "@/components/ui/button"
+import { ContactModal } from "../Home/components/ContactModal"
 
 const statistics = [
     {
@@ -132,6 +133,12 @@ const products = [
 ]
 
 export default function OurProductsPage() {
+    const [isContactModalOpen, setIsContactModalOpen] = useState(false)
+
+    const handleGetStarted = () => {
+        setIsContactModalOpen(true)
+    }
+
     return (
         <>
             <style>{`
@@ -391,34 +398,38 @@ export default function OurProductsPage() {
                         <p style={{ fontSize: '1.125rem', marginBottom: '2rem', opacity: 0.95, maxWidth: '600px', margin: '0 auto 2rem' }}>
                             Let's discuss how our products can help streamline your operations
                         </p>
-                        <Link to="/contact">
-                            <Button
-                                style={{
-                                    backgroundColor: '#ffffff',
-                                    color: '#1e40af',
-                                    padding: '1rem 2.5rem',
-                                    fontSize: '1.125rem',
-                                    fontWeight: '600',
-                                    borderRadius: '0.5rem',
-                                    border: 'none',
-                                    cursor: 'pointer',
-                                    transition: 'all 0.3s'
-                                }}
-                                onMouseEnter={(e) => {
-                                    e.currentTarget.style.transform = 'scale(1.05)'
-                                    e.currentTarget.style.boxShadow = '0 10px 25px rgba(255, 255, 255, 0.3)'
-                                }}
-                                onMouseLeave={(e) => {
-                                    e.currentTarget.style.transform = 'scale(1)'
-                                    e.currentTarget.style.boxShadow = 'none'
-                                }}
-                            >
-                                Get Started Today
-                            </Button>
-                        </Link>
+                        <Button
+                            onClick={handleGetStarted}
+                            style={{
+                                backgroundColor: '#ffffff',
+                                color: '#1e40af',
+                                padding: '1rem 2.5rem',
+                                fontSize: '1.125rem',
+                                fontWeight: '600',
+                                borderRadius: '0.5rem',
+                                border: 'none',
+                                cursor: 'pointer',
+                                transition: 'all 0.3s'
+                            }}
+                            onMouseEnter={(e) => {
+                                e.currentTarget.style.transform = 'scale(1.05)'
+                                e.currentTarget.style.boxShadow = '0 10px 25px rgba(255, 255, 255, 0.3)'
+                            }}
+                            onMouseLeave={(e) => {
+                                e.currentTarget.style.transform = 'scale(1)'
+                                e.currentTarget.style.boxShadow = 'none'
+                            }}
+                        >
+                            Get Started Today
+                        </Button>
                     </div>
                 </section>
             </main>
+
+            <ContactModal
+                isOpen={isContactModalOpen}
+                onClose={() => setIsContactModalOpen(false)}
+            />
         </>
     )
 }
