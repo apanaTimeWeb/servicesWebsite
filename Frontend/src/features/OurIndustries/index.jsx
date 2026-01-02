@@ -13,7 +13,7 @@ import shivaniProfile from "../../assets/images/shivani_profile.jpg"
 import nikhilProfile from "../../assets/images/nikhil_profile.jpg"
 import balGovindProfile from "../../assets/images/balgovind_profile.jpg"
 import beautyProfile from "../../assets/images/beauty_profile.jpg"
-import abhishekProfile from "../../assets/images/abhishek.png"
+import shabazProfile from "../../assets/images/Shahbaz.png"
 import shivPujanProfile from "../../assets/images/ShivPujan.png"
 
 const teamMembers = [
@@ -375,13 +375,13 @@ const teamMembers = [
     },
     {
         id: 11,
-        name: "Abhishek Roy",
-        role: "Data Analyst",
-        image: abhishekProfile,
+        name: "MD Shahbaz",
+        role: "Software Developer",
+        image: shabazProfile,
         experience: "3+ years",
         expertise: ["Data Analysis", "Python", "SQL", "Power BI", "Excel"],
         companies: ["Apana Time"],
-        location: "India",
+        location: "Delhi, India",
         rating: 4.6,
         totalReviews: 95,
         projectsCompleted: 25,
@@ -405,8 +405,8 @@ const teamMembers = [
                 date: "1 month ago"
             }
         ],
-        linkedin: "https://www.linkedin.com/in/abhishek-roy-b98175212",
-        email: "abhishekwriter2000@gmail.com"
+        linkedin: "https://www.linkedin.com/in/mdshahbaz1510?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
+        email: "mdshahbaz@gmail.com"
     },
     {
         id: 12,
@@ -626,7 +626,12 @@ export default function OurIndustriesPage() {
                                                 <img
                                                     src={member.image}
                                                     alt={member.name}
-                                                    style={{ width: '100%', height: '100%', objectFit: 'cover' }}
+                                                    style={{ 
+                                                        width: '100%', 
+                                                        height: '100%', 
+                                                        objectFit: 'cover',
+                                                        objectPosition: member.id === 11 ? 'center top' : 'center center'
+                                                    }}
                                                 />
                                             </div>
                                         ) : (
