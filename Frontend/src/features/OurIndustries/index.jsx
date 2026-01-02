@@ -27,7 +27,7 @@ const teamMembers = [
         companies: ["Inuron", "360digitmg", "Radwag", "Apana Time"],
         location: "Uttar Pradesh, India",
         rating: 4.9,
-        totalReviews: 1252,
+        totalReviews: 1247,
         projectsCompleted: 75,
         studentsTrained: 4200,
         achievements: [
@@ -68,7 +68,7 @@ const teamMembers = [
         companies: ["Apana Time"],
         location: "Bihar, India",
         rating: 4.8,
-        totalReviews: 98,
+        totalReviews: 42,
         projectsCompleted: 20,
         studentsTrained: 500,
         achievements: [
@@ -103,7 +103,7 @@ const teamMembers = [
         companies: ["Apana Time"],
         location: "Uttar Pradesh, India",
         rating: 4.5,
-        totalReviews: 50,
+        totalReviews: 47,
         projectsCompleted: 20,
         studentsTrained: 150,
         achievements: [
@@ -138,7 +138,7 @@ const teamMembers = [
         companies: ["Apana Time"],
         location: "Hyderabad, India",
         rating: 4.7,
-        totalReviews: 82,
+        totalReviews: 83,
         projectsCompleted: 30,
         studentsTrained: 200,
         achievements: [
@@ -173,7 +173,7 @@ const teamMembers = [
         companies: ["Apana Time"],
         location: "Maharashtra, India",
         rating: 4.7,
-        totalReviews: 105,
+        totalReviews: 103,
         projectsCompleted: 25,
         studentsTrained: 300,
         achievements: [
@@ -208,7 +208,7 @@ const teamMembers = [
         companies: ["Apana Time"],
         location: "Bihar, India",
         rating: 4.6,
-        totalReviews: 50,
+        totalReviews: 49,
         projectsCompleted: 10,
         studentsTrained: 250,
         achievements: [
@@ -243,7 +243,7 @@ const teamMembers = [
         companies: ["Apana Time"],
         location: "Gurgaon, India",
         rating: 4.8,
-        totalReviews: 80,
+        totalReviews: 79,
         projectsCompleted: 30,
         studentsTrained: 200,
         achievements: [
@@ -278,7 +278,7 @@ const teamMembers = [
         companies: ["Apana Time", "Physics Wallah"],
         location: "Uttar Pradesh, India",
         rating: 4.8,
-        totalReviews: 200,
+        totalReviews: 62,
         projectsCompleted: 30,
         studentsTrained: 500,
         achievements: [
@@ -313,7 +313,7 @@ const teamMembers = [
         companies: ["Apana Time"],
         location: "Uttar Pradesh, India",
         rating: 4.7,
-        totalReviews: 150,
+        totalReviews: 146,
         projectsCompleted: 40,
         studentsTrained: 500,
         achievements: [
@@ -348,7 +348,7 @@ const teamMembers = [
         companies: ["Apana Time"],
         location: "Delhi, India",
         rating: 4.5,
-        totalReviews: 80,
+        totalReviews: 77,
         projectsCompleted: 30,
         studentsTrained: 150,
         achievements: [
@@ -383,7 +383,7 @@ const teamMembers = [
         companies: ["Apana Time"],
         location: "Delhi, India",
         rating: 4.6,
-        totalReviews: 95,
+        totalReviews: 32,
         projectsCompleted: 25,
         studentsTrained: 300,
         achievements: [
@@ -418,7 +418,7 @@ const teamMembers = [
         companies: ["Apana Time"],
         location: "Bangalore, India",
         rating: 4.7,
-        totalReviews: 120,
+        totalReviews: 117,
         projectsCompleted: 35,
         studentsTrained: 400,
         achievements: [
