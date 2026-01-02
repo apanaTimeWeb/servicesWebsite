@@ -14,6 +14,7 @@ import nikhilProfile from "../../assets/images/nikhil_profile.jpg"
 import balGovindProfile from "../../assets/images/balgovind_profile.jpg"
 import beautyProfile from "../../assets/images/beauty_profile.jpg"
 import shabazProfile from "../../assets/images/Shahbaz.png"
+import satyamSinghProfile from "../../assets/images/Satyam_Singh.png"
 import shivPujanProfile from "../../assets/images/ShivPujan.png"
 
 const teamMembers = [
@@ -189,7 +190,7 @@ const teamMembers = [
         role: "Data Analyst",
         image: arihantProfile,
         experience: "2 years",
-        expertise: ["Data Analyst", "Power BI", "Python", "SQL"],
+        expertise: ["Data Analyst", "Power BI", "Python", "SQL", "Advanced Excel"],
         companies: ["Apana Time"],
         location: "Uttar Pradesh, India",
         rating: 4.5,
@@ -271,7 +272,7 @@ const teamMembers = [
         name: "Sawera Nadeem",
         role: "Mobile App Developer",
         image: saweraProfile,
-        experience: "3+ years",
+        experience: "5+ years",
         expertise: ["React Native", "Flutter", "iOS", "Android"],
         companies: ["Apana Time"],
         location: "Hyderabad, India",
@@ -520,7 +521,7 @@ const teamMembers = [
         name: "Shivani Nagar",
         role: "Full Stack Developer",
         image: shivaniProfile,
-        experience: "3+ years",
+        experience: "6+ years",
         expertise: ["React", "Node.js", "TypeScript", "AWS"],
         companies: ["Apana Time"],
         location: "Gurgaon, India",
@@ -686,7 +687,7 @@ const teamMembers = [
         name: "Bal Govind Maurya (Samar)",
         role: "Mobile App Developer",
         image: balGovindProfile,
-        experience: "3+ years",
+        experience: "4+ years",
         expertise: ["React Native", "Flutter", "iOS", "Android"],
         companies: ["Apana Time"],
         location: "Uttar Pradesh, India",
@@ -770,7 +771,7 @@ const teamMembers = [
         role: "Data Analyst",
         image: beautyProfile,
         experience: "2 years",
-        expertise: ["Data Analyst", "Power BI", "Python", "SQL"],
+        expertise: ["Data Analyst", "Power BI", "Python", "SQL", "Advanced Excel"],
         companies: ["Apana Time"],
         location: "Delhi, India",
         rating: 4.5,
@@ -852,7 +853,7 @@ const teamMembers = [
         name: "MD Shahbaz",
         role: "Software Developer",
         image: shabazProfile,
-        experience: "3+ years",
+        experience: "2 years",
         expertise: ["Data Analysis", "Python", "SQL", "Power BI", "Excel"],
         companies: ["Apana Time"],
         location: "Delhi, India",
@@ -935,9 +936,9 @@ const teamMembers = [
         name: "Shiv Pujan Kumar",
         role: "Full Stack Software Developer",
         image: shivPujanProfile,
-        experience: "3+ years",
-        expertise: ["React", "Node.js", "JavaScript", "MongoDB", "Express", "Full Stack"],
-        companies: ["Apana Time"],
+        experience: "5+ years",
+        expertise: ["React", "Node.js", "JavaScript", "MySQL", "MongoDB", "Express", "Full Stack"],
+        companies: ["Apana Time", "GB Tech Service"],
         location: "Bangalore, India",
         rating: 4.7,
         totalReviews: 117,
@@ -1012,6 +1013,92 @@ const teamMembers = [
         ],
         linkedin: "https://www.linkedin.com/in/shiv-p-kumar-008003198/",
         email: "sahil.8228053857@gmail.com"
+    },
+    {
+        id: 13,
+        name: "Satyam Singh",
+        role: "Penetration Tester & Software Developer",
+        image: satyamSinghProfile,
+        experience: "5+ years",
+        expertise: ["React", "Node.js", "MongoDB", "Express.js", "Python", "React Native", "Django", "NestJS", "Manual Testing", "Automation Testing", "Selenium", "Penetration Testing", "Web Security", "Mobile Security", "Red Teaming", "Mobile Development"],
+        companies: ["Apana Time"],
+        location: "Bangalore, India",
+        rating: 4.8,
+        totalReviews: 191,
+        projectsCompleted: 45,
+        studentsTrained: 350,
+        achievements: [
+            "Full Stack Development Expert",
+            "MERN Stack Specialist",
+            "Cybersecurity & Penetration Testing Expert",
+            "Mobile Development Specialist",
+            "Automation Testing Expert",
+            "Mentored 350+ students"
+        ],
+        reviews: [
+            {
+                student: "Jennifer Martinez - USA",
+                rating: 5,
+                comment: "Exceptional full-stack developer with outstanding React and Node.js skills.",
+                date: "1 week ago"
+            },
+            {
+                student: "Rahul Gupta - India",
+                rating: 5,
+                comment: "Professional MERN stack development and excellent project delivery.",
+                date: "2 weeks ago"
+            },
+            {
+                student: "Sophie Müller - Germany",
+                rating: 4,
+                comment: "Great JavaScript expertise and modern web development techniques.",
+                date: "3 weeks ago"
+            },
+            {
+                student: "Ahmed Al-Rashid - Qatar",
+                rating: 5,
+                comment: "Outstanding MongoDB and Express.js development skills for our platform.",
+                date: "1 month ago"
+            },
+            {
+                student: "Emma Thompson - UK",
+                rating: 5,
+                comment: "Incredible full-stack expertise and excellent mentoring abilities.",
+                date: "4 weeks ago"
+            },
+            {
+                student: "Carlos Mendez - Colombia",
+                rating: 4,
+                comment: "Professional approach to web development and great problem-solving skills.",
+                date: "5 weeks ago"
+            },
+            {
+                student: "Yuki Nakamura - Japan",
+                rating: 5,
+                comment: "Excellent React development and modern JavaScript framework expertise.",
+                date: "6 weeks ago"
+            },
+            {
+                student: "Olga Kozlov - Russia",
+                rating: 5,
+                comment: "Top-notch full-stack developer with great communication and technical skills.",
+                date: "2 months ago"
+            },
+            {
+                student: "Daniel O'Brien - Ireland",
+                rating: 4,
+                comment: "Solid understanding of MERN stack and database management techniques.",
+                date: "3 months ago"
+            },
+            {
+                student: "Amira Hassan - Egypt",
+                rating: 5,
+                comment: "Outstanding web developer with excellent Python and JavaScript expertise.",
+                date: "4 months ago"
+            }
+        ],
+        linkedin: "https://www.linkedin.com/in/satyam-singh-hackdev/",
+        email: "apanatimesatyam@gmail.com"
     }
 ]
 
@@ -1200,7 +1287,7 @@ export default function OurIndustriesPage() {
                                                         width: '100%', 
                                                         height: '100%', 
                                                         objectFit: 'cover',
-                                                        objectPosition: member.id === 11 ? 'center top' : 'center center'
+                                                        objectPosition: member.id === 11 ? 'center top' : member.id === 13 ? 'center top' : 'center center'
                                                     }}
                                                 />
                                             </div>
