@@ -37,10 +37,10 @@ export default function MobileDevelopment() {
   ]
 
   const stats = [
-    { value: '200+', label: 'Apps Delivered' },
-    { value: '15+', label: 'Live on Stores' },
-    { value: '35+', label: 'Clients Served' },
-    { value: '50k+', label: 'Avg. Downloads' }
+    { value: '15+', label: 'Apps Delivered' },
+    { value: '8+', label: 'Live on Stores' },
+    { value: '20+', label: 'Clients Served' },
+    { value: '5k+', label: 'Avg. Downloads' }
   ]
 
   return (

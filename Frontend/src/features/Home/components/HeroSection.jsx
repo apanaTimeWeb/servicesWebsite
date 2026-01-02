@@ -14,7 +14,7 @@ export function HeroSection() {
 
   return (
     <>
-      <section id="home" style={{ paddingTop: '6rem', paddingBottom: '2rem', backgroundColor: '#e5e7eb', minHeight: '100vh' }}>
+      <section id="home" style={{ paddingTop: '6rem', paddingBottom: '2rem', backgroundColor: '#e5e7eb' }}>
         <div style={{ maxWidth: '1400px', margin: '0 auto', padding: '0 2rem', height: '100%' }}>
           <div
             className="hero-grid"
@@ -23,7 +23,7 @@ export function HeroSection() {
               gridTemplateColumns: '1fr 1fr',
               gap: '2rem',
               alignItems: 'center',
-              minHeight: 'calc(100vh - 8rem)'
+              minHeight: 'auto'
             }}
           >
             <div>
@@ -42,7 +42,7 @@ export function HeroSection() {
                 color: '#4c1d95',
                 marginBottom: '1rem',
                 lineHeight: '0.9',
-                minHeight: '10rem'
+                minHeight: 'auto'
               }}>
                 <AnimatedText text="ApanaTime Tech Solutions" delay={150} />
               </h1>
@@ -107,10 +107,16 @@ export function HeroSection() {
 
       <style>{`
         @media (max-width: 1024px) {
+          #home {
+            padding-top: 4rem !important;
+            padding-bottom: 1rem !important;
+          }
+          
           .hero-grid {
             grid-template-columns: 1fr !important;
-            gap: 3rem !important;
+            gap: 2rem !important;
             text-align: center;
+            min-height: auto !important;
           }
           
           .hero-title {
@@ -132,8 +138,17 @@ export function HeroSection() {
         }
         
         @media (max-width: 768px) {
+          #home {
+            padding-top: 3rem !important;
+          }
+          
+          .hero-grid {
+            gap: 1.5rem !important;
+          }
+          
           .hero-title {
             font-size: 3rem !important;
+            margin-bottom: 0.75rem !important;
           }
           
           .hero-subtitle {
@@ -151,8 +166,17 @@ export function HeroSection() {
         }
         
         @media (max-width: 480px) {
+          #home {
+            padding-top: 2.5rem !important;
+          }
+          
+          .hero-grid {
+            gap: 1rem !important;
+          }
+          
           .hero-title {
             font-size: 2.5rem !important;
+            margin-bottom: 0.5rem !important;
           }
           
           .hero-subtitle {

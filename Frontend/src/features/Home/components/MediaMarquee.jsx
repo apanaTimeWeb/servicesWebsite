@@ -1,6 +1,6 @@
 "use client"
 
-import { useEffect, useRef } from 'react'
+import { useEffect, useRef, useState } from 'react'
 import { Link } from 'react-router-dom'
 
 const items = [
@@ -40,38 +40,87 @@ const items = [
 
 export function MediaMarquee() {
   const trackRef = useRef(null)
+  const [position, setPosition] = useState(0)
+  const animationRef = useRef(null)
+  const [isAutoPlaying, setIsAutoPlaying] = useState(true)
+  const [isDragging, setIsDragging] = useState(false)
+  const [startX, setStartX] = useState(0)
+  const [startPosition, setStartPosition] = useState(0)
+
+  const scroll = (direction) => {
+    setIsAutoPlaying(false)
+    if (animationRef.current) {
+      cancelAnimationFrame(animationRef.current)
+    }
+    const cardWidth = 340
+    setPosition(prev => {
+      const newPos = prev + (direction === 'left' ? -cardWidth : cardWidth)
+      const resetPoint = cardWidth * items.length
+      if (newPos < 0) return resetPoint + newPos
+      if (newPos >= resetPoint) return newPos - resetPoint
+      return newPos
+    })
+  }
+
+  const handleDragStart = (clientX) => {
+    setIsAutoPlaying(false)
+    if (animationRef.current) {
+      cancelAnimationFrame(animationRef.current)
+    }
+    setIsDragging(true)
+    setStartX(clientX)
+    setStartPosition(position)
+  }
+
+  const handleDragMove = (clientX) => {
+    if (!isDragging) return
+    const diff = startX - clientX
+    const newPos = startPosition + diff
+    const cardWidth = 340
+    const resetPoint = cardWidth * items.length
+    
+    if (newPos < 0) {
+      setPosition(resetPoint + (newPos % resetPoint))
+    } else if (newPos >= resetPoint) {
+      setPosition(newPos % resetPoint)
+    } else {
+      setPosition(newPos)
+    }
+  }
+
+  const handleDragEnd = () => {
+    setIsDragging(false)
+  }
 
   useEffect(() => {
     const track = trackRef.current
-    if (!track) return
+    if (!track || !isAutoPlaying) return
 
-    let position = 0
-    const speed = 1 // pixels per frame
+    const speed = 1
     let animationId
 
     const animate = () => {
-      position += speed
-
-      // Reset when first set of cards is fully scrolled
-      const cardWidth = 340 // 300px + 40px gap
-      const resetPoint = cardWidth * items.length
-
-      if (position >= resetPoint) {
-        position = 0
-      }
-
-      track.style.transform = `translateX(-${position}px)`
+      setPosition(prev => {
+        const cardWidth = 340
+        const resetPoint = cardWidth * items.length
+        const newPos = prev + speed
+        return newPos >= resetPoint ? 0 : newPos
+      })
       animationId = requestAnimationFrame(animate)
     }
 
     animationId = requestAnimationFrame(animate)
+    animationRef.current = animationId
 
     const handleMouseEnter = () => {
       cancelAnimationFrame(animationId)
     }
 
     const handleMouseLeave = () => {
-      animationId = requestAnimationFrame(animate)
+      if (isAutoPlaying) {
+        animationId = requestAnimationFrame(animate)
+        animationRef.current = animationId
+      }
     }
 
     track.addEventListener('mouseenter', handleMouseEnter)
@@ -82,7 +131,13 @@ export function MediaMarquee() {
       track.removeEventListener('mouseenter', handleMouseEnter)
       track.removeEventListener('mouseleave', handleMouseLeave)
     }
-  }, [])
+  }, [isAutoPlaying])
+
+  useEffect(() => {
+    if (trackRef.current) {
+      trackRef.current.style.transform = `translateX(-${position}px)`
+    }
+  }, [position])
 
   // Triple the items for seamless infinite scroll
   const infiniteItems = [...items, ...items, ...items]
@@ -153,14 +208,94 @@ export function MediaMarquee() {
         width: '100%',
         overflow: 'hidden'
       }}>
+        {/* Navigation Arrows */}
+        <button
+          onClick={() => scroll('left')}
+          style={{
+            position: 'absolute',
+            left: '1rem',
+            top: '50%',
+            transform: 'translateY(-50%)',
+            zIndex: 10,
+            width: '3rem',
+            height: '3rem',
+            borderRadius: '50%',
+            background: 'rgba(255, 255, 255, 0.95)',
+            border: '1px solid rgba(0, 0, 0, 0.1)',
+            boxShadow: '0 4px 12px rgba(0, 0, 0, 0.15)',
+            cursor: 'pointer',
+            display: 'flex',
+            alignItems: 'center',
+            justifyContent: 'center',
+            transition: 'all 0.3s ease',
+            fontSize: '1.2rem',
+            color: '#667eea'
+          }}
+          onMouseEnter={(e) => {
+            e.currentTarget.style.background = '#667eea'
+            e.currentTarget.style.color = '#ffffff'
+            e.currentTarget.style.transform = 'translateY(-50%) scale(1.1)'
+          }}
+          onMouseLeave={(e) => {
+            e.currentTarget.style.background = 'rgba(255, 255, 255, 0.95)'
+            e.currentTarget.style.color = '#667eea'
+            e.currentTarget.style.transform = 'translateY(-50%) scale(1)'
+          }}
+        >
+          ←
+        </button>
+        <button
+          onClick={() => scroll('right')}
+          style={{
+            position: 'absolute',
+            right: '1rem',
+            top: '50%',
+            transform: 'translateY(-50%)',
+            zIndex: 10,
+            width: '3rem',
+            height: '3rem',
+            borderRadius: '50%',
+            background: 'rgba(255, 255, 255, 0.95)',
+            border: '1px solid rgba(0, 0, 0, 0.1)',
+            boxShadow: '0 4px 12px rgba(0, 0, 0, 0.15)',
+            cursor: 'pointer',
+            display: 'flex',
+            alignItems: 'center',
+            justifyContent: 'center',
+            transition: 'all 0.3s ease',
+            fontSize: '1.2rem',
+            color: '#667eea'
+          }}
+          onMouseEnter={(e) => {
+            e.currentTarget.style.background = '#667eea'
+            e.currentTarget.style.color = '#ffffff'
+            e.currentTarget.style.transform = 'translateY(-50%) scale(1.1)'
+          }}
+          onMouseLeave={(e) => {
+            e.currentTarget.style.background = 'rgba(255, 255, 255, 0.95)'
+            e.currentTarget.style.color = '#667eea'
+            e.currentTarget.style.transform = 'translateY(-50%) scale(1)'
+          }}
+        >
+          →
+        </button>
         <div
           ref={trackRef}
           style={{
             display: 'flex',
             gap: '2.5rem',
             paddingLeft: '2rem',
-            willChange: 'transform'
+            willChange: 'transform',
+            cursor: isDragging ? 'grabbing' : 'grab',
+            userSelect: 'none'
           }}
+          onMouseDown={(e) => handleDragStart(e.clientX)}
+          onMouseMove={(e) => handleDragMove(e.clientX)}
+          onMouseUp={handleDragEnd}
+          onMouseLeave={handleDragEnd}
+          onTouchStart={(e) => handleDragStart(e.touches[0].clientX)}
+          onTouchMove={(e) => handleDragMove(e.touches[0].clientX)}
+          onTouchEnd={handleDragEnd}
         >
           {infiniteItems.map((item, i) => (
             <Link

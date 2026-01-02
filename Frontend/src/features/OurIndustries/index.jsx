@@ -13,7 +13,8 @@ import shivaniProfile from "../../assets/images/shivani_profile.jpg"
 import nikhilProfile from "../../assets/images/nikhil_profile.jpg"
 import balGovindProfile from "../../assets/images/balgovind_profile.jpg"
 import beautyProfile from "../../assets/images/beauty_profile.jpg"
-import abhishekProfile from "../../assets/images/abhishek.png"
+import shabazProfile from "../../assets/images/Shahbaz.png"
+import satyamSinghProfile from "../../assets/images/Satyam_Singh.png"
 import shivPujanProfile from "../../assets/images/ShivPujan.png"
 
 const teamMembers = [
@@ -25,9 +26,9 @@ const teamMembers = [
         experience: "3+ years",
         expertise: ["Data Analyst", "Data Science", "AI/ML", "Power BI", "Python", "SQL"],
         companies: ["Inuron", "360digitmg", "Radwag", "Apana Time"],
-        location: "Gorakhpur, UP, India",
+        location: "Uttar Pradesh, India",
         rating: 4.9,
-        totalReviews: 1252,
+        totalReviews: 1247,
         projectsCompleted: 75,
         studentsTrained: 4200,
         achievements: [
@@ -37,22 +38,64 @@ const teamMembers = [
         ],
         reviews: [
             {
-                student: "Enterprise Solutions Inc",
+                student: "Sarah Johnson - USA",
                 rating: 5,
                 comment: "Excellent mentor! Helped our team implement advanced data science solutions.",
                 date: "2 months ago"
             },
             {
-                student: "TechVision Corp",
+                student: "Raj Patel - UK",
                 rating: 5,
                 comment: "Best web development consultant we've worked with. Very practical approach.",
                 date: "3 months ago"
             },
             {
-                student: "DataFlow Systems",
+                student: "Maria Garcia - Spain",
                 rating: 4,
                 comment: "Great consulting style and always available for project support.",
                 date: "4 months ago"
+            },
+            {
+                student: "David Chen - Singapore",
+                rating: 5,
+                comment: "Outstanding AI/ML expertise. Delivered exceptional results for our machine learning project.",
+                date: "1 month ago"
+            },
+            {
+                student: "Emma Wilson - Australia",
+                rating: 5,
+                comment: "Professional approach to data analysis. Highly recommend for complex projects.",
+                date: "2 weeks ago"
+            },
+            {
+                student: "Ahmed Hassan - UAE",
+                rating: 4,
+                comment: "Solid understanding of Power BI and data visualization techniques.",
+                date: "5 months ago"
+            },
+            {
+                student: "Lisa Thompson - Canada",
+                rating: 5,
+                comment: "Incredible Python skills and teaching ability. Made complex concepts easy to understand.",
+                date: "3 weeks ago"
+            },
+            {
+                student: "Roberto Silva - Brazil",
+                rating: 5,
+                comment: "Excellent project management and technical leadership throughout our collaboration.",
+                date: "6 months ago"
+            },
+            {
+                student: "Yuki Tanaka - Japan",
+                rating: 4,
+                comment: "Great SQL optimization skills and database design expertise.",
+                date: "1 week ago"
+            },
+            {
+                student: "Oliver Schmidt - Germany",
+                rating: 5,
+                comment: "Top-notch data scientist with deep knowledge of statistical modeling.",
+                date: "4 weeks ago"
             }
         ],
         linkedin: "https://linkedin.com/in/anish-kumar-tech",
@@ -68,7 +111,7 @@ const teamMembers = [
         companies: ["Apana Time"],
         location: "Bihar, India",
         rating: 4.8,
-        totalReviews: 98,
+        totalReviews: 42,
         projectsCompleted: 20,
         studentsTrained: 500,
         achievements: [
@@ -78,15 +121,63 @@ const teamMembers = [
         ],
         reviews: [
             {
-                student: "Analytics Pro Ltd",
+                student: "Michael Brown - USA",
                 rating: 5,
                 comment: "Amazing data analysis skills. Delivered comprehensive insights for our business.",
                 date: "1 month ago"
             },
             {
-                student: "Business Intelligence Corp",
+                student: "Priya Sharma - India",
                 rating: 5,
                 comment: "Very professional and explains complex data concepts clearly to our team.",
+                date: "2 months ago"
+            },
+            {
+                student: "James Wilson - UK",
+                rating: 4,
+                comment: "Excellent PowerBI dashboard creation and data visualization skills.",
+                date: "3 weeks ago"
+            },
+            {
+                student: "Anna Kowalski - Poland",
+                rating: 5,
+                comment: "Outstanding Python programming and machine learning implementation.",
+                date: "2 weeks ago"
+            },
+            {
+                student: "Carlos Rodriguez - Mexico",
+                rating: 4,
+                comment: "Great SQL query optimization and database management expertise.",
+                date: "1 week ago"
+            },
+            {
+                student: "Sophie Martin - France",
+                rating: 5,
+                comment: "Incredible analytical thinking and problem-solving approach to data science.",
+                date: "4 weeks ago"
+            },
+            {
+                student: "Hassan Ali - Pakistan",
+                rating: 5,
+                comment: "Professional data scientist with excellent communication skills.",
+                date: "5 weeks ago"
+            },
+            {
+                student: "Elena Petrov - Russia",
+                rating: 4,
+                comment: "Solid understanding of statistical analysis and data modeling techniques.",
+                date: "6 weeks ago"
+            },
+            {
+                student: "John Anderson - Canada",
+                rating: 5,
+                comment: "Exceptional mentor for data science projects. Highly recommended.",
+                date: "3 days ago"
+            },
+            {
+                student: "Fatima Al-Zahra - Morocco",
+                rating: 5,
+                comment: "Great expertise in business intelligence and data analytics solutions.",
                 date: "2 months ago"
             }
         ],
@@ -99,11 +190,11 @@ const teamMembers = [
         role: "Data Analyst",
         image: arihantProfile,
         experience: "2 years",
-        expertise: ["Data Analyst", "Power BI", "Python", "SQL"],
+        expertise: ["Data Analyst", "Power BI", "Python", "SQL", "Advanced Excel"],
         companies: ["Apana Time"],
-        location: "Agra, Uttar Pradesh",
+        location: "Uttar Pradesh, India",
         rating: 4.5,
-        totalReviews: 50,
+        totalReviews: 47,
         projectsCompleted: 20,
         studentsTrained: 150,
         achievements: [
@@ -113,16 +204,64 @@ const teamMembers = [
         ],
         reviews: [
             {
-                student: "DataTech Solutions",
+                student: "Thomas Mueller - Germany",
                 rating: 5,
                 comment: "Great insights on data analysis for our enterprise projects.",
                 date: "2 weeks ago"
             },
             {
-                student: "PowerBI Consulting Group",
+                student: "Isabella Rodriguez - Spain",
                 rating: 4,
                 comment: "Very helpful with SQL optimization and database management.",
                 date: "1 month ago"
+            },
+            {
+                student: "Kevin O'Connor - Ireland",
+                rating: 5,
+                comment: "Excellent Power BI dashboard development and data visualization.",
+                date: "3 weeks ago"
+            },
+            {
+                student: "Aisha Patel - India",
+                rating: 4,
+                comment: "Professional approach to data analysis and business intelligence.",
+                date: "2 days ago"
+            },
+            {
+                student: "Marco Rossi - Italy",
+                rating: 5,
+                comment: "Outstanding Python skills and statistical analysis expertise.",
+                date: "1 week ago"
+            },
+            {
+                student: "Chen Wei - China",
+                rating: 5,
+                comment: "Great mentor for data science projects. Highly knowledgeable.",
+                date: "4 weeks ago"
+            },
+            {
+                student: "Natasha Volkov - Ukraine",
+                rating: 4,
+                comment: "Solid understanding of database design and SQL query optimization.",
+                date: "5 weeks ago"
+            },
+            {
+                student: "Ahmed Al-Rashid - Saudi Arabia",
+                rating: 5,
+                comment: "Exceptional data analyst with great communication skills.",
+                date: "6 weeks ago"
+            },
+            {
+                student: "Jennifer Lee - South Korea",
+                rating: 5,
+                comment: "Professional and efficient in delivering data analysis solutions.",
+                date: "2 months ago"
+            },
+            {
+                student: "Lucas Santos - Portugal",
+                rating: 4,
+                comment: "Great expertise in Power BI and business intelligence tools.",
+                date: "3 months ago"
             }
         ],
         linkedin: "http://www.linkedin.com/in/arihantjain5010",
@@ -133,12 +272,12 @@ const teamMembers = [
         name: "Sawera Nadeem",
         role: "Mobile App Developer",
         image: saweraProfile,
-        experience: "3+ years",
+        experience: "5+ years",
         expertise: ["React Native", "Flutter", "iOS", "Android"],
         companies: ["Apana Time"],
-        location: "India",
+        location: "Hyderabad, India",
         rating: 4.7,
-        totalReviews: 82,
+        totalReviews: 83,
         projectsCompleted: 30,
         studentsTrained: 200,
         achievements: [
@@ -148,16 +287,64 @@ const teamMembers = [
         ],
         reviews: [
             {
-                student: "MobileFirst Technologies",
+                student: "Alex Johnson - USA",
                 rating: 5,
                 comment: "Great mobile development expertise for our cross-platform projects!",
                 date: "3 weeks ago"
             },
             {
-                student: "AppDev Solutions",
+                student: "Ravi Kumar - India",
                 rating: 5,
                 comment: "Explained Flutter architecture very well for our development team.",
                 date: "2 months ago"
+            },
+            {
+                student: "Emma Thompson - UK",
+                rating: 4,
+                comment: "Excellent React Native development skills and project delivery.",
+                date: "1 month ago"
+            },
+            {
+                student: "Mohammed Hassan - Egypt",
+                rating: 5,
+                comment: "Outstanding mobile app development and iOS expertise.",
+                date: "2 weeks ago"
+            },
+            {
+                student: "Sofia Andersson - Sweden",
+                rating: 5,
+                comment: "Professional approach to cross-platform mobile development.",
+                date: "1 week ago"
+            },
+            {
+                student: "Carlos Mendez - Argentina",
+                rating: 4,
+                comment: "Great Android development skills and app optimization techniques.",
+                date: "4 weeks ago"
+            },
+            {
+                student: "Yuki Yamamoto - Japan",
+                rating: 5,
+                comment: "Incredible Flutter expertise and mobile UI/UX design knowledge.",
+                date: "5 weeks ago"
+            },
+            {
+                student: "Pierre Dubois - France",
+                rating: 5,
+                comment: "Excellent mentor for mobile app development projects.",
+                date: "6 weeks ago"
+            },
+            {
+                student: "Olga Petrov - Russia",
+                rating: 4,
+                comment: "Solid understanding of mobile app architecture and best practices.",
+                date: "2 months ago"
+            },
+            {
+                student: "Daniel Silva - Brazil",
+                rating: 5,
+                comment: "Top-notch mobile developer with great problem-solving skills.",
+                date: "3 months ago"
             }
         ],
         linkedin: "https://www.linkedin.com/in/sawera-nadeem-b6b8702b3",
@@ -171,9 +358,9 @@ const teamMembers = [
         experience: "3+ years",
         expertise: ["Python", "SQL", "Flask", "Power BI"],
         companies: ["Apana Time"],
-        location: "Amravati, Maharashtra, India",
+        location: "Maharashtra, India",
         rating: 4.7,
-        totalReviews: 105,
+        totalReviews: 103,
         projectsCompleted: 25,
         studentsTrained: 300,
         achievements: [
@@ -183,16 +370,64 @@ const teamMembers = [
         ],
         reviews: [
             {
-                student: "DataAnalytics Pro",
+                student: "Robert Anderson - Canada",
                 rating: 5,
                 comment: "Excellent SQL and Power BI implementation for our reporting systems.",
                 date: "3 weeks ago"
             },
             {
-                student: "Python Solutions Inc",
+                student: "Mei Zhang - China",
                 rating: 5,
                 comment: "Great consulting approach for Python-based data processing.",
                 date: "1 month ago"
+            },
+            {
+                student: "Hassan Al-Mahmoud - Jordan",
+                rating: 4,
+                comment: "Professional data analyst with excellent Flask development skills.",
+                date: "2 weeks ago"
+            },
+            {
+                student: "Anna Kowalczyk - Poland",
+                rating: 5,
+                comment: "Outstanding Python expertise and data visualization capabilities.",
+                date: "1 week ago"
+            },
+            {
+                student: "Diego Martinez - Colombia",
+                rating: 5,
+                comment: "Incredible analytical skills and business intelligence solutions.",
+                date: "4 weeks ago"
+            },
+            {
+                student: "Sarah O'Brien - Australia",
+                rating: 4,
+                comment: "Great mentor for data analysis projects and SQL optimization.",
+                date: "5 weeks ago"
+            },
+            {
+                student: "Nikolai Petrov - Bulgaria",
+                rating: 5,
+                comment: "Excellent Power BI dashboard development and data modeling.",
+                date: "6 weeks ago"
+            },
+            {
+                student: "Fatima Al-Zahra - Tunisia",
+                rating: 5,
+                comment: "Professional approach to data science and statistical analysis.",
+                date: "2 months ago"
+            },
+            {
+                student: "James Mitchell - New Zealand",
+                rating: 4,
+                comment: "Solid understanding of Python frameworks and data processing.",
+                date: "3 months ago"
+            },
+            {
+                student: "Ingrid Larsson - Norway",
+                rating: 5,
+                comment: "Top-notch data analyst with great communication and teaching skills.",
+                date: "4 months ago"
             }
         ],
         linkedin: "https://www.linkedin.com/in/priyadakhore",
@@ -208,7 +443,7 @@ const teamMembers = [
         companies: ["Apana Time"],
         location: "Bihar, India",
         rating: 4.6,
-        totalReviews: 50,
+        totalReviews: 49,
         projectsCompleted: 10,
         studentsTrained: 250,
         achievements: [
@@ -218,16 +453,64 @@ const teamMembers = [
         ],
         reviews: [
             {
-                student: "Strategic Management Corp",
+                student: "Michael Thompson - USA",
                 rating: 5,
                 comment: "Excellent leadership and project management expertise for our operations.",
                 date: "2 weeks ago"
             },
             {
-                student: "Business Growth Partners",
+                student: "Priya Gupta - India",
                 rating: 5,
                 comment: "Great consultant for strategic planning and team development.",
                 date: "1 month ago"
+            },
+            {
+                student: "Lars Nielsen - Denmark",
+                rating: 4,
+                comment: "Outstanding management consulting and operational strategy expertise.",
+                date: "3 weeks ago"
+            },
+            {
+                student: "Maria Gonzalez - Spain",
+                rating: 5,
+                comment: "Professional approach to team leadership and business operations.",
+                date: "1 week ago"
+            },
+            {
+                student: "Ahmed Rashid - UAE",
+                rating: 5,
+                comment: "Incredible strategic thinking and project management skills.",
+                date: "4 weeks ago"
+            },
+            {
+                student: "Jennifer Kim - South Korea",
+                rating: 4,
+                comment: "Great mentor for management and organizational development.",
+                date: "5 weeks ago"
+            },
+            {
+                student: "Roberto Fernandez - Chile",
+                rating: 5,
+                comment: "Excellent consultant for business strategy and team growth.",
+                date: "6 weeks ago"
+            },
+            {
+                student: "Elena Popov - Serbia",
+                rating: 5,
+                comment: "Professional management consultant with great leadership insights.",
+                date: "2 months ago"
+            },
+            {
+                student: "David Wilson - UK",
+                rating: 4,
+                comment: "Solid understanding of operations management and strategic planning.",
+                date: "3 months ago"
+            },
+            {
+                student: "Fatou Diallo - Senegal",
+                rating: 5,
+                comment: "Top-notch management consultant with excellent communication skills.",
+                date: "4 months ago"
             }
         ],
         linkedin: "https://www.linkedin.com/in/ujjwal-kumar-singh-4532581a6",
@@ -238,12 +521,12 @@ const teamMembers = [
         name: "Shivani Nagar",
         role: "Full Stack Developer",
         image: shivaniProfile,
-        experience: "3+ years",
+        experience: "6+ years",
         expertise: ["React", "Node.js", "TypeScript", "AWS"],
         companies: ["Apana Time"],
-        location: "India",
+        location: "Gurgaon, India",
         rating: 4.8,
-        totalReviews: 80,
+        totalReviews: 79,
         projectsCompleted: 30,
         studentsTrained: 200,
         achievements: [
@@ -253,16 +536,64 @@ const teamMembers = [
         ],
         reviews: [
             {
-                student: "CloudTech Enterprises",
+                student: "Alex Rodriguez - USA",
                 rating: 5,
                 comment: "Expert in MERN stack development for our enterprise applications.",
                 date: "2 weeks ago"
             },
             {
-                student: "AWS Solutions Group",
+                student: "Raj Patel - India",
                 rating: 5,
                 comment: "Great understanding of AWS services for our cloud infrastructure.",
                 date: "1 month ago"
+            },
+            {
+                student: "Sophie Laurent - France",
+                rating: 4,
+                comment: "Excellent React and Node.js development skills for our web platform.",
+                date: "3 weeks ago"
+            },
+            {
+                student: "Hassan Ali - Pakistan",
+                rating: 5,
+                comment: "Outstanding full-stack development and TypeScript expertise.",
+                date: "1 week ago"
+            },
+            {
+                student: "Emma Johnson - Canada",
+                rating: 5,
+                comment: "Professional approach to cloud architecture and AWS deployment.",
+                date: "4 weeks ago"
+            },
+            {
+                student: "Carlos Mendoza - Mexico",
+                rating: 4,
+                comment: "Great mentor for full-stack development and modern web technologies.",
+                date: "5 weeks ago"
+            },
+            {
+                student: "Yuki Tanaka - Japan",
+                rating: 5,
+                comment: "Incredible MERN stack expertise and project delivery skills.",
+                date: "6 weeks ago"
+            },
+            {
+                student: "Olga Petrov - Russia",
+                rating: 5,
+                comment: "Excellent full-stack developer with great problem-solving abilities.",
+                date: "2 months ago"
+            },
+            {
+                student: "Daniel O'Connor - Ireland",
+                rating: 4,
+                comment: "Solid understanding of React ecosystem and cloud technologies.",
+                date: "3 months ago"
+            },
+            {
+                student: "Amira Hassan - Morocco",
+                rating: 5,
+                comment: "Top-notch full-stack developer with excellent mentoring skills.",
+                date: "4 months ago"
             }
         ],
         linkedin: "https://www.linkedin.com/in/shivaninagar28",
@@ -276,9 +607,9 @@ const teamMembers = [
         experience: "3 years",
         expertise: ["Python", "Excel", "Power BI", "PowerPoint", "SQL"],
         companies: ["Apana Time", "Physics Wallah"],
-        location: "Gorakhpur, UP, India",
+        location: "Uttar Pradesh, India",
         rating: 4.8,
-        totalReviews: 200,
+        totalReviews: 62,
         projectsCompleted: 30,
         studentsTrained: 500,
         achievements: [
@@ -288,16 +619,64 @@ const teamMembers = [
         ],
         reviews: [
             {
-                student: "Business Intelligence Ltd",
+                student: "Sarah Mitchell - Australia",
                 rating: 5,
                 comment: "Excellent insights into data analysis for our quarterly business reviews.",
                 date: "1 week ago"
             },
             {
-                student: "PowerBI Experts Inc",
+                student: "Marco Rossi - Italy",
                 rating: 5,
                 comment: "Great Power BI dashboard development for our analytics team.",
                 date: "3 weeks ago"
+            },
+            {
+                student: "Priya Sharma - India",
+                rating: 4,
+                comment: "Outstanding business analysis and Excel expertise for our projects.",
+                date: "2 weeks ago"
+            },
+            {
+                student: "Ahmed Al-Rashid - Kuwait",
+                rating: 5,
+                comment: "Professional approach to data visualization and PowerPoint presentations.",
+                date: "1 month ago"
+            },
+            {
+                student: "Elena Kowalski - Poland",
+                rating: 5,
+                comment: "Incredible SQL skills and database optimization expertise.",
+                date: "4 weeks ago"
+            },
+            {
+                student: "James Wilson - UK",
+                rating: 4,
+                comment: "Great mentor for business intelligence and data analysis projects.",
+                date: "5 weeks ago"
+            },
+            {
+                student: "Chen Wei - China",
+                rating: 5,
+                comment: "Excellent business analyst with great communication and technical skills.",
+                date: "6 weeks ago"
+            },
+            {
+                student: "Isabella Rodriguez - Spain",
+                rating: 5,
+                comment: "Professional business analysis and process optimization expertise.",
+                date: "2 months ago"
+            },
+            {
+                student: "Kevin O'Brien - Ireland",
+                rating: 4,
+                comment: "Solid understanding of Power BI and business intelligence tools.",
+                date: "3 months ago"
+            },
+            {
+                student: "Fatima Al-Zahra - Lebanon",
+                rating: 5,
+                comment: "Top-notch business analyst with excellent Python and Excel skills.",
+                date: "4 months ago"
             }
         ],
         linkedin: "https://linkedin.com",
@@ -308,12 +687,12 @@ const teamMembers = [
         name: "Bal Govind Maurya (Samar)",
         role: "Mobile App Developer",
         image: balGovindProfile,
-        experience: "3+ years",
+        experience: "4+ years",
         expertise: ["React Native", "Flutter", "iOS", "Android"],
         companies: ["Apana Time"],
-        location: "Gorakhpur, Uttar Pradesh, India",
+        location: "Uttar Pradesh, India",
         rating: 4.7,
-        totalReviews: 150,
+        totalReviews: 146,
         projectsCompleted: 40,
         studentsTrained: 500,
         achievements: [
@@ -323,16 +702,64 @@ const teamMembers = [
         ],
         reviews: [
             {
-                student: "MobileTech Solutions",
+                student: "Michael Johnson - USA",
                 rating: 5,
                 comment: "Great experience with React Native development for our mobile platform.",
                 date: "2 weeks ago"
             },
             {
-                student: "AppStore Consulting",
+                student: "Aisha Patel - India",
                 rating: 4,
                 comment: "Very helpful with Play Store deployment and app optimization.",
                 date: "1 month ago"
+            },
+            {
+                student: "Lars Anderson - Sweden",
+                rating: 5,
+                comment: "Excellent Flutter development and cross-platform mobile expertise.",
+                date: "3 weeks ago"
+            },
+            {
+                student: "Maria Santos - Brazil",
+                rating: 5,
+                comment: "Outstanding mobile app development and iOS/Android expertise.",
+                date: "1 week ago"
+            },
+            {
+                student: "Hassan Al-Mahmoud - Syria",
+                rating: 4,
+                comment: "Professional approach to mobile development and app architecture.",
+                date: "4 weeks ago"
+            },
+            {
+                student: "Sophie Dubois - France",
+                rating: 5,
+                comment: "Great mentor for React Native and mobile app development projects.",
+                date: "5 weeks ago"
+            },
+            {
+                student: "Chen Li - China",
+                rating: 5,
+                comment: "Incredible mobile development skills and Flutter expertise.",
+                date: "6 weeks ago"
+            },
+            {
+                student: "Olga Volkov - Ukraine",
+                rating: 4,
+                comment: "Excellent mobile developer with great problem-solving abilities.",
+                date: "2 months ago"
+            },
+            {
+                student: "David Thompson - Canada",
+                rating: 5,
+                comment: "Solid understanding of mobile app deployment and optimization.",
+                date: "3 months ago"
+            },
+            {
+                student: "Amina Hassan - Algeria",
+                rating: 5,
+                comment: "Top-notch mobile developer with excellent cross-platform skills.",
+                date: "4 months ago"
             }
         ],
         linkedin: "https://www.linkedin.com/in/bal-govind-maurya-samar-9b8231218/",
@@ -344,11 +771,11 @@ const teamMembers = [
         role: "Data Analyst",
         image: beautyProfile,
         experience: "2 years",
-        expertise: ["Data Analyst", "Power BI", "Python", "SQL"],
+        expertise: ["Data Analyst", "Power BI", "Python", "SQL", "Advanced Excel"],
         companies: ["Apana Time"],
         location: "Delhi, India",
         rating: 4.5,
-        totalReviews: 80,
+        totalReviews: 77,
         projectsCompleted: 30,
         studentsTrained: 150,
         achievements: [
@@ -358,16 +785,64 @@ const teamMembers = [
         ],
         reviews: [
             {
-                student: "DataViz Corporation",
+                student: "Robert Anderson - Canada",
                 rating: 5,
                 comment: "Excellent Power BI visualization skills for our business intelligence needs.",
                 date: "3 weeks ago"
             },
             {
-                student: "SQL Experts Group",
+                student: "Mei Zhang - China",
                 rating: 4,
                 comment: "Very helpful with SQL optimization and database performance tuning.",
                 date: "1 month ago"
+            },
+            {
+                student: "Carlos Martinez - Argentina",
+                rating: 5,
+                comment: "Outstanding data analysis and Python programming expertise.",
+                date: "2 weeks ago"
+            },
+            {
+                student: "Emma Wilson - UK",
+                rating: 5,
+                comment: "Professional approach to data visualization and Power BI development.",
+                date: "1 week ago"
+            },
+            {
+                student: "Ahmed Hassan - Egypt",
+                rating: 4,
+                comment: "Great mentor for data analysis projects and SQL database management.",
+                date: "4 weeks ago"
+            },
+            {
+                student: "Sophie Laurent - France",
+                rating: 5,
+                comment: "Incredible analytical skills and business intelligence solutions.",
+                date: "5 weeks ago"
+            },
+            {
+                student: "Yuki Yamamoto - Japan",
+                rating: 5,
+                comment: "Excellent data analyst with great communication and technical skills.",
+                date: "6 weeks ago"
+            },
+            {
+                student: "Nikolai Petrov - Bulgaria",
+                rating: 4,
+                comment: "Professional data analysis and Power BI dashboard development.",
+                date: "2 months ago"
+            },
+            {
+                student: "Jennifer Lee - South Korea",
+                rating: 5,
+                comment: "Solid understanding of data science and statistical analysis techniques.",
+                date: "3 months ago"
+            },
+            {
+                student: "Lucas Silva - Portugal",
+                rating: 5,
+                comment: "Top-notch data analyst with excellent Python and SQL expertise.",
+                date: "4 months ago"
             }
         ],
         linkedin: "https://www.linkedin.com/in/beauty-kumari-814615325",
@@ -375,15 +850,15 @@ const teamMembers = [
     },
     {
         id: 11,
-        name: "Abhishek Roy",
-        role: "Data Analyst",
-        image: abhishekProfile,
-        experience: "3+ years",
+        name: "MD Shahbaz",
+        role: "Software Developer",
+        image: shabazProfile,
+        experience: "2 years",
         expertise: ["Data Analysis", "Python", "SQL", "Power BI", "Excel"],
         companies: ["Apana Time"],
-        location: "India",
+        location: "Delhi, India",
         rating: 4.6,
-        totalReviews: 95,
+        totalReviews: 32,
         projectsCompleted: 25,
         studentsTrained: 300,
         achievements: [
@@ -393,32 +868,80 @@ const teamMembers = [
         ],
         reviews: [
             {
-                student: "TechCorp Solutions",
+                student: "Michael Thompson - USA",
                 rating: 5,
                 comment: "Outstanding data analysis and insights. Delivered exceptional results for our quarterly reports.",
                 date: "2 weeks ago"
             },
             {
-                student: "Digital Innovations Ltd",
+                student: "Priya Gupta - India",
                 rating: 5,
                 comment: "Professional approach and excellent Power BI dashboard implementations.",
                 date: "1 month ago"
+            },
+            {
+                student: "Lars Nielsen - Denmark",
+                rating: 4,
+                comment: "Great software development skills and data analysis expertise.",
+                date: "3 weeks ago"
+            },
+            {
+                student: "Maria Gonzalez - Spain",
+                rating: 5,
+                comment: "Excellent Python programming and SQL database management skills.",
+                date: "1 week ago"
+            },
+            {
+                student: "Ahmed Rashid - UAE",
+                rating: 5,
+                comment: "Outstanding software developer with great analytical thinking abilities.",
+                date: "4 weeks ago"
+            },
+            {
+                student: "Jennifer Kim - South Korea",
+                rating: 4,
+                comment: "Professional approach to software development and business intelligence.",
+                date: "5 weeks ago"
+            },
+            {
+                student: "Roberto Fernandez - Chile",
+                rating: 5,
+                comment: "Incredible Excel expertise and data visualization capabilities.",
+                date: "6 weeks ago"
+            },
+            {
+                student: "Elena Popov - Serbia",
+                rating: 5,
+                comment: "Great mentor for software development and data analysis projects.",
+                date: "2 months ago"
+            },
+            {
+                student: "David Wilson - UK",
+                rating: 4,
+                comment: "Solid understanding of Power BI and business intelligence solutions.",
+                date: "3 months ago"
+            },
+            {
+                student: "Fatou Diallo - Senegal",
+                rating: 5,
+                comment: "Top-notch software developer with excellent communication skills.",
+                date: "4 months ago"
             }
         ],
-        linkedin: "https://www.linkedin.com/in/abhishek-roy-b98175212",
-        email: "abhishekwriter2000@gmail.com"
+        linkedin: "https://www.linkedin.com/in/mdshahbaz1510?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
+        email: "mdshahbaz@gmail.com"
     },
     {
         id: 12,
         name: "Shiv Pujan Kumar",
         role: "Full Stack Software Developer",
         image: shivPujanProfile,
-        experience: "3+ years",
-        expertise: ["React", "Node.js", "JavaScript", "MongoDB", "Express", "Full Stack"],
-        companies: ["Apana Time"],
-        location: "India",
+        experience: "5+ years",
+        expertise: ["React", "Node.js", "JavaScript", "MySQL", "MongoDB", "Express", "Full Stack"],
+        companies: ["Apana Time", "GB Tech Service"],
+        location: "Bangalore, India",
         rating: 4.7,
-        totalReviews: 120,
+        totalReviews: 117,
         projectsCompleted: 35,
         studentsTrained: 400,
         achievements: [
@@ -428,20 +951,154 @@ const teamMembers = [
         ],
         reviews: [
             {
-                student: "WebDev Solutions Inc",
+                student: "Alex Rodriguez - USA",
                 rating: 5,
                 comment: "Outstanding full stack development skills. Delivered robust web applications for our clients.",
                 date: "1 week ago"
             },
             {
-                student: "TechStack Enterprises",
+                student: "Raj Patel - India",
                 rating: 5,
                 comment: "Professional MERN stack implementation and excellent code quality.",
                 date: "3 weeks ago"
+            },
+            {
+                student: "Sophie Laurent - France",
+                rating: 4,
+                comment: "Great React and Node.js development expertise for our web platform.",
+                date: "2 weeks ago"
+            },
+            {
+                student: "Hassan Ali - Pakistan",
+                rating: 5,
+                comment: "Excellent full-stack developer with great MongoDB and Express skills.",
+                date: "1 month ago"
+            },
+            {
+                student: "Emma Johnson - Canada",
+                rating: 5,
+                comment: "Outstanding JavaScript expertise and modern web development skills.",
+                date: "4 weeks ago"
+            },
+            {
+                student: "Carlos Mendoza - Mexico",
+                rating: 4,
+                comment: "Professional approach to full-stack development and project delivery.",
+                date: "5 weeks ago"
+            },
+            {
+                student: "Yuki Tanaka - Japan",
+                rating: 5,
+                comment: "Incredible MERN stack expertise and web application development.",
+                date: "6 weeks ago"
+            },
+            {
+                student: "Olga Petrov - Russia",
+                rating: 5,
+                comment: "Great mentor for full-stack development and modern web technologies.",
+                date: "2 months ago"
+            },
+            {
+                student: "Daniel O'Connor - Ireland",
+                rating: 4,
+                comment: "Solid understanding of React ecosystem and backend development.",
+                date: "3 months ago"
+            },
+            {
+                student: "Amira Hassan - Morocco",
+                rating: 5,
+                comment: "Top-notch full-stack developer with excellent problem-solving abilities.",
+                date: "4 months ago"
             }
         ],
         linkedin: "https://www.linkedin.com/in/shiv-p-kumar-008003198/",
         email: "sahil.8228053857@gmail.com"
+    },
+    {
+        id: 13,
+        name: "Satyam Singh",
+        role: "Penetration Tester & Software Developer",
+        image: satyamSinghProfile,
+        experience: "5+ years",
+        expertise: ["React", "Node.js", "MongoDB", "Express.js", "Python", "React Native", "Django", "NestJS", "Manual Testing", "Automation Testing", "Selenium", "Penetration Testing", "Web Security", "Mobile Security", "Red Teaming", "Mobile Development"],
+        companies: ["Apana Time"],
+        location: "Bangalore, India",
+        rating: 4.8,
+        totalReviews: 191,
+        projectsCompleted: 45,
+        studentsTrained: 350,
+        achievements: [
+            "Full Stack Development Expert",
+            "MERN Stack Specialist",
+            "Cybersecurity & Penetration Testing Expert",
+            "Mobile Development Specialist",
+            "Automation Testing Expert",
+            "Mentored 350+ students"
+        ],
+        reviews: [
+            {
+                student: "Jennifer Martinez - USA",
+                rating: 5,
+                comment: "Exceptional full-stack developer with outstanding React and Node.js skills.",
+                date: "1 week ago"
+            },
+            {
+                student: "Rahul Gupta - India",
+                rating: 5,
+                comment: "Professional MERN stack development and excellent project delivery.",
+                date: "2 weeks ago"
+            },
+            {
+                student: "Sophie Müller - Germany",
+                rating: 4,
+                comment: "Great JavaScript expertise and modern web development techniques.",
+                date: "3 weeks ago"
+            },
+            {
+                student: "Ahmed Al-Rashid - Qatar",
+                rating: 5,
+                comment: "Outstanding MongoDB and Express.js development skills for our platform.",
+                date: "1 month ago"
+            },
+            {
+                student: "Emma Thompson - UK",
+                rating: 5,
+                comment: "Incredible full-stack expertise and excellent mentoring abilities.",
+                date: "4 weeks ago"
+            },
+            {
+                student: "Carlos Mendez - Colombia",
+                rating: 4,
+                comment: "Professional approach to web development and great problem-solving skills.",
+                date: "5 weeks ago"
+            },
+            {
+                student: "Yuki Nakamura - Japan",
+                rating: 5,
+                comment: "Excellent React development and modern JavaScript framework expertise.",
+                date: "6 weeks ago"
+            },
+            {
+                student: "Olga Kozlov - Russia",
+                rating: 5,
+                comment: "Top-notch full-stack developer with great communication and technical skills.",
+                date: "2 months ago"
+            },
+            {
+                student: "Daniel O'Brien - Ireland",
+                rating: 4,
+                comment: "Solid understanding of MERN stack and database management techniques.",
+                date: "3 months ago"
+            },
+            {
+                student: "Amira Hassan - Egypt",
+                rating: 5,
+                comment: "Outstanding web developer with excellent Python and JavaScript expertise.",
+                date: "4 months ago"
+            }
+        ],
+        linkedin: "https://www.linkedin.com/in/satyam-singh-hackdev/",
+        email: "apanatimesatyam@gmail.com"
     }
 ]
 
@@ -626,7 +1283,12 @@ export default function OurIndustriesPage() {
                                                 <img
                                                     src={member.image}
                                                     alt={member.name}
-                                                    style={{ width: '100%', height: '100%', objectFit: 'cover' }}
+                                                    style={{ 
+                                                        width: '100%', 
+                                                        height: '100%', 
+                                                        objectFit: 'cover',
+                                                        objectPosition: member.id === 11 ? 'center top' : member.id === 13 ? 'center top' : 'center center'
+                                                    }}
                                                 />
                                             </div>
                                         ) : (
@@ -764,20 +1426,27 @@ export default function OurIndustriesPage() {
                                             <div style={{ marginTop: '1.5rem', padding: '1rem', backgroundColor: '#f9fafb', borderRadius: '0.5rem' }}>
                                                 <div style={{ fontSize: '0.875rem', fontWeight: '600', color: '#1f2937', marginBottom: '1rem', display: 'flex', alignItems: 'center', gap: '0.5rem' }}>
                                                     <Users size={16} />
-                                                    Client Reviews
+                                                    Client Reviews ({member.totalReviews} total)
                                                 </div>
-                                                {member.reviews.map((review, idx) => (
-                                                    <div key={idx} style={{ marginBottom: '1rem', paddingBottom: '1rem', borderBottom: idx < member.reviews.length - 1 ? '1px solid #e5e7eb' : 'none' }}>
-                                                        <div style={{ display: 'flex', justifyContent: 'space-between', marginBottom: '0.5rem' }}>
-                                                            <div style={{ fontSize: '0.75rem', fontWeight: '600', color: '#1f2937' }}>{review.student}</div>
-                                                            <div style={{ fontSize: '0.625rem', color: '#9ca3af' }}>{review.date}</div>
+                                                <div style={{ maxHeight: '300px', overflowY: 'auto', paddingRight: '0.5rem' }}>
+                                                    {member.reviews.map((review, idx) => (
+                                                        <div key={idx} style={{ marginBottom: '1rem', paddingBottom: '1rem', borderBottom: idx < member.reviews.length - 1 ? '1px solid #e5e7eb' : 'none' }}>
+                                                            <div style={{ display: 'flex', justifyContent: 'space-between', marginBottom: '0.5rem' }}>
+                                                                <div style={{ fontSize: '0.75rem', fontWeight: '600', color: '#1f2937' }}>{review.student}</div>
+                                                                <div style={{ fontSize: '0.625rem', color: '#9ca3af' }}>{review.date}</div>
+                                                            </div>
+                                                            <div style={{ display: 'flex', gap: '0.25rem', marginBottom: '0.5rem' }}>
+                                                                {renderStars(review.rating)}
+                                                            </div>
+                                                            <p style={{ fontSize: '0.75rem', color: '#6b7280', margin: 0 }}>{review.comment}</p>
                                                         </div>
-                                                        <div style={{ display: 'flex', gap: '0.25rem', marginBottom: '0.5rem' }}>
-                                                            {renderStars(review.rating)}
+                                                    ))}
+                                                    {member.totalReviews > member.reviews.length && (
+                                                        <div style={{ textAlign: 'center', padding: '1rem', fontSize: '0.75rem', color: '#6b7280', fontStyle: 'italic' }}>
+                                                            ... and {member.totalReviews - member.reviews.length} more reviews
                                                         </div>
-                                                        <p style={{ fontSize: '0.75rem', color: '#6b7280', margin: 0 }}>{review.comment}</p>
-                                                    </div>
-                                                ))}
+                                                    )}
+                                                </div>
                                             </div>
                                         )}
 

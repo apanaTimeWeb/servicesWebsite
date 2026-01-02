@@ -38,10 +38,10 @@ export default function WebDevelopment() {
   ]
 
   const stats = [
-    { value: '300+', label: 'Websites Built' },
-    { value: '50+', label: 'E-commerce Sites' },
-    { value: '200+', label: 'Happy Clients' },
-    { value: '99%', label: 'Client Satisfaction' }
+    { value: '25+', label: 'Websites Built' },
+    { value: '8+', label: 'E-commerce Sites' },
+    { value: '30+', label: 'Happy Clients' },
+    { value: '100%', label: 'Client Satisfaction' }
   ]
 
   return (
