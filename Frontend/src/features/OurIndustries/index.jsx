@@ -416,7 +416,7 @@ const teamMembers = [
         experience: "3+ years",
         expertise: ["React", "Node.js", "JavaScript", "MongoDB", "Express", "Full Stack"],
         companies: ["Apana Time"],
-        location: "Banglore, India",
+        location: "Bangalore, India",
         rating: 4.7,
         totalReviews: 120,
         projectsCompleted: 35,
