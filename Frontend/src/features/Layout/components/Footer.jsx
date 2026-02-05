@@ -105,6 +105,7 @@ export function Footer() {
               <li><a href="https://wa.me/917080404594" target="_blank" rel="noopener noreferrer" style={{ color: '#9ca3af', textDecoration: 'none' }}>WhatsApp</a></li>
               <li><a href="#testimonials" onClick={(e) => handleNavClick(e, 'testimonials')} style={{ color: '#9ca3af', textDecoration: 'none' }}>Testimonial</a></li>
               <li><Link to="/our-expert-teams" style={{ color: '#9ca3af', textDecoration: 'none' }}>Our Teams</Link></li>
+              <li><Link to="/our-blog" style={{ color: '#9ca3af', textDecoration: 'none' }}>Our Blog</Link></li>
             </ul>
           </div>
         </div>

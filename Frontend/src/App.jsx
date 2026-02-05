@@ -16,6 +16,7 @@ import OurIndustriesPage from "@/features/OurIndustries"
 import OurServicesPage from "@/features/OurServices"
 import OurProductsPage from "@/features/OurProducts"
 import OurEventsPage from "@/features/OurEvents"
+import OurBlogPage from "@/features/OurBlog"
 import PrivacyPolicy from "@/features/Legal/PrivacyPolicy"
 import TermsOfService from "@/features/Legal/TermsOfService"
 import CookiePolicy from "@/features/Legal/CookiePolicy"
@@ -36,6 +37,7 @@ function App() {
                     <Route path="/our-services" element={<OurServicesPage />} />
                     <Route path="/our-products" element={<OurProductsPage />} />
                     <Route path="/our-events" element={<OurEventsPage />} />
+                    <Route path="/our-blog" element={<OurBlogPage />} />
                     <Route path="/services/:serviceName" element={<ServicePage />} />
                     <Route path="/privacy" element={<PrivacyPolicy />} />
                     <Route path="/terms" element={<TermsOfService />} />

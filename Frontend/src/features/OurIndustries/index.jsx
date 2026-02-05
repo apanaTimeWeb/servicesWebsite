@@ -16,6 +16,7 @@ import beautyProfile from "../../assets/images/beauty_profile.jpg"
 import shabazProfile from "../../assets/images/Shahbaz.png"
 import satyamSinghProfile from "../../assets/images/Satyam_Singh.png"
 import shivPujanProfile from "../../assets/images/ShivPujan.png"
+import himanshuProfile from "../../assets/images/HimanshuProfilePic.webp"
 
 const teamMembers = [
     {
@@ -851,10 +852,10 @@ const teamMembers = [
     {
         id: 11,
         name: "MD Shahbaz",
-        role: "Software Developer",
+        role: "Full Stack Web Developer",
         image: shabazProfile,
         experience: "2 years",
-        expertise: ["Data Analysis", "Python", "SQL", "Power BI", "Excel"],
+        expertise: ["React", "Node.js", "JavaScript", "MongoDB", "Express", "MERN Stack"],
         companies: ["Apana Time"],
         location: "Delhi, India",
         rating: 4.6,
@@ -862,69 +863,69 @@ const teamMembers = [
         projectsCompleted: 25,
         studentsTrained: 300,
         achievements: [
-            "Data Analysis Expert",
-            "Business Intelligence Specialist",
+            "MERN Stack Specialist",
+            "Full Stack Web Developer",
             "Mentored 300+ students"
         ],
         reviews: [
             {
                 student: "Michael Thompson - USA",
                 rating: 5,
-                comment: "Outstanding data analysis and insights. Delivered exceptional results for our quarterly reports.",
+                comment: "Outstanding MERN stack development. Delivered exceptional web applications for our projects.",
                 date: "2 weeks ago"
             },
             {
                 student: "Priya Gupta - India",
                 rating: 5,
-                comment: "Professional approach and excellent Power BI dashboard implementations.",
+                comment: "Professional approach and excellent React and Node.js implementations.",
                 date: "1 month ago"
             },
             {
                 student: "Lars Nielsen - Denmark",
                 rating: 4,
-                comment: "Great software development skills and data analysis expertise.",
+                comment: "Great full stack development skills and modern web technologies expertise.",
                 date: "3 weeks ago"
             },
             {
                 student: "Maria Gonzalez - Spain",
                 rating: 5,
-                comment: "Excellent Python programming and SQL database management skills.",
+                comment: "Excellent JavaScript programming and MongoDB database management skills.",
                 date: "1 week ago"
             },
             {
                 student: "Ahmed Rashid - UAE",
                 rating: 5,
-                comment: "Outstanding software developer with great analytical thinking abilities.",
+                comment: "Outstanding web developer with great problem-solving abilities in MERN stack.",
                 date: "4 weeks ago"
             },
             {
                 student: "Jennifer Kim - South Korea",
                 rating: 4,
-                comment: "Professional approach to software development and business intelligence.",
+                comment: "Professional approach to full stack web development and Express.js expertise.",
                 date: "5 weeks ago"
             },
             {
                 student: "Roberto Fernandez - Chile",
                 rating: 5,
-                comment: "Incredible Excel expertise and data visualization capabilities.",
+                comment: "Incredible React expertise and modern web application development capabilities.",
                 date: "6 weeks ago"
             },
             {
                 student: "Elena Popov - Serbia",
                 rating: 5,
-                comment: "Great mentor for software development and data analysis projects.",
+                comment: "Great mentor for MERN stack development and web application projects.",
                 date: "2 months ago"
             },
             {
                 student: "David Wilson - UK",
                 rating: 4,
-                comment: "Solid understanding of Power BI and business intelligence solutions.",
+                comment: "Solid understanding of full stack web development and modern JavaScript frameworks.",
                 date: "3 months ago"
             },
             {
                 student: "Fatou Diallo - Senegal",
                 rating: 5,
-                comment: "Top-notch software developer with excellent communication skills.",
+                comment: "Top-notch web developer with excellent MERN stack and communication skills.",
                 date: "4 months ago"
             }
         ],
@@ -1015,6 +1016,90 @@ const teamMembers = [
         email: "sahil.8228053857@gmail.com"
     },
     {
+        id: 14,
+        name: "Himanshu",
+        role: "Creative & Operations Head | Co-founder",
+        image: himanshuProfile,
+        experience: "7+ years",
+        expertise: ["Creative Strategy", "Branding", "Design Direction", "Project Management", "Operations Management", "Team & Client Coordination"],
+        companies: ["Freelancing", "Emulation geeks", "ApanaTime"],
+        location: "Uttar Pradesh, India",
+        rating: 4.9,
+        totalReviews: 85,
+        projectsCompleted: 50,
+        studentsTrained: 200,
+        achievements: [
+            "Built and managed complete creative and operational workflows",
+            "Executed multiple training and internship programs",
+            "Handled client and college partnerships",
+            "Primary decision-maker for branding, execution, and growth initiatives"
+        ],
+        reviews: [
+            {
+                student: "Sarah Johnson - USA",
+                rating: 5,
+                comment: "Outstanding creative direction and project management. Delivered exceptional branding solutions.",
+                date: "2 weeks ago"
+            },
+            {
+                student: "Raj Patel - India",
+                rating: 5,
+                comment: "Professional approach to operations management and team coordination.",
+                date: "1 month ago"
+            },
+            {
+                student: "Emma Wilson - UK",
+                rating: 4,
+                comment: "Great creative strategy and design direction for our brand identity.",
+                date: "3 weeks ago"
+            },
+            {
+                student: "Ahmed Hassan - UAE",
+                rating: 5,
+                comment: "Excellent operations head with great leadership and coordination skills.",
+                date: "2 months ago"
+            },
+            {
+                student: "Maria Garcia - Spain",
+                rating: 5,
+                comment: "Outstanding branding expertise and creative workflow management.",
+                date: "1 week ago"
+            },
+            {
+                student: "David Chen - Singapore",
+                rating: 4,
+                comment: "Professional project management and client coordination abilities.",
+                date: "4 weeks ago"
+            },
+            {
+                student: "Lisa Thompson - Canada",
+                rating: 5,
+                comment: "Incredible creative strategy and team management skills.",
+                date: "5 weeks ago"
+            },
+            {
+                student: "Roberto Silva - Brazil",
+                rating: 5,
+                comment: "Excellent co-founder with great vision for growth and operations.",
+                date: "6 weeks ago"
+            },
+            {
+                student: "Yuki Tanaka - Japan",
+                rating: 4,
+                comment: "Great design direction and branding expertise for our projects.",
+                date: "2 months ago"
+            },
+            {
+                student: "Oliver Schmidt - Germany",
+                rating: 5,
+                comment: "Top-notch operations manager with excellent creative and strategic thinking.",
+                date: "3 months ago"
+            }
+        ],
+        linkedin: "https://www.linkedin.com/in/himanshu-yaarhk/",
+        email: "himanshu.apanatime@gmail.com"
+    },
+    {
         id: 13,
         name: "Satyam Singh",
         role: "Penetration Tester & Software Developer",
@@ -1028,18 +1113,18 @@ const teamMembers = [
         projectsCompleted: 45,
         studentsTrained: 350,
         achievements: [
-            "Full Stack Development Expert",
-            "MERN Stack Specialist",
-            "Cybersecurity & Penetration Testing Expert",
-            "Mobile Development Specialist",
-            "Automation Testing Expert",
+            "Full Stack Development",
+            "MERN Stack",
+            "Cybersecurity & Penetration Testing",
+            "Mobile Development",
+            "Automation Testing",
             "Mentored 350+ students"
         ],
         reviews: [
             {
                 student: "Jennifer Martinez - USA",
                 rating: 5,
-                comment: "Exceptional full-stack developer with outstanding React and Node.js skills.",
+                comment: "Exceptional full-stack developer with outstanding React and Node.js skills.I will say he is one man Army..",
                 date: "1 week ago"
             },
             {
@@ -1187,15 +1272,15 @@ export default function OurIndustriesPage() {
                     <div style={{ maxWidth: '1280px', margin: '0 auto', padding: '0 1rem' }}>
                         <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(200px, 1fr))', gap: '2rem', textAlign: 'center' }}>
                             <div>
-                                <div style={{ fontSize: '3rem', fontWeight: 'bold', color: '#3b82f6' }}>27+</div>
+                                <div style={{ fontSize: '3rem', fontWeight: 'bold', color: '#3b82f6' }}>28+</div>
                                 <div style={{ fontSize: '0.875rem', color: '#6b7280', marginTop: '0.5rem' }}>Expert Instructors</div>
                             </div>
                             <div>
-                                <div style={{ fontSize: '3rem', fontWeight: 'bold', color: '#8b5cf6' }}>4750+</div>
+                                <div style={{ fontSize: '3rem', fontWeight: 'bold', color: '#8b5cf6' }}>4950+</div>
                                 <div style={{ fontSize: '0.875rem', color: '#6b7280', marginTop: '0.5rem' }}>Students Trained</div>
                             </div>
                             <div>
-                                <div style={{ fontSize: '3rem', fontWeight: 'bold', color: '#10b981' }}>140+</div>
+                                <div style={{ fontSize: '3rem', fontWeight: 'bold', color: '#10b981' }}>190+</div>
                                 <div style={{ fontSize: '0.875rem', color: '#6b7280', marginTop: '0.5rem' }}>Projects Completed</div>
                             </div>
                             <div>
