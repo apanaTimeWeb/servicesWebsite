@@ -1113,18 +1113,18 @@ const teamMembers = [
         projectsCompleted: 45,
         studentsTrained: 350,
         achievements: [
-            "Full Stack Development Expert",
-            "MERN Stack Specialist",
-            "Cybersecurity & Penetration Testing Expert",
-            "Mobile Development Specialist",
-            "Automation Testing Expert",
+            "Full Stack Development",
+            "MERN Stack",
+            "Cybersecurity & Penetration Testing",
+            "Mobile Development",
+            "Automation Testing",
             "Mentored 350+ students"
         ],
         reviews: [
             {
                 student: "Jennifer Martinez - USA",
                 rating: 5,
-                comment: "Exceptional full-stack developer with outstanding React and Node.js skills.",
+                comment: "Exceptional full-stack developer with outstanding React and Node.js skills.I will say he is one man Army..",
                 date: "1 week ago"
             },
             {
