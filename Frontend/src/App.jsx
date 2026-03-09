@@ -20,6 +20,7 @@ import OurBlogPage from "@/features/OurBlog"
 import PrivacyPolicy from "@/features/Legal/PrivacyPolicy"
 import TermsOfService from "@/features/Legal/TermsOfService"
 import CookiePolicy from "@/features/Legal/CookiePolicy"
+import Certifications from "@/features/Legal/Certifications"
 
 function App() {
     return (
@@ -42,6 +43,7 @@ function App() {
                     <Route path="/privacy" element={<PrivacyPolicy />} />
                     <Route path="/terms" element={<TermsOfService />} />
                     <Route path="/cookies" element={<CookiePolicy />} />
+                    <Route path="/certifications" element={<Certifications />} />
                 </Routes>
                 <Footer />
                 <FloatingWhatsApp />
