@@ -1,50 +1,9 @@
 "use client"
 
 import React, { useState } from "react"
-import { Link } from "react-router-dom"
-import { Calendar, Users, Video, MapPin, Clock, ArrowRight, Mic2, Presentation, Laptop } from "lucide-react"
 import { Button } from "@/components/ui/button"
 import { ContactModal } from "../Home/components/ContactModal"
-import powerBiWebinar from "../../assets/images/power_bi_webinar.png"
-
-const events = [
-    {
-        id: 1,
-        type: "Seminar",
-        title: "Future of AI in Business",
-        date: "March 15, 2024",
-        time: "10:00 AM - 2:00 PM",
-        location: "Tech Hub Auditorium, Bangalore",
-        image: "https://images.unsplash.com/photo-1544531586-fde5298cdd40?w=800&h=500&fit=crop",
-        description: "Join industry leaders to discuss the transformative power of Artificial Intelligence in modern business landscapes.",
-        icon: Mic2,
-        gradient: "from-blue-500 to-indigo-500"
-    },
-    {
-        id: 2,
-        type: "Webinar",
-        title: "Master in Power BI Dashboard",
-        date: "March 20, 2024",
-        time: "3:00 PM - 5:00 PM",
-        location: "Online (Zoom)",
-        image: powerBiWebinar,
-        description: "Learn how to build interactive and insightful dashboards using Power BI with live examples.",
-        icon: Laptop,
-        gradient: "from-purple-500 to-pink-500"
-    },
-    {
-        id: 3,
-        type: "Workshop",
-        title: "Full Stack Development Bootcamp",
-        date: "April 5-7, 2024",
-        time: "9:00 AM - 5:00 PM",
-        location: "ApanaTime Campus, Hyderabad",
-        image: "https://images.unsplash.com/photo-1531482615713-2afd69097998?w=800&h=500&fit=crop",
-        description: "Hands-on workshop covering the latest full-stack technologies including React, Node.js, and MongoDB.",
-        icon: Presentation,
-        gradient: "from-orange-500 to-red-500"
-    }
-]
+import EventsComponents from "./EventsComponents"
 
 export default function OurEventsPage() {
     const [isContactModalOpen, setIsContactModalOpen] = useState(false)
@@ -127,101 +86,7 @@ export default function OurEventsPage() {
                 </section>
 
                 {/* Events List Section */}
-                <section id="events-list" style={{ padding: '5rem 0' }}>
-                    <div style={{ maxWidth: '1280px', margin: '0 auto', padding: '0 1rem' }}>
-                        <div style={{ display: 'flex', flexDirection: 'column', gap: '3rem' }}>
-                            {events.map((event, index) => {
-                                const Icon = event.icon
-                                return (
-                                    <div
-                                        key={event.id}
-                                        className="event-card event-card-inner"
-                                        style={{
-                                            display: 'flex',
-                                            flexDirection: 'row',
-                                            backgroundColor: '#ffffff',
-                                            borderRadius: '1.5rem',
-                                            overflow: 'hidden',
-                                            boxShadow: '0 10px 40px -10px rgba(0,0,0,0.1)',
-                                            animationDelay: `${index * 0.2}s`,
-                                            opacity: 0,
-                                            border: '1px solid #e2e8f0'
-                                        }}
-                                    >
-                                        {/* Image Section */}
-                                        <div className="event-image-side" style={{ flex: '0 0 40%', position: 'relative', minHeight: '300px' }}>
-                                            <img
-                                                src={event.image}
-                                                alt={event.title}
-                                                style={{ width: '100%', height: '100%', objectFit: 'cover' }}
-                                            />
-                                            <div style={{
-                                                position: 'absolute',
-                                                top: '1.5rem',
-                                                left: '1.5rem',
-                                                backgroundColor: '#ffffff',
-                                                padding: '0.5rem 1rem',
-                                                borderRadius: '0.5rem',
-                                                fontWeight: '700',
-                                                color: '#0f172a',
-                                                boxShadow: '0 4px 6px -1px rgba(0, 0, 0, 0.1)'
-                                            }}>
-                                                {event.type}
-                                            </div>
-                                        </div>
-
-                                        {/* Content Section */}
-                                        <div className="event-content-side" style={{ flex: '1', padding: '3rem', display: 'flex', flexDirection: 'column', justifyContent: 'center' }}>
-                                            <div style={{ display: 'flex', alignItems: 'center', gap: '0.75rem', marginBottom: '1rem', color: '#64748b' }}>
-                                                <Calendar size={18} />
-                                                <span style={{ fontWeight: '500' }}>{event.date}</span>
-                                                <span style={{ margin: '0 0.5rem' }}>•</span>
-                                                <Clock size={18} />
-                                                <span style={{ fontWeight: '500' }}>{event.time}</span>
-                                            </div>
-
-                                            <h3 style={{ fontSize: '2rem', fontWeight: '800', color: '#0f172a', marginBottom: '1rem', lineHeight: '1.2' }}>
-                                                {event.title}
-                                            </h3>
-
-                                            <p style={{ fontSize: '1.125rem', color: '#475569', marginBottom: '2rem', lineHeight: '1.6' }}>
-                                                {event.description}
-                                            </p>
-
-                                            <div className="event-meta-info" style={{ display: 'flex', alignItems: 'center', gap: '2rem', marginBottom: '2rem' }}>
-                                                <div style={{ display: 'flex', alignItems: 'center', gap: '0.5rem', color: '#475569' }}>
-                                                    <MapPin size={20} color="#3b82f6" />
-                                                    <span style={{ fontWeight: '500' }}>{event.location}</span>
-                                                </div>
-                                                <div style={{ display: 'flex', alignItems: 'center', gap: '0.5rem', color: '#475569' }}>
-                                                    <Users size={20} color="#3b82f6" />
-                                                    <span style={{ fontWeight: '500' }}>Open for Registration</span>
-                                                </div>
-                                            </div>
-
-                                            <div>
-                                                <Button style={{
-                                                    backgroundColor: '#0f172a',
-                                                    color: '#ffffff',
-                                                    padding: '0.75rem 2rem',
-                                                    borderRadius: '0.5rem',
-                                                    fontWeight: '600',
-                                                    display: 'inline-flex',
-                                                    alignItems: 'center',
-                                                    gap: '0.5rem',
-                                                    transition: 'all 0.2s'
-                                                }}>
-                                                    Register Now
-                                                    <ArrowRight size={18} />
-                                                </Button>
-                                            </div>
-                                        </div>
-                                    </div>
-                                )
-                            })}
-                        </div>
-                    </div>
-                </section>
+                <EventsComponents />
 
                 {/* Host Event CTA */}
                 <section id="host-event-cta" style={{
