@@ -89,7 +89,7 @@ export default function EventsComponents() {
                     {activeTab === 'seminar' && seminarImages.map((img, idx) => (
                         <img key={idx} src={img} alt={`Seminar ${idx + 1}`} style={{ width: '100%', height: '350px', objectFit: 'cover', borderRadius: '1rem' }} />
                     ))}
-                    {activeTab === 'workshop' && workshopImages.slice(0, 3).map((img, idx) => (
+                    {activeTab === 'workshop' && workshopImages.map((img, idx) => (
                         <img key={idx} src={img} alt={`Workshop ${idx + 1}`} style={{ width: '100%', height: '350px', objectFit: 'cover', borderRadius: '1rem' }} />
                     ))}
                     {activeTab === 'honorary' && honoraryImages.map((img, idx) => (
