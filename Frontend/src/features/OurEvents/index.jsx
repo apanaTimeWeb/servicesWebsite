@@ -18,6 +18,15 @@ export default function OurEventsPage() {
         @keyframes fadeIn { from { opacity: 0; } to { opacity: 1; } }
         .event-card { animation: fadeInUp 0.6s ease-out forwards; }
         .hero-animate { animation: fadeIn 1s ease-out forwards; }
+        
+        @media (max-width: 768px) {
+          #events-hero { padding: 3rem 0 !important; }
+          #events-hero h1 { font-size: 2.5rem !important; }
+          #events-hero p { font-size: 1rem !important; }
+          #host-event-cta { padding: 3rem 0 !important; }
+          #host-event-cta h2 { font-size: 1.75rem !important; }
+          #host-event-cta p { font-size: 1rem !important; }
+        }
       `}</style>
 
             <main style={{ paddingTop: '64px', minHeight: '100vh', backgroundColor: '#f8fafc' }}>

@@ -27,25 +27,25 @@ export function HeroSection() {
             }}
           >
             <div>
-              <p className="hero-subtitle" style={{
-                fontSize: '2rem',
-                color: '#4b5563',
-                marginBottom: '0.25rem',
-                fontWeight: '500'
-              }}>
-                Transform Your Digital Future
-              </p>
-
               <h1 className="hero-title" style={{
                 fontSize: '5.5rem',
                 fontWeight: 'bold',
                 color: '#4c1d95',
-                marginBottom: '1rem',
+                marginBottom: '0.5rem',
                 lineHeight: '0.9',
-                minHeight: 'auto'
+                minHeight: '5rem'
               }}>
                 <AnimatedText text="ApanaTime Tech Solutions" delay={150} />
               </h1>
+
+              <p className="hero-subtitle" style={{
+                fontSize: '2rem',
+                color: '#4b5563',
+                marginBottom: '1rem',
+                fontWeight: '500'
+              }}>
+                Transform Your Digital Future
+              </p>
 
               <p className="hero-description" style={{
                 fontSize: '1.75rem',
@@ -121,19 +121,29 @@ export function HeroSection() {
           
           .hero-title {
             font-size: 4rem !important;
+            order: 2;
           }
           
           .hero-subtitle {
             font-size: 1.5rem !important;
+            order: 1;
+            margin-bottom: 0.5rem !important;
+          }
+          
+          .hero-grid > div:first-child {
+            display: flex;
+            flex-direction: column;
           }
           
           .hero-description {
             font-size: 1.25rem !important;
+            order: 3;
           }
           
           .hero-button {
             font-size: 1.125rem !important;
             padding: 1rem 2.5rem !important;
+            order: 4;
           }
         }
         
@@ -148,11 +158,13 @@ export function HeroSection() {
           
           .hero-title {
             font-size: 3rem !important;
-            margin-bottom: 0.75rem !important;
+            margin-bottom: 0.5rem !important;
+            min-height: 3.5rem !important;
           }
           
           .hero-subtitle {
             font-size: 1.25rem !important;
+            margin-bottom: 0.5rem !important;
           }
           
           .hero-description {
@@ -177,10 +189,12 @@ export function HeroSection() {
           .hero-title {
             font-size: 2.5rem !important;
             margin-bottom: 0.5rem !important;
+            min-height: 3rem !important;
           }
           
           .hero-subtitle {
             font-size: 1.125rem !important;
+            margin-bottom: 0.5rem !important;
           }
           
           .hero-description {
