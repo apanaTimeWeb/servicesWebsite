@@ -336,7 +336,13 @@ export default function OurProductsPage() {
                                             transition: 'all 0.3s',
                                             boxShadow: '0 1px 3px rgba(0, 0, 0, 0.1)',
                                             animationDelay: `${index * 0.1}s`,
-                                            opacity: 0
+                                            opacity: 0,
+                                            cursor: product.name === "School Management System" ? "pointer" : "default"
+                                        }}
+                                        onClick={() => {
+                                            if (product.name === "School Management System") {
+                                                window.location.href = "https://apanacampus.com/";
+                                            }
                                         }}
                                         onMouseEnter={(e) => {
                                             e.currentTarget.style.transform = 'translateY(-8px)'
