@@ -4,8 +4,6 @@ import React, { useState } from "react"
 import { Star, Briefcase, Award, Users, GraduationCap, TrendingUp, MapPin, Linkedin, Github, Mail } from "lucide-react"
 import { Button } from "@/components/ui/button"
 import anishProfile from "../../assets/images/anish_profile.jpg"
-import satyamProfile from "../../assets/images/satyam_profile.jpg"
-import ujjwalProfile from "../../assets/images/ujjwal_profile.jpg"
 import saweraProfile from "../../assets/images/sawera_profile.jpg"
 import arihantProfile from "../../assets/images/arihant_profile.jpg"
 import priyaProfile from "../../assets/images/priya_profile.jpg"
@@ -101,89 +99,6 @@ const teamMembers = [
         ],
         linkedin: "https://linkedin.com/in/anish-kumar-tech",
         email: "Anishkumarstech@gmail.com"
-    },
-    {
-        id: 2,
-        name: "Satyam Kumar Chaudhary",
-        role: "Data Scientist",
-        image: satyamProfile,
-        experience: "2+ years",
-        expertise: ["Python", "SQL", "PowerBI", "Data Analyst", "ML"],
-        companies: ["Apana Time"],
-        location: "Bihar, India",
-        rating: 4.8,
-        totalReviews: 42,
-        projectsCompleted: 20,
-        studentsTrained: 500,
-        achievements: [
-            "Completed 20+ projects",
-            "Data Science Expert",
-            "Mentored 500+ students"
-        ],
-        reviews: [
-            {
-                student: "Michael Brown - USA",
-                rating: 5,
-                comment: "Amazing data analysis skills. Delivered comprehensive insights for our business.",
-                date: "1 month ago"
-            },
-            {
-                student: "Priya Sharma - India",
-                rating: 5,
-                comment: "Very professional and explains complex data concepts clearly to our team.",
-                date: "2 months ago"
-            },
-            {
-                student: "James Wilson - UK",
-                rating: 4,
-                comment: "Excellent PowerBI dashboard creation and data visualization skills.",
-                date: "3 weeks ago"
-            },
-            {
-                student: "Anna Kowalski - Poland",
-                rating: 5,
-                comment: "Outstanding Python programming and machine learning implementation.",
-                date: "2 weeks ago"
-            },
-            {
-                student: "Carlos Rodriguez - Mexico",
-                rating: 4,
-                comment: "Great SQL query optimization and database management expertise.",
-                date: "1 week ago"
-            },
-            {
-                student: "Sophie Martin - France",
-                rating: 5,
-                comment: "Incredible analytical thinking and problem-solving approach to data science.",
-                date: "4 weeks ago"
-            },
-            {
-                student: "Hassan Ali - Pakistan",
-                rating: 5,
-                comment: "Professional data scientist with excellent communication skills.",
-                date: "5 weeks ago"
-            },
-            {
-                student: "Elena Petrov - Russia",
-                rating: 4,
-                comment: "Solid understanding of statistical analysis and data modeling techniques.",
-                date: "6 weeks ago"
-            },
-            {
-                student: "John Anderson - Canada",
-                rating: 5,
-                comment: "Exceptional mentor for data science projects. Highly recommended.",
-                date: "3 days ago"
-            },
-            {
-                student: "Fatima Al-Zahra - Morocco",
-                rating: 5,
-                comment: "Great expertise in business intelligence and data analytics solutions.",
-                date: "2 months ago"
-            }
-        ],
-        linkedin: "https://www.linkedin.com/in/satyam-kumar-0262882a5",
-        email: "satyamkumarsprediff@gmail.com"
     },
     {
         id: 3,
@@ -433,89 +348,6 @@ const teamMembers = [
         ],
         linkedin: "https://www.linkedin.com/in/priyadakhore",
         email: "priyadakhore08@gmail.com"
-    },
-    {
-        id: 6,
-        name: "Ujjwal Kumar Singh",
-        role: "Management Consultant",
-        image: ujjwalProfile,
-        experience: "2 years",
-        expertise: ["Management", "Operations", "Team Leadership", "Strategy"],
-        companies: ["Apana Time"],
-        location: "Bihar, India",
-        rating: 4.6,
-        totalReviews: 49,
-        projectsCompleted: 10,
-        studentsTrained: 250,
-        achievements: [
-            "Project Management Professional",
-            "Led operational strategy",
-            "Team growth specialist"
-        ],
-        reviews: [
-            {
-                student: "Michael Thompson - USA",
-                rating: 5,
-                comment: "Excellent leadership and project management expertise for our operations.",
-                date: "2 weeks ago"
-            },
-            {
-                student: "Priya Gupta - India",
-                rating: 5,
-                comment: "Great consultant for strategic planning and team development.",
-                date: "1 month ago"
-            },
-            {
-                student: "Lars Nielsen - Denmark",
-                rating: 4,
-                comment: "Outstanding management consulting and operational strategy expertise.",
-                date: "3 weeks ago"
-            },
-            {
-                student: "Maria Gonzalez - Spain",
-                rating: 5,
-                comment: "Professional approach to team leadership and business operations.",
-                date: "1 week ago"
-            },
-            {
-                student: "Ahmed Rashid - UAE",
-                rating: 5,
-                comment: "Incredible strategic thinking and project management skills.",
-                date: "4 weeks ago"
-            },
-            {
-                student: "Jennifer Kim - South Korea",
-                rating: 4,
-                comment: "Great mentor for management and organizational development.",
-                date: "5 weeks ago"
-            },
-            {
-                student: "Roberto Fernandez - Chile",
-                rating: 5,
-                comment: "Excellent consultant for business strategy and team growth.",
-                date: "6 weeks ago"
-            },
-            {
-                student: "Elena Popov - Serbia",
-                rating: 5,
-                comment: "Professional management consultant with great leadership insights.",
-                date: "2 months ago"
-            },
-            {
-                student: "David Wilson - UK",
-                rating: 4,
-                comment: "Solid understanding of operations management and strategic planning.",
-                date: "3 months ago"
-            },
-            {
-                student: "Fatou Diallo - Senegal",
-                rating: 5,
-                comment: "Top-notch management consultant with excellent communication skills.",
-                date: "4 months ago"
-            }
-        ],
-        linkedin: "https://www.linkedin.com/in/ujjwal-kumar-singh-4532581a6",
-        email: "ujjwal150212@gmail.com"
     },
     {
         id: 7,
